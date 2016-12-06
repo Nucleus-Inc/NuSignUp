@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NuSignUp_Example' do
+  pod 'NuSignUp', :path => '../'
+
+  target 'NuSignUp_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

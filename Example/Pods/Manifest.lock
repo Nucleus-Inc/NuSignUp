@@ -1,0 +1,16 @@
+PODS:
+  - NuSignUp (0.1.0)
+
+DEPENDENCIES:
+  - NuSignUp (from `../`)
+
+EXTERNAL SOURCES:
+  NuSignUp:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NuSignUp: 05ead0e590bb2b1f8ab096c9e57126d12b83b2fd
+
+PODFILE CHECKSUM: 1dce246adad7f45b5b2d02030a1dc02fadc7985b
+
+COCOAPODS: 1.2.0.beta.1

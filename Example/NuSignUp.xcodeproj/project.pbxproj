@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3EBA3C8816B119D4A9CFB8D6 /* Pods_NuSignUp_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AFEB35C2B7A56EF8CA91EF /* Pods_NuSignUp_Example.framework */; };
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		660365364AA3A255930FAF58 /* Pods_NuSignUp_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3CC985B907A99BFEB25001 /* Pods_NuSignUp_Tests.framework */; };
+		88F30FA61DF7548A00B92043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FA31DF7548A00B92043 /* AppDelegate.swift */; };
+		88F30FA71DF7548A00B92043 /* MyRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FA41DF7548A00B92043 /* MyRegisterController.swift */; };
+		88F30FA81DF7548A00B92043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FA51DF7548A00B92043 /* ViewController.swift */; };
+		88F30FB41DF7568800B92043 /* BasicQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FB31DF7568800B92043 /* BasicQuestionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,22 +32,24 @@
 /* Begin PBXFileReference section */
 		190363530CA2F033AF1FB797 /* Pods-NuSignUp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuSignUp_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3C3CC985B907A99BFEB25001 /* Pods_NuSignUp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F111E44AB4292A359A11F5D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5F111E44AB4292A359A11F5D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NuSignUp_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NuSignUp_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* NuSignUp_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuSignUp_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		728E17BDFDDFFD7E06A74E29 /* NuSignUp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NuSignUp.podspec; path = ../NuSignUp.podspec; sourceTree = "<group>"; };
+		728E17BDFDDFFD7E06A74E29 /* NuSignUp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NuSignUp.podspec; path = ../NuSignUp.podspec; sourceTree = "<group>"; };
 		76AFEB35C2B7A56EF8CA91EF /* Pods_NuSignUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F30FA31DF7548A00B92043 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88F30FA41DF7548A00B92043 /* MyRegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRegisterController.swift; sourceTree = "<group>"; };
+		88F30FA51DF7548A00B92043 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88F30FB31DF7568800B92043 /* BasicQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicQuestionCell.swift; sourceTree = "<group>"; };
 		A17B4F5CBF510EED323735F0 /* Pods-NuSignUp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuSignUp_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A68F6441789F00DCDBE4D01E /* Pods-NuSignUp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuSignUp_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B8F1595FEE4166F872F70FBD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B8F1595FEE4166F872F70FBD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BAA762EAF151084249000722 /* Pods-NuSignUp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuSignUp_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,8 +117,10 @@
 		607FACD21AFB9204008FA782 /* Example for NuSignUp */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				88F30FB31DF7568800B92043 /* BasicQuestionCell.swift */,
+				88F30FA31DF7548A00B92043 /* AppDelegate.swift */,
+				88F30FA41DF7548A00B92043 /* MyRegisterController.swift */,
+				88F30FA51DF7548A00B92043 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -215,9 +221,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0810;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -359,8 +367,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				88F30FB41DF7568800B92043 /* BasicQuestionCell.swift in Sources */,
+				88F30FA81DF7548A00B92043 /* ViewController.swift in Sources */,
+				88F30FA71DF7548A00B92043 /* MyRegisterController.swift in Sources */,
+				88F30FA61DF7548A00B92043 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,11 +499,14 @@
 			baseConfigurationReference = 190363530CA2F033AF1FB797 /* Pods-NuSignUp_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NuSignUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -502,11 +515,13 @@
 			baseConfigurationReference = A68F6441789F00DCDBE4D01E /* Pods-NuSignUp_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NuSignUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -514,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BAA762EAF151084249000722 /* Pods-NuSignUp_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -526,6 +542,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -533,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A17B4F5CBF510EED323735F0 /* Pods-NuSignUp_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -541,6 +559,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

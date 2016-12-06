@@ -22,7 +22,7 @@ pod "NuSignUp"
 
 ## Author
 
-José Lucas, joselucas1994@yahoo.com.br
+José Lucas, chagasjoselucas@gmail.com
 
 ## License
 

@@ -18,9 +18,13 @@ class MyRegisterController: RegisterTableViewController {
         super.viewDidLoad()
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     //MARK: - RegisterDelegate methods
     
-    override func answer(answer: Any?, ForQuestionAtPosition position: Int) {
+    override func answer(answer: Any?, ForQuestionCellAtPosition position: Int) {
         print(answer as! String)
         answers[position] = answer!
     }
@@ -28,7 +32,7 @@ class MyRegisterController: RegisterTableViewController {
     //MARK: - RegiterDataSource methods
     
     override func numberOfQuestionsOn(RegisterTableView table: RegisterTableView) -> Int {
-        return 1
+        return 3
     }
     
     override func isQuestionOptional(position: Int) -> Bool {

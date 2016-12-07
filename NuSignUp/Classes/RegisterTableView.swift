@@ -9,6 +9,7 @@
 import UIKit
 
 public protocol RegisterQuestion{
+    func setAnswer(answer:Any)
     func answer()->Any?
     func isAValidAnswer()->Bool
     func activeQuestion()
@@ -17,9 +18,9 @@ public protocol RegisterQuestion{
 
 @objc public protocol RegisterDelegate{
     
-    func answer(answer:Any?,ForQuestionAtPosition position:Int)
+    func answer(answer:Any?,ForQuestionCellAtPosition position:Int)
  
-    @objc optional func height(ForQuestionAtPosition position:Int)->CGFloat
+    @objc optional func height(ForQuestionCellAtPosition position:Int)->CGFloat
 
 }
 
@@ -46,13 +47,19 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
         
     public var regDelegate:RegisterDelegate?{
         didSet{
-            //self.delegate = self
+            guard let _ = self.delegate else{
+                self.delegate = self
+                return
+            }
         }
     }
     
     public var regDataSource:RegisterDataSource?{
         didSet{
-            //self.dataSource = self
+            guard let _ = self.dataSource else{
+                self.dataSource = self
+                return
+            }
         }
     }
     
@@ -74,7 +81,7 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
     
     func sendAnswerOfQuestionAt(position: Int){
         let questionCell = self.visibleCells[0] as! RegisterQuestion
-        self.regDelegate!.answer(answer: questionCell.answer(), ForQuestionAtPosition: position)
+        self.regDelegate!.answer(answer: questionCell.answer(), ForQuestionCellAtPosition: position)
     }
     
     func canGoToQuestion(AtPosition newPos:Int, fromPosition pos:Int)->Bool{
@@ -126,6 +133,7 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
         self.isPagingEnabled = true
         self.allowsSelection = false
         self.showsVerticalScrollIndicator = false
+        self.separatorStyle = UITableViewCellSeparatorStyle.none
     }
     
     

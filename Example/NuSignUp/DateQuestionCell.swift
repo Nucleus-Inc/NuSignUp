@@ -1,60 +1,57 @@
 //
-//  BasicQuestionCell.swift
-//  NuLikeSignUp
+//  DateQuestionCell.swift
+//  NuSignUp
 //
-//  Created by Nucleus on 05/12/16.
+//  Created by José Lucas Souza das Chagas on 06/12/16.
 //  Copyright © 2016 CocoaPods. All rights reserved.
 //
 
 import UIKit
 import NuSignUp
 
-class BasicQuestionCell: UITableViewCell,RegisterQuestion {
-    
-    
+class DateQuestionCell: UITableViewCell,RegisterQuestion {
 
     @IBOutlet weak var questionLabel: UILabel!
     
-    @IBOutlet weak var answerTextField: UITextField!
+    
+    @IBOutlet weak var bornDatePicker: UIDatePicker!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         // Initialization code
     }
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
-        answerTextField.text = ""
+        bornDatePicker.date = Date()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
-    
-    
+
     public func setAnswer(answer: Any) {
-        if let text = answer as? String{
-            answerTextField.text = text
+        if let bornDate = answer as? Date{
+            bornDatePicker.date = bornDate
         }
     }
-
-    
-    
     public func answer() -> Any? {
-        return answerTextField.text
+        return bornDatePicker.date
     }
     
     func isAValidAnswer() -> Bool {
-        if let text = answerTextField.text, text.characters.count > 10{
+       
+        if Date().timeIntervalSince1970 - bornDatePicker.date.timeIntervalSince1970 > 0{
             return true
         }
+        
         return false
     }
     
     func activeQuestion() {
-        answerTextField.becomeFirstResponder()
+        bornDatePicker.becomeFirstResponder()
     }
-
 }

@@ -35,7 +35,6 @@ public protocol RegisterQuestion{
     @objc optional func questionCellFor(RegisterTableView table:RegisterTableView,AtPosition position:Int)->UITableViewCell!
 }
 
-
 public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
     /*
     // Only override draw() if you perform custom drawing.
@@ -44,6 +43,9 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
         // Drawing code
     }
     */
+    
+    
+    @IBInspectable var useDefaultStyle:Bool = true
         
     public var regDelegate:RegisterDelegate?{
         didSet{
@@ -63,6 +65,7 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
         }
     }
     
+
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setUpTableView()
@@ -116,7 +119,7 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
             let yVelocity = (gestureRecognizer as! UIPanGestureRecognizer).velocity(in: self).y
             let pos = self.indexPathsForVisibleRows![0].row
             
-            if canGoToQuestion(AtPosition: pos - Int(yVelocity)/abs(Int(yVelocity)), fromPosition: pos){
+            if yVelocity != 0 && canGoToQuestion(AtPosition: pos - Int(yVelocity)/abs(Int(yVelocity)), fromPosition: pos){
                 sendAnswerOfQuestionAt(position: pos)
                 return true
             }
@@ -130,10 +133,12 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
     //MARK: - TableView Methods
     
     private func setUpTableView(){
-        self.isPagingEnabled = true
-        self.allowsSelection = false
-        self.showsVerticalScrollIndicator = false
-        self.separatorStyle = UITableViewCellSeparatorStyle.none
+        if useDefaultStyle{
+            self.isPagingEnabled = true
+            self.allowsSelection = false
+            self.showsVerticalScrollIndicator = false
+            self.separatorStyle = UITableViewCellSeparatorStyle.none
+        }
     }
     
     
@@ -175,3 +180,39 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
 
     }
 }
+
+
+public extension UILabel{
+    open func emphasyzeText(text:String,color:UIColor,font:UIFont){
+        var attibutedText = NSMutableAttributedString(string: self.text!, attributes: [NSFontAttributeName:self.font])
+        if let range = self.text!.range(of: text) as? NSRange{
+            
+            attibutedText.addAttribute(NSFontAttributeName, value: font, range: range)
+            
+            attibutedText.addAttribute(NSForegroundColorAttributeName, value: color, range: range)
+            
+        }
+        
+    }
+    
+    open func emphasyzeText(text:String,attributedStringAttributes:[String:Any]){
+        var attibutedText = NSMutableAttributedString(string: self.text!, attributes: [NSFontAttributeName:self.font])
+        if let range = self.text!.range(of: text) as? NSRange{
+            for key in attributedStringAttributes.arrayOfKeys(){
+                attibutedText.addAttribute(key, value: attributedStringAttributes[key], range: range)
+            }
+        }
+        
+    }
+
+}
+
+
+public extension Dictionary{
+    func arrayOfKeys()-> [Key]{
+        return self.flatMap { (_ tupla: (key: Key, value: Value)) -> Key? in
+            return tupla.key
+        }
+    }
+}
+

@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,14 +27,14 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="simpleQuestion" rowHeight="138" id="sFC-yb-kBI" customClass="BasicQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourNameQuestion" rowHeight="138" id="sFC-yb-kBI" customClass="BasicQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sFC-yb-kBI" id="KqF-kg-rbf">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j2-mC-xk4" customClass="RegisterLabel" customModule="NuLikeSignUp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j2-mC-xk4">
                                                     <rect key="frame" x="5" y="30" width="365" height="33.5"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Digite seu ">
@@ -76,14 +77,106 @@
                                             <outlet property="questionLabel" destination="4j2-mC-xk4" id="Vvi-vY-TrP"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourAgeQuestion" rowHeight="300" id="6wf-2f-DxS" customClass="DateQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="civilStateQuestion" rowHeight="300" id="WFQ-JH-lL9" customClass="CivilStateQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="166" width="375" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WFQ-JH-lL9" id="cqv-PH-qYt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ec-8m-Uey">
+                                                    <rect key="frame" x="5" y="30" width="365" height="24"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Estado civil">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDP-kS-xzn">
+                                                    <rect key="frame" x="8" y="54" width="96" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Syq-nC-rTK"/>
+                                                        <constraint firstAttribute="width" constant="96" id="aaR-3w-rlF"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="Solteiro">
+                                                        <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected">
+                                                        <color key="titleColor" red="0.16393443939999999" green="0.50095689300000001" blue="0.78808051349999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="stateButtonAction:" destination="WFQ-JH-lL9" eventType="touchUpInside" id="CAc-3e-B1U"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmi-CQ-ArN">
+                                                    <rect key="frame" x="8" y="100" width="96" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="8DE-Ot-vWT"/>
+                                                        <constraint firstAttribute="width" constant="96" id="uhU-lN-7vL"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="Casado">
+                                                        <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected">
+                                                        <color key="titleColor" red="0.16393443939999999" green="0.50095689300000001" blue="0.78808051349999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="stateButtonAction:" destination="WFQ-JH-lL9" eventType="touchUpInside" id="FAY-El-efw"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g79-JJ-n3B">
+                                                    <rect key="frame" x="8" y="146" width="96" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="CQn-wt-PNZ"/>
+                                                        <constraint firstAttribute="height" constant="30" id="EmV-rT-AGh"/>
+                                                        <constraint firstAttribute="width" constant="96" id="PdN-9Y-4OU"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="96" id="oNZ-i9-vbl"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="Viuvo">
+                                                        <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected">
+                                                        <color key="titleColor" red="0.16393443939999999" green="0.50095689300000001" blue="0.78808051349999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="stateButtonAction:" destination="WFQ-JH-lL9" eventType="touchUpInside" id="V70-dP-fw3"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cmi-CQ-ArN" firstAttribute="top" secondItem="qDP-kS-xzn" secondAttribute="bottom" constant="16" id="1wo-GP-Jje"/>
+                                                <constraint firstItem="g79-JJ-n3B" firstAttribute="leading" secondItem="cqv-PH-qYt" secondAttribute="leadingMargin" id="8wl-QF-kUB"/>
+                                                <constraint firstItem="qDP-kS-xzn" firstAttribute="top" secondItem="0ec-8m-Uey" secondAttribute="bottom" id="Cr0-PE-r9q"/>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="0ec-8m-Uey" secondAttribute="trailing" constant="5" id="KyZ-3w-rjx"/>
+                                                <constraint firstItem="0ec-8m-Uey" firstAttribute="top" secondItem="cqv-PH-qYt" secondAttribute="top" constant="30" id="Qdl-v8-nAm"/>
+                                                <constraint firstItem="qDP-kS-xzn" firstAttribute="leading" secondItem="cqv-PH-qYt" secondAttribute="leadingMargin" id="VfH-oG-epf"/>
+                                                <constraint firstItem="cmi-CQ-ArN" firstAttribute="leading" secondItem="cqv-PH-qYt" secondAttribute="leadingMargin" id="fm2-No-TMQ"/>
+                                                <constraint firstItem="g79-JJ-n3B" firstAttribute="top" secondItem="cmi-CQ-ArN" secondAttribute="bottom" constant="16" id="lVj-kq-bX6"/>
+                                                <constraint firstItem="0ec-8m-Uey" firstAttribute="leading" secondItem="cqv-PH-qYt" secondAttribute="leading" constant="5" id="x2t-Ve-vXS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="questionLabel" destination="0ec-8m-Uey" id="oVA-vx-He4"/>
+                                            <outletCollection property="civilStateButtons" destination="qDP-kS-xzn" collectionClass="NSMutableArray" id="DJt-Id-iNk"/>
+                                            <outletCollection property="civilStateButtons" destination="cmi-CQ-ArN" collectionClass="NSMutableArray" id="apr-SK-Fx3"/>
+                                            <outletCollection property="civilStateButtons" destination="g79-JJ-n3B" collectionClass="NSMutableArray" id="NnX-0N-ZK2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourAgeQuestion" rowHeight="300" id="6wf-2f-DxS" customClass="DateQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="466" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6wf-2f-DxS" id="ldU-aI-zkH">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL9-5u-Hcw" customClass="RegisterLabel" customModule="NuLikeSignUp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL9-5u-Hcw">
                                                     <rect key="frame" x="5" y="30" width="365" height="33.5"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Informe sua ">
@@ -151,201 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-361" y="-34"/>
-        </scene>
-        <!--My Register Controller-->
-        <scene sceneID="Jac-u3-JSZ">
-            <objects>
-                <tableViewController id="7tI-zr-YiL" customClass="MyRegisterController" customModule="NuSignUp_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vLI-4j-DqO" customClass="RegisterTableView" customModule="NuSignUp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="Czx-B8-NXV">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourNameQuestion" rowHeight="150" id="hQY-3n-1Jm" customClass="BasicQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hQY-3n-1Jm" id="5kq-ew-QN5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AX-LU-Ak4" customClass="RegisterLabel" customModule="NuLikeSignUp">
-                                                    <rect key="frame" x="5" y="30" width="365" height="29"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Digite seu ">
-                                                            <attributes>
-                                                                <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="nome">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.14997080606841906" green="0.62583835592610093" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="24" name=".AppleSystemUIFont"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content=" completo">
-                                                            <attributes>
-                                                                <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gTp-kA-FXY">
-                                                    <rect key="frame" x="10" y="74" width="355" height="21"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="7AX-LU-Ak4" secondAttribute="trailing" constant="5" id="9TW-Bh-vCf"/>
-                                                <constraint firstItem="gTp-kA-FXY" firstAttribute="leading" secondItem="5kq-ew-QN5" secondAttribute="leading" constant="10" id="FPm-8G-O5V"/>
-                                                <constraint firstItem="7AX-LU-Ak4" firstAttribute="leading" secondItem="5kq-ew-QN5" secondAttribute="leading" constant="5" id="SX9-pN-GX0"/>
-                                                <constraint firstItem="7AX-LU-Ak4" firstAttribute="top" secondItem="5kq-ew-QN5" secondAttribute="top" constant="30" id="TPT-0q-1yG"/>
-                                                <constraint firstAttribute="trailing" secondItem="gTp-kA-FXY" secondAttribute="trailing" constant="10" id="Y0Q-59-yQ1"/>
-                                                <constraint firstItem="gTp-kA-FXY" firstAttribute="top" secondItem="7AX-LU-Ak4" secondAttribute="bottom" constant="15" id="sI4-WR-anB"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="answerTextField" destination="gTp-kA-FXY" id="G8n-Gd-Iva"/>
-                                            <outlet property="questionLabel" destination="7AX-LU-Ak4" id="RDl-0U-0ON"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="motherNameQuestion" rowHeight="150" id="QsQ-Ag-YLg" customClass="BasicQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="150" width="375" height="150"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QsQ-Ag-YLg" id="m20-AY-Sag">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cC9-nC-mPv" customClass="RegisterLabel" customModule="NuLikeSignUp">
-                                                    <rect key="frame" x="5" y="30" width="365" height="29"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Qual o ">
-                                                            <attributes>
-                                                                <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="nome">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.11671436578035355" green="0.50345063209533691" blue="0.80244922637939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content=" da sua ">
-                                                            <attributes>
-                                                                <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="mae">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.1167143658" green="0.50345063209999996" blue="0.80244922640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="24" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="?">
-                                                            <attributes>
-                                                                <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hLw-Ym-4xM">
-                                                    <rect key="frame" x="10" y="74" width="355" height="21"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="cC9-nC-mPv" firstAttribute="leading" secondItem="m20-AY-Sag" secondAttribute="leading" constant="5" id="2v1-Vp-l9r"/>
-                                                <constraint firstItem="hLw-Ym-4xM" firstAttribute="leading" secondItem="m20-AY-Sag" secondAttribute="leading" constant="10" id="Mkv-6U-bcB"/>
-                                                <constraint firstAttribute="trailing" secondItem="hLw-Ym-4xM" secondAttribute="trailing" constant="10" id="NJM-XI-60o"/>
-                                                <constraint firstItem="cC9-nC-mPv" firstAttribute="top" secondItem="m20-AY-Sag" secondAttribute="top" constant="30" id="OpC-Y0-xOo"/>
-                                                <constraint firstItem="hLw-Ym-4xM" firstAttribute="top" secondItem="cC9-nC-mPv" secondAttribute="bottom" constant="15" id="oH4-uZ-gsu"/>
-                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="cC9-nC-mPv" secondAttribute="trailing" constant="5" id="tTX-Zx-2xb"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="answerTextField" destination="hLw-Ym-4xM" id="6NC-Kb-Y5K"/>
-                                            <outlet property="questionLabel" destination="cC9-nC-mPv" id="MvS-RR-qlt"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourAgeQuestion" rowHeight="300" id="mws-aS-LOU">
-                                        <rect key="frame" x="0.0" y="300" width="375" height="300"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mws-aS-LOU" id="Mmt-Tk-wLn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMq-zX-bRt" customClass="RegisterLabel" customModule="NuLikeSignUp">
-                                                    <rect key="frame" x="5" y="30" width="365" height="29"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Informe sua ">
-                                                            <attributes>
-                                                                <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="idade">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.1167143658" green="0.50345063209999996" blue="0.80244922640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="24" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content=" por favor!">
-                                                            <attributes>
-                                                                <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3TY-BZ-V0m">
-                                                    <rect key="frame" x="5" y="109" width="365" height="183"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="3TY-BZ-V0m" secondAttribute="height" multiplier="365:168" constant="-32.589285714285666" id="sLl-Da-gS3"/>
-                                                    </constraints>
-                                                    <date key="date" timeIntervalSinceReferenceDate="502763973.21013701">
-                                                        <!--2016-12-07 00:39:33 +0000-->
-                                                    </date>
-                                                    <locale key="locale" localeIdentifier="pt_BR"/>
-                                                </datePicker>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="eMq-zX-bRt" secondAttribute="trailing" constant="5" id="Ce4-Ph-5qg"/>
-                                                <constraint firstItem="eMq-zX-bRt" firstAttribute="leading" secondItem="Mmt-Tk-wLn" secondAttribute="leading" constant="5" id="CtB-KU-foM"/>
-                                                <constraint firstAttribute="trailing" secondItem="3TY-BZ-V0m" secondAttribute="trailing" constant="5" id="iuT-o1-jqn"/>
-                                                <constraint firstItem="3TY-BZ-V0m" firstAttribute="leading" secondItem="Mmt-Tk-wLn" secondAttribute="leading" constant="5" id="m83-hm-0tU"/>
-                                                <constraint firstItem="eMq-zX-bRt" firstAttribute="top" secondItem="Mmt-Tk-wLn" secondAttribute="top" constant="30" id="pxz-Px-thM"/>
-                                                <constraint firstItem="3TY-BZ-V0m" firstAttribute="top" secondItem="eMq-zX-bRt" secondAttribute="bottom" constant="50" id="yr8-9X-uU5"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="7tI-zr-YiL" id="REU-jY-uUK"/>
-                            <outlet property="delegate" destination="7tI-zr-YiL" id="yI7-o9-Tgh"/>
-                        </connections>
-                    </tableView>
-                    <nil key="simulatedStatusBarMetrics"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tpo-fZ-Ugn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="520.79999999999995" y="-35.532233883058474"/>
+            <point key="canvasLocation" x="-362.39999999999998" y="-34.632683658170919"/>
         </scene>
     </scenes>
 </document>

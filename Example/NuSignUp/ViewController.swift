@@ -13,9 +13,10 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
     
     @IBOutlet weak var registerTableV: RegisterTableView!
     
-    let numberOfQuestions:Int = 5
+    let numberOfQuestions:Int = 3
     
-    //var questions:[String]!
+    var questionsOrder:[String] = ["yourNameQuestion","yourAgeQuestion","civilStateQuestion"]
+    
     var answers:[Any] = [Any?](repeating: nil, count: 5)
     
     override func viewDidLoad() {
@@ -37,8 +38,8 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
     //MARK: - RegisterDelegate methods
     
     func answer(answer: Any?, ForQuestionCellAtPosition position: Int) {
-        print(answer as! String)
-        answers[position] = answer!
+        print(answer)
+        answers[position] = answer
     }
     
     
@@ -55,11 +56,10 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
     
     func questionCellFor(RegisterTableView table: RegisterTableView, AtPosition position: Int) -> UITableViewCell! {
         
-        let cell = table.dequeueReusableCell(withIdentifier: "simpleQuestion") as! BasicQuestionCell
+        let cell = table.dequeueReusableCell(withIdentifier: questionsOrder[position])!
         
-        cell.questionLabel.text = "Digite o seu nome \(position)"
-        
-        cell.setAnswer(answer: answers[position])
+        let questionCell = cell as! RegisterQuestion
+        questionCell.setAnswer(answer: answers[position])
         
         return cell
     }

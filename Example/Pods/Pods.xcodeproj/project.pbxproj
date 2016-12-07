@@ -13,9 +13,7 @@
 		269EA4B356A9AFDBC70C15A2A984E604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		2A5D90A59C996B128CCAF5D73750C97F /* Pods-NuSignUp_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F56C0F077C277F102FC499DD8E3FB45B /* Pods-NuSignUp_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C4339DA906BED4FE0410B0A162BDA82 /* Pods-NuSignUp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFF8CF86E2BBDE48F742FC350F343DE7 /* Pods-NuSignUp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88F30FAE1DF754E800B92043 /* RegisterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FA91DF754E800B92043 /* RegisterLabel.swift */; };
 		88F30FAF1DF754E800B92043 /* RegisterTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FAA1DF754E800B92043 /* RegisterTableView.swift */; };
-		88F30FB01DF754E800B92043 /* RegisterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FAB1DF754E800B92043 /* RegisterTableViewController.swift */; };
 		88F30FB11DF754E800B92043 /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FAC1DF754E800B92043 /* RegisterTextField.swift */; };
 		88F30FB21DF754E800B92043 /* RegisterValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FAD1DF754E800B92043 /* RegisterValidations.swift */; };
 		B436FDAEBDBE7BA5DEAE79365E654129 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -48,9 +46,7 @@
 		6ED20A9B5E034D80D63DC65DF62250D2 /* NuSignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuSignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA5D8EEC73230EA6786A2918D72C452 /* Pods-NuSignUp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		7B4B4A331148BA84E03A02DE1A77A017 /* Pods-NuSignUp_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NuSignUp_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		88F30FA91DF754E800B92043 /* RegisterLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterLabel.swift; sourceTree = "<group>"; };
 		88F30FAA1DF754E800B92043 /* RegisterTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTableView.swift; sourceTree = "<group>"; };
-		88F30FAB1DF754E800B92043 /* RegisterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTableViewController.swift; sourceTree = "<group>"; };
 		88F30FAC1DF754E800B92043 /* RegisterTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
 		88F30FAD1DF754E800B92043 /* RegisterValidations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterValidations.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -201,9 +197,7 @@
 		BC202BB6D0EEDB31FC5F618CF0777E65 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				88F30FA91DF754E800B92043 /* RegisterLabel.swift */,
 				88F30FAA1DF754E800B92043 /* RegisterTableView.swift */,
-				88F30FAB1DF754E800B92043 /* RegisterTableViewController.swift */,
 				88F30FAC1DF754E800B92043 /* RegisterTextField.swift */,
 				88F30FAD1DF754E800B92043 /* RegisterValidations.swift */,
 			);
@@ -357,12 +351,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F30FB01DF754E800B92043 /* RegisterTableViewController.swift in Sources */,
 				88F30FAF1DF754E800B92043 /* RegisterTableView.swift in Sources */,
 				88F30FB11DF754E800B92043 /* RegisterTextField.swift in Sources */,
 				88F30FB21DF754E800B92043 /* RegisterValidations.swift in Sources */,
 				1394384502B710E52F535D8C5BF04CAF /* NuSignUp-dummy.m in Sources */,
-				88F30FAE1DF754E800B92043 /* RegisterLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

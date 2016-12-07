@@ -44,7 +44,7 @@ class DateQuestionCell: UITableViewCell,RegisterQuestion {
     
     func isAValidAnswer() -> Bool {
        
-        if Date().timeIntervalSince1970 - bornDatePicker.date.timeIntervalSince1970 > 0{
+        if Date().timeIntervalSince1970 - bornDatePicker.date.timeIntervalSince1970 > 3600*24{
             return true
         }
         

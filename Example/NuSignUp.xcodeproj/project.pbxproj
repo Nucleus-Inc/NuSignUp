@@ -15,9 +15,9 @@
 		88351B991DF7A6E30049663C /* DateQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88351B981DF7A6E30049663C /* DateQuestionCell.swift */; };
 		88DE6BC41DF763FD004CEA04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DE6BC31DF763FD004CEA04 /* Main.storyboard */; };
 		88F30FA61DF7548A00B92043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FA31DF7548A00B92043 /* AppDelegate.swift */; };
-		88F30FA71DF7548A00B92043 /* MyRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FA41DF7548A00B92043 /* MyRegisterController.swift */; };
 		88F30FA81DF7548A00B92043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FA51DF7548A00B92043 /* ViewController.swift */; };
 		88F30FB41DF7568800B92043 /* BasicQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FB31DF7568800B92043 /* BasicQuestionCell.swift */; };
+		EE3E419F1DF8581E002B0624 /* CivilStateQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E419E1DF8581E002B0624 /* CivilStateQuestionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +46,13 @@
 		88351B981DF7A6E30049663C /* DateQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateQuestionCell.swift; sourceTree = "<group>"; };
 		88DE6BC31DF763FD004CEA04 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		88F30FA31DF7548A00B92043 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88F30FA41DF7548A00B92043 /* MyRegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRegisterController.swift; sourceTree = "<group>"; };
 		88F30FA51DF7548A00B92043 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88F30FB31DF7568800B92043 /* BasicQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicQuestionCell.swift; sourceTree = "<group>"; };
 		A17B4F5CBF510EED323735F0 /* Pods-NuSignUp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuSignUp_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A68F6441789F00DCDBE4D01E /* Pods-NuSignUp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuSignUp_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B8F1595FEE4166F872F70FBD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BAA762EAF151084249000722 /* Pods-NuSignUp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuSignUp_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE3E419E1DF8581E002B0624 /* CivilStateQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivilStateQuestionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,6 @@
 			children = (
 				88351B971DF7A6B30049663C /* RegisterCells */,
 				88F30FA31DF7548A00B92043 /* AppDelegate.swift */,
-				88F30FA41DF7548A00B92043 /* MyRegisterController.swift */,
 				88F30FA51DF7548A00B92043 /* ViewController.swift */,
 				88DE6BC31DF763FD004CEA04 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -172,6 +171,7 @@
 			children = (
 				88F30FB31DF7568800B92043 /* BasicQuestionCell.swift */,
 				88351B981DF7A6E30049663C /* DateQuestionCell.swift */,
+				EE3E419E1DF8581E002B0624 /* CivilStateQuestionCell.swift */,
 			);
 			name = RegisterCells;
 			sourceTree = "<group>";
@@ -380,8 +380,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88F30FB41DF7568800B92043 /* BasicQuestionCell.swift in Sources */,
+				EE3E419F1DF8581E002B0624 /* CivilStateQuestionCell.swift in Sources */,
 				88F30FA81DF7548A00B92043 /* ViewController.swift in Sources */,
-				88F30FA71DF7548A00B92043 /* MyRegisterController.swift in Sources */,
 				88F30FA61DF7548A00B92043 /* AppDelegate.swift in Sources */,
 				88351B991DF7A6E30049663C /* DateQuestionCell.swift in Sources */,
 			);

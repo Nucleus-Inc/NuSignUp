@@ -60,10 +60,7 @@ class CivilStateQuestionCell: UITableViewCell,RegisterQuestion {
         if let answer = answer as? String{
             for button in civilStateButtons{
                 let title = button.title(for: UIControlState.normal)!
-                
-                if title.caseInsensitiveCompare(answer) != ComparisonResult.orderedSame{
-                    button.isSelected = true
-                }
+                button.isSelected = title.caseInsensitiveCompare(answer) == ComparisonResult.orderedSame
             }
         }
     }

@@ -77,11 +77,11 @@
                                             <outlet property="questionLabel" destination="4j2-mC-xk4" id="Vvi-vY-TrP"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourLastNameQuestion" rowHeight="138" id="0eg-QL-dkr" customClass="BasicQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="166" width="375" height="138"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourLastNameQuestion" rowHeight="200" id="0eg-QL-dkr" customClass="BasicQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="166" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0eg-QL-dkr" id="mOZ-lt-66z">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLu-S9-g1U">
@@ -109,13 +109,21 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sem caracteres especiais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbX-ed-8cM">
+                                                    <rect key="frame" x="8" y="123" width="165.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="4Qp-mY-r6P" secondAttribute="trailing" constant="10" id="6ob-UL-axC"/>
+                                                <constraint firstItem="XbX-ed-8cM" firstAttribute="top" secondItem="4Qp-mY-r6P" secondAttribute="bottom" constant="10" id="AHd-1X-yHi"/>
                                                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="VLu-S9-g1U" secondAttribute="trailing" constant="5" id="Cf9-Nm-CNP"/>
                                                 <constraint firstItem="4Qp-mY-r6P" firstAttribute="leading" secondItem="mOZ-lt-66z" secondAttribute="leading" constant="10" id="CqM-f7-PGQ"/>
                                                 <constraint firstItem="4Qp-mY-r6P" firstAttribute="top" secondItem="VLu-S9-g1U" secondAttribute="bottom" constant="30" id="YaW-fU-vep"/>
                                                 <constraint firstItem="VLu-S9-g1U" firstAttribute="top" secondItem="mOZ-lt-66z" secondAttribute="top" constant="30" id="dfd-uB-g5V"/>
+                                                <constraint firstItem="XbX-ed-8cM" firstAttribute="leading" secondItem="mOZ-lt-66z" secondAttribute="leadingMargin" id="oQp-RV-suW"/>
                                                 <constraint firstItem="VLu-S9-g1U" firstAttribute="leading" secondItem="mOZ-lt-66z" secondAttribute="leading" constant="5" id="y8s-jj-xBf"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -125,7 +133,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="civilStateQuestion" rowHeight="300" id="WFQ-JH-lL9" customClass="CivilStateQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="304" width="375" height="300"/>
+                                        <rect key="frame" x="0.0" y="366" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WFQ-JH-lL9" id="cqv-PH-qYt">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
@@ -220,7 +228,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourAgeQuestion" rowHeight="300" id="6wf-2f-DxS" customClass="DateQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="604" width="375" height="300"/>
+                                        <rect key="frame" x="0.0" y="666" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6wf-2f-DxS" id="ldU-aI-zkH">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>

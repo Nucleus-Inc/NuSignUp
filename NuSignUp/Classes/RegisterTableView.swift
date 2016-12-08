@@ -140,25 +140,7 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
             self.scrollToRow(at: IndexPath(row: pos+1, section: 0), at: UITableViewScrollPosition.top, animated: true)
         }
     }
-    /*//MARK: - Gesture Recognizer delegate methods
-    
-    
-    public override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        if gestureRecognizer is UIPanGestureRecognizer{
-            let yVelocity = (gestureRecognizer as! UIPanGestureRecognizer).velocity(in: self).y
-            let pos = self.indexPathsForVisibleRows![0].row
-            
-            if yVelocity != 0 && canGoToQuestion(AtPosition: pos - Int(yVelocity)/abs(Int(yVelocity)), fromPosition: pos){
-                sendAnswerOfQuestionAt(position: pos)
-                return true
-            }
-            else{
-                return false
-            }
-        }
-        return super.gestureRecognizerShouldBegin(gestureRecognizer)
-    }*/
-    
+       
     //MARK: - TableView Methods
     
     private func setUpTableView(){

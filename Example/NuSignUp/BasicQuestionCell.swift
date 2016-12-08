@@ -56,5 +56,9 @@ class BasicQuestionCell: UITableViewCell,RegisterQuestion {
     func activeQuestion() {
         answerTextField.becomeFirstResponder()
     }
+    
+    func desactiveQuestion(){
+        self.endEditing(true)
+    }
 
 }

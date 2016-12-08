@@ -13,13 +13,15 @@ public protocol RegisterQuestion{
     func answer()->Any?
     func isAValidAnswer()->Bool
     func activeQuestion()
+    func desactiveQuestion()
+
 }
 
 
 @objc public protocol RegisterDelegate{
     
     func answer(answer:Any?,ForQuestionCellAtPosition position:Int)
- 
+    
     @objc optional func height(ForQuestionCellAtPosition position:Int)->CGFloat
 
 }
@@ -87,6 +89,16 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
         self.regDelegate!.answer(answer: questionCell.answer(), ForQuestionCellAtPosition: position)
     }
     
+    private func activeQuestionAt(position:Int){
+        let questionCell = self.visibleCells[position] as! RegisterQuestion
+        questionCell.activeQuestion()
+    }
+   
+    private func desactiveQuestionAt(position:Int){
+        let questionCell = self.visibleCells[position] as! RegisterQuestion
+        questionCell.desactiveQuestion()
+    }
+    
     func canGoToQuestion(AtPosition newPos:Int, fromPosition pos:Int)->Bool{
         let questionCell = self.visibleCells[0] as! RegisterQuestion
         if newPos >= pos{
@@ -95,6 +107,9 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
         return newPos >= 0
     }
     
+    /**
+     Call this method for you return to a previous question
+     */
     public func goToPreviousQuestion(){
         let pos = self.indexPathsForVisibleRows![0].row
         if canGoToQuestion(AtPosition: pos - 1, fromPosition: pos){
@@ -103,8 +118,11 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
         }
     }
 
-    
+    /**
+     Call this method for you go to the next question if possible.
+     */
     public func goToNextQuestion(){
+        
         let pos = self.indexPathsForVisibleRows![0].row
         if canGoToQuestion(AtPosition: pos + 1, fromPosition: pos){
             sendAnswerOfQuestionAt(position: pos)
@@ -142,7 +160,7 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
     }
     
     
-    //MARK: - TableView Delegate
+    //MARK: TableView Delegate
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if let height = regDelegate!.height{
@@ -151,14 +169,25 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
         return self.frame.height
     }
     
-   
-    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        print("foi")
+    }
+    
+    public func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if let question = cell as? RegisterQuestion{
-            question.activeQuestion()
+            question.desactiveQuestion()
         }
     }
     
-    //MARK: TableViewDataSource
+    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let question = cell as? RegisterQuestion{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                question.activeQuestion()
+            }
+        }
+    }
+    
+    //MARK: TableView DataSource
     
     
     
@@ -174,10 +203,8 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
     
     @available(iOS 2.0, *)
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = regDataSource!.questionCellFor!(RegisterTableView: tableView as! RegisterTableView, AtPosition: indexPath.row)
         return cell!
-
     }
 }
 
@@ -186,11 +213,8 @@ public extension UILabel{
     open func emphasyzeText(text:String,color:UIColor,font:UIFont){
         var attibutedText = NSMutableAttributedString(string: self.text!, attributes: [NSFontAttributeName:self.font])
         if let range = self.text!.range(of: text) as? NSRange{
-            
             attibutedText.addAttribute(NSFontAttributeName, value: font, range: range)
-            
             attibutedText.addAttribute(NSForegroundColorAttributeName, value: color, range: range)
-            
         }
         
     }

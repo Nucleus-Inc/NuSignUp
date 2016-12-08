@@ -13,27 +13,32 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
     
     @IBOutlet weak var registerTableV: RegisterTableView!
     
-    let numberOfQuestions:Int = 3
+    @IBOutlet weak var nextButton: RegisterButton!
     
-    var questionsOrder:[String] = ["yourNameQuestion","yourAgeQuestion","civilStateQuestion"]
+    let numberOfQuestions:Int = 2
     
-    var answers:[Any] = [Any?](repeating: nil, count: 5)
+    var questionsOrder:[String] = ["yourNameQuestion","yourAgeQuestion","yourLastNameQuestion","civilStateQuestion"]
+    
+    var answers:[Any] = [Any?](repeating: nil, count: 4)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         registerTableV.regDataSource = self
         registerTableV.regDelegate = self
-        
-        
-// Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func nextQuestionAction(_ sender: UIButton) {
+        
+        self.registerTableV.goToNextQuestion()
+        
+    }
     
     //MARK: - RegisterDelegate methods
     

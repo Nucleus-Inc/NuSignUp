@@ -54,4 +54,9 @@ class DateQuestionCell: UITableViewCell,RegisterQuestion {
     func activeQuestion() {
         bornDatePicker.becomeFirstResponder()
     }
+    
+    public func desactiveQuestion() {
+        bornDatePicker.resignFirstResponder()
+
+    }
 }

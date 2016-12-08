@@ -77,8 +77,55 @@
                                             <outlet property="questionLabel" destination="4j2-mC-xk4" id="Vvi-vY-TrP"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourLastNameQuestion" rowHeight="138" id="0eg-QL-dkr" customClass="BasicQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="166" width="375" height="138"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0eg-QL-dkr" id="mOZ-lt-66z">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLu-S9-g1U">
+                                                    <rect key="frame" x="5" y="30" width="365" height="29"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Seu ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="sobrenome">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.1167143658" green="0.50345063209999996" blue="0.80244922640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="24" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Qp-mY-r6P">
+                                                    <rect key="frame" x="10" y="79" width="355" height="18"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="4Qp-mY-r6P" secondAttribute="trailing" constant="10" id="6ob-UL-axC"/>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="VLu-S9-g1U" secondAttribute="trailing" constant="5" id="Cf9-Nm-CNP"/>
+                                                <constraint firstItem="4Qp-mY-r6P" firstAttribute="leading" secondItem="mOZ-lt-66z" secondAttribute="leading" constant="10" id="CqM-f7-PGQ"/>
+                                                <constraint firstItem="4Qp-mY-r6P" firstAttribute="top" secondItem="VLu-S9-g1U" secondAttribute="bottom" constant="20" id="YaW-fU-vep"/>
+                                                <constraint firstItem="VLu-S9-g1U" firstAttribute="top" secondItem="mOZ-lt-66z" secondAttribute="top" constant="30" id="dfd-uB-g5V"/>
+                                                <constraint firstItem="VLu-S9-g1U" firstAttribute="leading" secondItem="mOZ-lt-66z" secondAttribute="leading" constant="5" id="y8s-jj-xBf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="answerTextField" destination="4Qp-mY-r6P" id="gNt-4c-30s"/>
+                                            <outlet property="questionLabel" destination="VLu-S9-g1U" id="0my-l1-Dx5"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="civilStateQuestion" rowHeight="300" id="WFQ-JH-lL9" customClass="CivilStateQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="166" width="375" height="300"/>
+                                        <rect key="frame" x="0.0" y="304" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WFQ-JH-lL9" id="cqv-PH-qYt">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
@@ -170,7 +217,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourAgeQuestion" rowHeight="300" id="6wf-2f-DxS" customClass="DateQuestionCell" customModule="NuSignUp_Example" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="466" width="375" height="300"/>
+                                        <rect key="frame" x="0.0" y="604" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6wf-2f-DxS" id="ldU-aI-zkH">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
@@ -229,16 +276,33 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCf-ue-cXn" customClass="RegisterButton" customModule="NuSignUp">
+                                <rect key="frame" x="5" y="616" width="365" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="18D-KK-nhn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.1167143658" green="0.50345063209999996" blue="0.80244922640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestionAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zJ0-At-OXs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="iVh-N8-sOE" secondAttribute="trailing" id="ETp-Hx-A7O"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="RCf-ue-cXn" secondAttribute="bottom" constant="5" id="LXQ-Pf-uMq"/>
+                            <constraint firstAttribute="trailing" secondItem="RCf-ue-cXn" secondAttribute="trailing" constant="5" id="TT1-7Y-j6V"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iVh-N8-sOE" secondAttribute="bottom" id="fH2-VY-g3y"/>
                             <constraint firstItem="iVh-N8-sOE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="fcx-cT-9gf"/>
                             <constraint firstItem="iVh-N8-sOE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="sdt-Mz-1KK"/>
+                            <constraint firstItem="RCf-ue-cXn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="5" id="y4n-xw-Zww"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="RCf-ue-cXn" id="Hml-RY-lCS"/>
                         <outlet property="registerTableV" destination="iVh-N8-sOE" id="PFR-29-hhu"/>
                     </connections>
                 </viewController>

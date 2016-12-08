@@ -10,6 +10,8 @@ import UIKit
 import NuSignUp
 
 class CivilStateQuestionCell: UITableViewCell,RegisterQuestion {
+    
+
 
     @IBOutlet weak var questionLabel: UILabel!
     
@@ -82,5 +84,8 @@ class CivilStateQuestionCell: UITableViewCell,RegisterQuestion {
         
     }
 
+    public func desactiveQuestion() {
+        
+    }
 
 }

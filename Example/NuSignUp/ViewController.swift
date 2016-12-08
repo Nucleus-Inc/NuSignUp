@@ -15,9 +15,12 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
     
     @IBOutlet weak var nextButton: RegisterButton!
     
-    let numberOfQuestions:Int = 2
+    @IBOutlet weak var previousButton: UIButton!
+
     
-    var questionsOrder:[String] = ["yourNameQuestion","yourAgeQuestion","yourLastNameQuestion","civilStateQuestion"]
+    let numberOfQuestions:Int = 4
+    
+    var questionsOrder:[String] = ["yourNameQuestion","yourLastNameQuestion","yourAgeQuestion","civilStateQuestion"]
     
     var answers:[Any] = [Any?](repeating: nil, count: 4)
     
@@ -40,6 +43,11 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
         
     }
     
+    @IBAction func previusQuestionAction(_ sender: UIButton) {
+        self.registerTableV.goToPreviousQuestion()
+    }
+    
+    
     //MARK: - RegisterDelegate methods
     
     func answer(answer: Any?, ForQuestionCellAtPosition position: Int) {
@@ -47,6 +55,18 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
         answers[position] = answer
     }
     
+    
+    public func position(position: Int, OfCurrentQuestionCell cell: UITableViewCell) {
+        if position == numberOfQuestions - 1{
+            self.nextButton.setTitle("Finish", for: UIControlState.normal)
+        }
+        else{
+            self.nextButton.setTitle("Next", for: UIControlState.normal)
+        }
+        
+        self.previousButton.isEnabled = position != 0
+    }
+
     
 
     //MARK: - RegiterDataSource methods

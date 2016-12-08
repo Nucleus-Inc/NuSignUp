@@ -58,7 +58,7 @@ class BasicQuestionCell: UITableViewCell,RegisterQuestion {
     }
     
     func desactiveQuestion(){
-        self.endEditing(true)
+        self.superview!.endEditing(true)
     }
 
 }

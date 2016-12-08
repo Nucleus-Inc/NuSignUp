@@ -52,6 +52,7 @@ class DateQuestionCell: UITableViewCell,RegisterQuestion {
     }
     
     func activeQuestion() {
+        //self.superview!.endEditing(true)
         bornDatePicker.becomeFirstResponder()
     }
     

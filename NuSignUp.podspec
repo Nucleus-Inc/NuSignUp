@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NuSignUp'
-  s.version          = '0.3.0'
-  s.summary          = 'A short description of NuSignUp.'
+  s.version          = '0.4.0'
+  s.summary          = 'The basic configuration of signup'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+" This a library that execute all the basic configuration necessary to create a simple sigup view"
                        DESC
 
   s.homepage         = 'https://github.com/Nucleus-Inc/NuSignUp'

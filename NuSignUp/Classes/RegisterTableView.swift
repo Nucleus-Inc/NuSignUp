@@ -140,7 +140,7 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
             self.scrollToRow(at: IndexPath(row: pos+1, section: 0), at: UITableViewScrollPosition.top, animated: true)
         }
     }
-       
+    
     //MARK: - TableView Methods
     
     private func setUpTableView(){
@@ -197,25 +197,28 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
 
 
 public extension UILabel{
-    open func emphasyzeText(text:String,color:UIColor,font:UIFont){
-        var attibutedText = NSMutableAttributedString(string: self.text!, attributes: [NSFontAttributeName:self.font])
-        if let range = self.text!.range(of: text) as? NSRange{
-            attibutedText.addAttribute(NSFontAttributeName, value: font, range: range)
-            attibutedText.addAttribute(NSForegroundColorAttributeName, value: color, range: range)
-        }
+    public func emphasyzeText(text:String,color:UIColor,font:UIFont){
+        let attibutedText = NSMutableAttributedString(string: self.text!, attributes: [NSFontAttributeName:self.font])
+        
+        let string = NSString(string: self.text!)
+        let range = string.range(of: text)
+        
+        attibutedText.addAttribute(NSFontAttributeName, value: font, range: range)
+        attibutedText.addAttribute(NSForegroundColorAttributeName, value: color, range: range)
+
         
     }
     
-    open func emphasyzeText(text:String,attributedStringAttributes:[String:Any]){
-        var attibutedText = NSMutableAttributedString(string: self.text!, attributes: [NSFontAttributeName:self.font])
-        if let range = self.text!.range(of: text) as? NSRange{
-            for key in attributedStringAttributes.arrayOfKeys(){
-                attibutedText.addAttribute(key, value: attributedStringAttributes[key], range: range)
+    public func emphasyzeText(text:String,attributedStringAttributes:[String:Any]){
+        let attibutedText = NSMutableAttributedString(string: self.text!, attributes: [NSFontAttributeName:self.font])
+        let string = NSString(string: self.text!)
+        let range = string.range(of: text)
+        for key in attributedStringAttributes.arrayOfKeys(){
+            if let value = attributedStringAttributes[key]{
+                attibutedText.addAttribute(key, value: value, range: range)
             }
         }
-        
     }
-
 }
 
 

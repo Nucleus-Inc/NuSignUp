@@ -88,7 +88,6 @@ open class RegisterButton: UIButton {
     func hideKeyBoardTarget(_ notification:Notification){
         let info = (notification as NSNotification).userInfo as! [String:AnyObject]
         
-        let keyBoardFrame = info[UIKeyboardFrameEndUserInfoKey]?.cgRectValue
         let animationDuration = info[UIKeyboardAnimationDurationUserInfoKey]
         
         let size = self.frame.size

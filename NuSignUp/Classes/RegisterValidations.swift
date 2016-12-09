@@ -94,4 +94,7 @@ public class RegisterValidations: NSObject {
         return true
     }
     
+    
+    
+    
 }

@@ -18,7 +18,7 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
     @IBOutlet weak var previousButton: UIButton!
 
     
-    let numberOfQuestions:Int = 4
+    let numberOfQuestions:Int = 1
     
     var questionsOrder:[String] = ["yourNameQuestion","yourLastNameQuestion","yourAgeQuestion","civilStateQuestion"]
     

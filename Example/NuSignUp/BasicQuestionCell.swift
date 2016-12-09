@@ -15,7 +15,7 @@ class BasicQuestionCell: UITableViewCell,RegisterQuestion {
 
     @IBOutlet weak var questionLabel: UILabel!
     
-    @IBOutlet weak var answerTextField: UITextField!
+    @IBOutlet weak var answerTextField: RegisterTextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()

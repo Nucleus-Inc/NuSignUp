@@ -9,12 +9,13 @@
 import UIKit
 
 public protocol RegisterQuestion{
+    
     func setAnswer(answer:Any)
     func answer()->Any?
     func isAValidAnswer()->Bool
     func activeQuestion()
     func desactiveQuestion()
-
+    
 }
 
 
@@ -76,11 +77,15 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
     }
     
     //MARK: - Register tableView Methods
-    func currentQuestion()->RegisterQuestion{
+    public func currentQuestion()->RegisterQuestion{
         return self.visibleCells[0] as! RegisterQuestion
     }
     
-    func currentQuestionPosition()->Int{
+    public func currentQuestionCell()->UITableViewCell{
+        return self.visibleCells[0]
+    }
+    
+    public func currentQuestionPosition()->Int{
         return self.indexPathsForVisibleRows![0].row
     }
     
@@ -137,7 +142,9 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
             DispatchQueue.main.async {
                 self.desactiveQuestionAt(position: pos)
             }
-            self.scrollToRow(at: IndexPath(row: pos+1, section: 0), at: UITableViewScrollPosition.top, animated: true)
+            
+            
+            self.scrollToRow(at: IndexPath(row: pos+1, section: 0), at: UITableViewScrollPosition.middle, animated: true)
         }
     }
     
@@ -149,8 +156,11 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
             let yVelocity = (gestureRecognizer as! UIPanGestureRecognizer).velocity(in: self).y
             let pos = self.indexPathsForVisibleRows![0].row
             
-            if yVelocity > 0{
+            if yVelocity != 0{
                 if canGoToQuestion(AtPosition: pos - Int(yVelocity)/abs(Int(yVelocity)), fromPosition: pos){
+                    DispatchQueue.main.async {
+                        self.desactiveQuestionAt(position: pos)
+                    }
                     sendAnswerOfQuestionAt(position: pos)
                     return true
                 }
@@ -159,6 +169,7 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
                 }
 
             }
+            return false
         }
         return super.gestureRecognizerShouldBegin(gestureRecognizer)
     }
@@ -177,6 +188,13 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
     
     //MARK: TableView Delegate
     
+    public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        if let height = regDelegate.height{
+            return height(indexPath.row)
+        }
+        return self.frame.height
+    }
+    
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if let height = regDelegate.height{
             return height(indexPath.row)
@@ -187,10 +205,10 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         print("foi")
     }
-    
+
     public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if let question = cell as? RegisterQuestion{
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 question.activeQuestion()
             }
             self.regDelegate.position(position: indexPath.row, OfCurrentQuestionCell: cell)

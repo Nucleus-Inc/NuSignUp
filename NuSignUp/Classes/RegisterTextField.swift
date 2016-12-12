@@ -80,26 +80,40 @@ open class RegisterTextField: UITextField,UITextFieldDelegate {
     
     }
     
-    //MARK: - TextFieldDelegate
-    
-    
-    open func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-        if string == ""{//removing characters
-            return true
-        }
-        
+    open func applyMaskToText(){
         if let _ = self.text{
             let count = textWithNoMask.characters.count
             
+            if useMaskType == .other{
+                maxAllowedCharacters = otherMaskDelegate!.maxNumberOfCharacters()
+            }
+            
+            if (maxAllowedCharacters < 0 || maxAllowedCharacters > count) && applyMask{
+                switch useMaskType {
+                case .cpf:
+                    self.text = RegisterMasks.applyCPFMaskTo(Text: self.text!)
+                case .cnpj:
+                    self.text = RegisterMasks.applyCNPJMaskTo(Text: self.text!)
+                case .rg:
+                    self.text = RegisterMasks.applyRGMaskTo(Text: self.text!)
+                case .other:
+                    self.text = otherMaskDelegate!.applyMaskToText(text: self.text)
+
+                default:
+                    break
+                }
+
+            }
+            
+            /*
             if useMaskType == RegisterMaskType.other{
                 if let _ = otherMaskDelegate{
                     let max = otherMaskDelegate!.maxNumberOfCharacters()
                     if (max < 0 || max > count) && applyMask{
                         self.text = otherMaskDelegate!.applyMaskToText(text: self.text)
-                        return true
+                        //return true
                     }
-                    return (max < 0 || max > count)
+                    //return (max < 0 || max > count)
                 }
                 else{
                     assertionFailure("If you want to use other mask it is necessary to implement OtherMaskDelegate and inform it to param otherMaskDelegate")
@@ -113,17 +127,30 @@ open class RegisterTextField: UITextField,UITextFieldDelegate {
                     self.text = RegisterMasks.applyCNPJMaskTo(Text: self.text!)
                 case .rg:
                     self.text = RegisterMasks.applyRGMaskTo(Text: self.text!)
-
+                    
                 default:
                     break
                 }
                 
                 return true
             }
-            return (maxAllowedCharacters < 0/*no mask*/) || /*some mask but only quant*/maxAllowedCharacters > 0 && maxAllowedCharacters > count
+            //return (maxAllowedCharacters < 0/*no mask*/) || /*some mask but only quant*/maxAllowedCharacters > 0 && maxAllowedCharacters > count*/
         }
+
+    }
+    
+    //MARK: - TextFieldDelegate
+    
+    
+    open func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let count = textWithNoMask.characters.count
+        if string == ""{//removing characters
+            return true
+        }
+        applyMaskToText()
         
-        return true
+        return (maxAllowedCharacters < 0/*no mask*/) || /*some mask but only quant*/maxAllowedCharacters > 0 && maxAllowedCharacters > count
+
     }
     
 }

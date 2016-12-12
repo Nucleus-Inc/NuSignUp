@@ -25,6 +25,14 @@ open class RegisterTextField: UITextField,UITextFieldDelegate {
         // Drawing code
     }
     */
+
+    @IBInspectable open var canChangeCharactersOnlyAtEnd:Bool = false{
+        didSet{
+            if canChangeCharactersOnlyAtEnd{
+                self.tintColor = UIColor.clear
+            }
+        }
+    }
     
     @IBInspectable open var useMask:String = "none"{
         didSet{
@@ -37,6 +45,8 @@ open class RegisterTextField: UITextField,UITextFieldDelegate {
             maxAllowedCharacters = MaxCharactersForMask(maskName: useMaskType).rawValue
         }
     }
+    
+    
     
     open var maxAllowedCharacters:Int = -1
     
@@ -144,6 +154,7 @@ open class RegisterTextField: UITextField,UITextFieldDelegate {
     
     open func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let count = textWithNoMask.characters.count
+        
         if string == ""{//removing characters
             return true
         }

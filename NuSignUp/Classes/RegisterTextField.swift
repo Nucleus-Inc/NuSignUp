@@ -8,6 +8,12 @@
 
 import UIKit
 
+public protocol OtherMaskDelegate{
+    
+    func maxNumberOfCharacters()->Int
+    func applyMaskToText(text:String?)->String?
+    
+}
 
 
 open class RegisterTextField: UITextField,UITextFieldDelegate {
@@ -34,6 +40,8 @@ open class RegisterTextField: UITextField,UITextFieldDelegate {
     
     open var maxAllowedCharacters:Int = -1
     
+    public var otherMaskDelegate:OtherMaskDelegate?
+    
     open var textWithNoMask:String{
         get{
             if let text = self.text{
@@ -54,6 +62,10 @@ open class RegisterTextField: UITextField,UITextFieldDelegate {
         }
     }
     
+    /**
+     Pass true if you want to change the text accordingly to the mask
+     Pass false if you only want to check the number of allowed characters for the corresponding mask
+     */
     @IBInspectable open var applyMask:Bool = true
 
     
@@ -80,8 +92,20 @@ open class RegisterTextField: UITextField,UITextFieldDelegate {
         if let _ = self.text{
             let count = textWithNoMask.characters.count
             
-            
-            if maxAllowedCharacters > 0 && maxAllowedCharacters > count && applyMask{
+            if useMaskType == RegisterMaskType.other{
+                if let _ = otherMaskDelegate{
+                    let max = otherMaskDelegate!.maxNumberOfCharacters()
+                    if (max < 0 || max > count) && applyMask{
+                        self.text = otherMaskDelegate!.applyMaskToText(text: self.text)
+                        return true
+                    }
+                    return (max < 0 || max > count)
+                }
+                else{
+                    assertionFailure("If you want to use other mask it is necessary to implement OtherMaskDelegate and inform it to param otherMaskDelegate")
+                }
+            }
+            else if maxAllowedCharacters > 0 && maxAllowedCharacters > count && applyMask{
                 switch useMaskType {
                 case .cpf:
                     self.text = RegisterMasks.applyCPFMaskTo(Text: self.text!)

@@ -18,6 +18,8 @@ public enum RegisterMaskType:Int{
             self = .cnpj
         case "rg":
             self = .rg
+        case "other":
+            self = .other
         default:
             self = .none
         }
@@ -27,6 +29,7 @@ public enum RegisterMaskType:Int{
     case cpf = 1
     case cnpj = 2
     case rg = 3
+    case other = 4
 }
 
 public enum MaxCharactersForMask:Int{
@@ -51,7 +54,7 @@ public enum MaxCharactersForMask:Int{
 }
 
 
-public class RegisterMasks: NSObject {
+open class RegisterMasks: NSObject {
     
     
     static public func applyCPFMaskTo(Text text:String)->String{

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class RegisterValidations: NSObject {
+open class RegisterValidations: NSObject {
 
     //http://www.geradorcpf.com/algoritmo_do_cpf.htm
     public class func isAValidCPFFormat(cpfString:String)->Bool{

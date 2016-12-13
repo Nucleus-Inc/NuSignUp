@@ -9,7 +9,7 @@
 import UIKit
 import NuSignUp
 
-class BasicQuestionCell: UITableViewCell,RegisterQuestion {
+class BasicQuestionCell: UITableViewCell,RegisterQuestion,UITextFieldDelegate {
     
     @IBOutlet weak var questionLabel: UILabel!
     
@@ -17,12 +17,14 @@ class BasicQuestionCell: UITableViewCell,RegisterQuestion {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        answerTextField.delegate = self
         // Initialization code
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         answerTextField.text = ""
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -57,6 +59,20 @@ class BasicQuestionCell: UITableViewCell,RegisterQuestion {
     
     func desactiveQuestion(){
         self.superview!.endEditing(true)
+    }
+    
+    
+    //MARK: - TextField delegate
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        
+        if string == ""{//removing characters
+            return true
+        }
+        self.answerTextField.applyMaskToText()
+        
+        return self.answerTextField.canAddOtherCharacterOnText()
     }
 
 }

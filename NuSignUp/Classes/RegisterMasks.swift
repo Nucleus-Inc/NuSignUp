@@ -10,7 +10,7 @@ import UIKit
 
 public enum RegisterMaskType:Int{
     
-    init(name:String) {
+    public init(name:String) {
         switch name.lowercased(){
         case "cpf":
             self = .cpf
@@ -25,6 +25,13 @@ public enum RegisterMaskType:Int{
         }
 
     }
+    
+    public var maxAllowedCharacters:Int{
+        get{
+            return MaxCharactersForMask(maskName: self).rawValue
+        }
+    }
+    
     case none = 0
     case cpf = 1
     case cnpj = 2
@@ -32,7 +39,7 @@ public enum RegisterMaskType:Int{
     case other = 4
 }
 
-public enum MaxCharactersForMask:Int{
+enum MaxCharactersForMask:Int{
     public init(maskName:RegisterMaskType) {
         switch maskName{
         case .cpf:
@@ -46,7 +53,6 @@ public enum MaxCharactersForMask:Int{
         }
     }
     
-    
     case none = -1
     case cpf = 11
     case cnpj = 14
@@ -56,8 +62,50 @@ public enum MaxCharactersForMask:Int{
 
 open class RegisterMasks: NSObject {
     
+    open class func canAddOtherCharacterOnText(text:String,withMask mask:RegisterMaskType)->Bool{
+        let count = RegisterMasks.removeMaskType(type: mask, OfText: text).characters.count
+        let maxAllowedCharacters = mask.maxAllowedCharacters
+        return maxAllowedCharacters < 0 || maxAllowedCharacters > count
+    }
     
-    static public func applyCPFMaskTo(Text text:String)->String{
+    open class func applyMaskType(type:RegisterMaskType,OnText text:String)->String{
+        let count = text.characters.count
+        let maxAllowedCharacters = MaxCharactersForMask(maskName: type).rawValue
+        var newText = text
+        if RegisterMasks.canAddOtherCharacterOnText(text: text, withMask: type){
+            switch type {
+            case .cpf:
+                newText = RegisterMasks.applyCPFMaskTo(Text: text)
+            case .cnpj:
+                newText = RegisterMasks.applyCNPJMaskTo(Text: text)
+            case .rg:
+                newText = RegisterMasks.applyRGMaskTo(Text: text)
+            default:
+                break
+            }
+            
+        }
+        return newText
+    }
+    
+    open class func removeMaskType(type:RegisterMaskType,OfText text:String)->String{
+        let count = text.characters.count
+        switch type {
+        case .cpf:
+            return RegisterMasks.removeCPFMaskTo(Text: text)
+        case .cnpj:
+            return RegisterMasks.removeCNPJMaskTo(Text: text)
+        case .rg:
+            return RegisterMasks.removeRGMaskTo(Text: text)
+        default:
+            break
+        }
+
+        return text
+    }
+
+    //999.999.999-99
+    public class func applyCPFMaskTo(Text text:String)->String{
         var maskedText = text
         let count = text.characters.count
         
@@ -87,15 +135,15 @@ open class RegisterMasks: NSObject {
         return maskedText
     }
     
-    static public func removeCPFMaskTo(Text text:String)->String{
+    public class func removeCPFMaskTo(Text text:String)->String{
         var maskedText = text
         maskedText = maskedText.replacingOccurrences(of: ".", with: "")
         maskedText = maskedText.replacingOccurrences(of: "-", with: "")
         return maskedText
     }
     
-    
-    static public func applyCNPJMaskTo(Text text:String)->String{
+    //99.999.999/9999-99
+    public class func applyCNPJMaskTo(Text text:String)->String{
         var maskedText = text
         let count = text.characters.count
         if count > 0{
@@ -131,7 +179,7 @@ open class RegisterMasks: NSObject {
         return maskedText
     }
     
-    static public func removeCNPJMaskTo(Text text:String)->String{
+    public class func removeCNPJMaskTo(Text text:String)->String{
         var maskedText = text
         maskedText = maskedText.replacingOccurrences(of: ".", with: "")
         maskedText = maskedText.replacingOccurrences(of: "/", with: "")
@@ -141,7 +189,7 @@ open class RegisterMasks: NSObject {
 
     
     
-    static public func applyRGMaskTo(Text text:String)->String{
+    public class func applyRGMaskTo(Text text:String)->String{
         var maskedText = text
         let count = text.characters.count
         
@@ -172,14 +220,10 @@ open class RegisterMasks: NSObject {
         return maskedText
     }
     
-    static public func removeRGMaskTo(Text text:String)->String{
+    public class func removeRGMaskTo(Text text:String)->String{
         var maskedText = text
         maskedText = maskedText.replacingOccurrences(of: ".", with: "")
         maskedText = maskedText.replacingOccurrences(of: "-", with: "")
         return maskedText
     }
-
-    
-    
-    
 }

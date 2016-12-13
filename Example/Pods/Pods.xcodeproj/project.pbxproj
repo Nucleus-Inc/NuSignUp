@@ -15,7 +15,6 @@
 		4C4339DA906BED4FE0410B0A162BDA82 /* Pods-NuSignUp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFF8CF86E2BBDE48F742FC350F343DE7 /* Pods-NuSignUp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88CCD2771DF8F73600EC3E54 /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CCD2761DF8F73600EC3E54 /* RegisterButton.swift */; };
 		88F30FAF1DF754E800B92043 /* RegisterTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FAA1DF754E800B92043 /* RegisterTableView.swift */; };
-		88F30FB11DF754E800B92043 /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FAC1DF754E800B92043 /* RegisterTextField.swift */; };
 		88F30FB21DF754E800B92043 /* RegisterValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FAD1DF754E800B92043 /* RegisterValidations.swift */; };
 		B436FDAEBDBE7BA5DEAE79365E654129 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		BBB8D68296AE5D2B8B2AFD4DB5EB7B81 /* Pods-NuSignUp_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F092DE9CA4B7DD19ECB3891D4E619E /* Pods-NuSignUp_Tests-dummy.m */; };
@@ -50,7 +49,6 @@
 		7B4B4A331148BA84E03A02DE1A77A017 /* Pods-NuSignUp_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NuSignUp_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		88CCD2761DF8F73600EC3E54 /* RegisterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
 		88F30FAA1DF754E800B92043 /* RegisterTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTableView.swift; sourceTree = "<group>"; };
-		88F30FAC1DF754E800B92043 /* RegisterTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
 		88F30FAD1DF754E800B92043 /* RegisterValidations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterValidations.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AD37C1A87C3E50674D63303DFF0253C9 /* Pods-NuSignUp_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NuSignUp_Tests.modulemap"; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				88F30FAA1DF754E800B92043 /* RegisterTableView.swift */,
-				88F30FAC1DF754E800B92043 /* RegisterTextField.swift */,
 				88F30FAD1DF754E800B92043 /* RegisterValidations.swift */,
 				88CCD2761DF8F73600EC3E54 /* RegisterButton.swift */,
 				EEDF83701DFACA1E00A5DA2B /* RegisterMasks.swift */,
@@ -359,7 +356,6 @@
 			files = (
 				EEDF83711DFACA1E00A5DA2B /* RegisterMasks.swift in Sources */,
 				88F30FAF1DF754E800B92043 /* RegisterTableView.swift in Sources */,
-				88F30FB11DF754E800B92043 /* RegisterTextField.swift in Sources */,
 				88F30FB21DF754E800B92043 /* RegisterValidations.swift in Sources */,
 				1394384502B710E52F535D8C5BF04CAF /* NuSignUp-dummy.m in Sources */,
 				88CCD2771DF8F73600EC3E54 /* RegisterButton.swift in Sources */,

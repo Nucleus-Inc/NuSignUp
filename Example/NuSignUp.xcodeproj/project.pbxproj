@@ -18,6 +18,7 @@
 		88F30FA81DF7548A00B92043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FA51DF7548A00B92043 /* ViewController.swift */; };
 		88F30FB41DF7568800B92043 /* BasicQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FB31DF7568800B92043 /* BasicQuestionCell.swift */; };
 		EE3E419F1DF8581E002B0624 /* CivilStateQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E419E1DF8581E002B0624 /* CivilStateQuestionCell.swift */; };
+		EEF0382C1E00172C005692B3 /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0382B1E00172C005692B3 /* RegisterTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B8F1595FEE4166F872F70FBD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BAA762EAF151084249000722 /* Pods-NuSignUp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuSignUp_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE3E419E1DF8581E002B0624 /* CivilStateQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivilStateQuestionCell.swift; sourceTree = "<group>"; };
+		EEF0382B1E00172C005692B3 /* RegisterTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		607FACD21AFB9204008FA782 /* Example for NuSignUp */ = {
 			isa = PBXGroup;
 			children = (
+				EEF0382D1E00173B005692B3 /* RegisterComponents */,
 				88351B971DF7A6B30049663C /* RegisterCells */,
 				88F30FA31DF7548A00B92043 /* AppDelegate.swift */,
 				88F30FA51DF7548A00B92043 /* ViewController.swift */,
@@ -174,6 +177,14 @@
 				EE3E419E1DF8581E002B0624 /* CivilStateQuestionCell.swift */,
 			);
 			name = RegisterCells;
+			sourceTree = "<group>";
+		};
+		EEF0382D1E00173B005692B3 /* RegisterComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EEF0382B1E00172C005692B3 /* RegisterTextField.swift */,
+			);
+			name = RegisterComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +392,7 @@
 			files = (
 				88F30FB41DF7568800B92043 /* BasicQuestionCell.swift in Sources */,
 				EE3E419F1DF8581E002B0624 /* CivilStateQuestionCell.swift in Sources */,
+				EEF0382C1E00172C005692B3 /* RegisterTextField.swift in Sources */,
 				88F30FA81DF7548A00B92043 /* ViewController.swift in Sources */,
 				88F30FA61DF7548A00B92043 /* AppDelegate.swift in Sources */,
 				88351B991DF7A6E30049663C /* DateQuestionCell.swift in Sources */,

@@ -63,7 +63,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="useMask" value="rg"/>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="applyMask" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>

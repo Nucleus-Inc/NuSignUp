@@ -18,6 +18,8 @@ public enum RegisterMaskType:Int{
             self = .cnpj
         case "rg":
             self = .rg
+        case "cep":
+            self = .cep
         case "other":
             self = .other
         default:
@@ -36,6 +38,7 @@ public enum RegisterMaskType:Int{
     case cpf = 1
     case cnpj = 2
     case rg = 3
+    case cep = 5
     case other = 4
 }
 
@@ -48,6 +51,8 @@ enum MaxCharactersForMask:Int{
             self = .cnpj
         case .rg:
             self = .rg
+        case .cep:
+            self = .cep
         default:
             self = .none
         }
@@ -56,6 +61,7 @@ enum MaxCharactersForMask:Int{
     case none = -1
     case cpf = 11
     case cnpj = 14
+    case cep = 8
     case rg = 9
 }
 
@@ -80,6 +86,9 @@ open class RegisterMasks: NSObject {
                 newText = RegisterMasks.applyCNPJMaskTo(Text: text)
             case .rg:
                 newText = RegisterMasks.applyRGMaskTo(Text: text)
+            case .cep:
+                newText = RegisterMasks.applyCEPMaskTo(Text: text)
+
             default:
                 break
             }
@@ -97,6 +106,9 @@ open class RegisterMasks: NSObject {
             return RegisterMasks.removeCNPJMaskTo(Text: text)
         case .rg:
             return RegisterMasks.removeRGMaskTo(Text: text)
+        case .cep:
+            return RegisterMasks.removeCEPMaskTo(Text: text)
+
         default:
             break
         }
@@ -226,4 +238,41 @@ open class RegisterMasks: NSObject {
         maskedText = maskedText.replacingOccurrences(of: "-", with: "")
         return maskedText
     }
+    
+    //[0-9]{2}.[0-9]{3}-[0-9]{3}
+    //65.765-065
+    public class func applyCEPMaskTo(Text text:String)->String{
+        var maskedText = text
+        let count = text.characters.count
+        
+        if count > 0{
+            let lastChar = maskedText.characters.last!
+            if lastChar == "." || lastChar == "-"{
+                let index = text.index(text.startIndex, offsetBy: count - 1)
+                maskedText = maskedText.substring(to: index)
+            }
+        }
+        
+        
+        
+        if count == 2{
+            let index = text.index(text.startIndex, offsetBy: 2)
+            maskedText.insert(".", at: index)
+        }
+        
+        if count == 6 {
+            let index = text.index(text.startIndex, offsetBy: 6)
+            maskedText.insert("-", at: index)
+        }
+        
+        return maskedText
+    }
+    
+    public class func removeCEPMaskTo(Text text:String)->String{
+        var maskedText = text
+        maskedText = maskedText.replacingOccurrences(of: ".", with: "")
+        maskedText = maskedText.replacingOccurrences(of: "-", with: "")
+        return maskedText
+    }
+
 }

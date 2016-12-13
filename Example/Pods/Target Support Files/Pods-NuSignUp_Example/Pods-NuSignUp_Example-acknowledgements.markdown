@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## NuSignUp
 
-Copyright (c) 2016 José Lucas <joselucas1994@yahoo.com.br>
+Copyright (c) 2016 Nucleus <nucleus@nucleus.eti.br>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

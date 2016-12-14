@@ -7,10 +7,31 @@
 //
 
 import UIKit
+
+
+public enum RegisterValidationType:String{
+    case cpf = "cpf"
+    case cnpj = "cnpj"
+    case email = "email"
+}
+
 open class RegisterValidations: NSObject {
     
     
-
+    open class func validateAnswer(answer:Any,forType type:RegisterValidationType)->Bool{
+        switch type{
+        case .cpf:
+            return isAValidCPFFormat(cpfString: answer as! String)
+        case .cnpj:
+            return isAValidCNPJFormat(cnpjString: answer as! String)
+        case .email:
+            return isAValidEmailFormat(emailString: answer as! String)
+        default:
+            return true
+        }
+    }
+    
+    
     //http://www.geradorcpf.com/algoritmo_do_cpf.htm
     public class func isAValidCPFFormat(cpfString:String)->Bool{
         var cpfNumbers:[Int] = cpfString.characters.map { (charNumber) -> Int in

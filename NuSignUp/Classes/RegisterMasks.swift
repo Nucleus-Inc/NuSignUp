@@ -41,7 +41,9 @@ public enum RegisterMaskType:Int{
     case cep = 5
     case other = 4
 }
-
+/**
+ The number of characters without mask characters, so only number for a cpf
+ */
 enum MaxCharactersForMask:Int{
     public init(maskName:RegisterMaskType) {
         switch maskName{
@@ -64,6 +66,8 @@ enum MaxCharactersForMask:Int{
     case cep = 8
     case rg = 9
 }
+
+
 
 
 open class RegisterMasks: NSObject {

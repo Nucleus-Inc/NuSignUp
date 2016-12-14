@@ -10,6 +10,16 @@ import UIKit
 import NuSignUp
 
 class CivilStateQuestionCell: UITableViewCell,RegisterQuestion {
+    /**
+     Do not assign a value to this property just use the methods of this protocol to send constant updates to user about the state of your answer, more details take a look on example project
+     */
+    public var answerListener: AnswerListener!{
+        didSet{
+            self.answerListener.changeAnswer(answer: self.answerValue, ToStateValid: self.isAValidAnswer())
+        }
+    }
+
+
     
 
 
@@ -22,9 +32,10 @@ class CivilStateQuestionCell: UITableViewCell,RegisterQuestion {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -47,8 +58,10 @@ class CivilStateQuestionCell: UITableViewCell,RegisterQuestion {
                     button.isSelected = false
                 }
             }
-
         }
+        
+        self.answerListener.changeAnswer(answer: self.answerValue, ToStateValid: self.isAValidAnswer())
+
     }
     
     
@@ -58,11 +71,14 @@ class CivilStateQuestionCell: UITableViewCell,RegisterQuestion {
     
     public func setAnswer(answer: Any) {
         if let answer = answer as? String{
+            self.answerValue = answer
             for button in civilStateButtons{
                 let title = button.title(for: UIControlState.normal)!
                 button.isSelected = title.caseInsensitiveCompare(answer) == ComparisonResult.orderedSame
             }
+            self.answerListener.changeAnswer(answer: self.answerValue, ToStateValid: self.isAValidAnswer())
         }
+        
     }
     public func answer() -> Any? {
         return answerValue

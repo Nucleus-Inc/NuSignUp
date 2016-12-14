@@ -11,6 +11,8 @@ import NuSignUp
 
 class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
     
+
+    
     @IBOutlet weak var registerTableV: RegisterTableView!
     
     @IBOutlet weak var nextButton: RegisterButton!
@@ -50,10 +52,18 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
     
     //MARK: - RegisterDelegate methods
     
-    func answer(answer: Any?, ForQuestionCellAtPosition position: Int) {
-        print(answer)
-        answers[position] = answer
+    public func answer(answer: Any?, Isvalid valid: Bool, ForQuestionCellAtPosition position: Int) {
+        
+        if valid {
+            answers[position] = answer
+            self.nextButton.isHidden =  false
+        }
+        else{
+            self.nextButton.isHidden =  true
+        }
+
     }
+    
     
     
     public func position(position: Int, OfCurrentQuestionCell cell: UITableViewCell) {
@@ -79,12 +89,13 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
         return false
     }
     
+    func currentAnswerForQuestion(AtPosition position: Int) -> Any? {
+        return answers[position]
+    }
+    
     func questionCellFor(RegisterTableView table: RegisterTableView, AtPosition position: Int) -> UITableViewCell! {
         
         let cell = table.dequeueReusableCell(withIdentifier: questionsOrder[position])!
-        
-        let questionCell = cell as! RegisterQuestion
-        questionCell.setAnswer(answer: answers[position])
         
         return cell
     }

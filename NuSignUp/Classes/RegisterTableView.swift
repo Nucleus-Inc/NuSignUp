@@ -9,6 +9,10 @@
 import UIKit
 
 public protocol RegisterQuestion{
+    /**
+     Do not assign a value to this property just use the methods of this protocol to send constant updates to user about the state of your answer, more details take a look on example project
+     */
+    var answerListener:AnswerListener!{get set}
     
     func setAnswer(answer:Any)
     func answer()->Any?
@@ -18,10 +22,19 @@ public protocol RegisterQuestion{
     
 }
 
+/**
+ This is  protocol that helps for constant knowledge about answer state
+ */
+public protocol AnswerListener{
+    
+    func changeAnswer(answer:Any?, ToStateValid valid:Bool)
+    
+}
+
 
 @objc public protocol RegisterDelegate{
     
-    func answer(answer:Any?,ForQuestionCellAtPosition position:Int)
+    func answer(answer:Any?,Isvalid valid:Bool,ForQuestionCellAtPosition position:Int)
     
     func position(position:Int, OfCurrentQuestionCell cell:UITableViewCell)
     
@@ -37,10 +50,12 @@ public protocol RegisterQuestion{
     
     func isQuestionOptional(position:Int)->Bool
     
+    func currentAnswerForQuestion(AtPosition position:Int)->Any?
+    
     @objc optional func questionCellFor(RegisterTableView table:RegisterTableView,AtPosition position:Int)->UITableViewCell!
 }
 
-public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
+public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataSource,AnswerListener {
    
     
     
@@ -76,6 +91,7 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
         setUpTableView()
     }
     
+    
     //MARK: - Register tableView Methods
     public func currentQuestion()->RegisterQuestion{
         return self.visibleCells[0] as! RegisterQuestion
@@ -90,8 +106,10 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
     }
     
     func sendAnswerOfQuestionAt(position: Int){
+        
         let questionCell = self.cellForRow(at: IndexPath(row: position, section: 0)) as! RegisterQuestion
-        self.regDelegate.answer(answer: questionCell.answer(), ForQuestionCellAtPosition: position)
+        self.regDelegate.answer(answer: questionCell.answer(), Isvalid: questionCell.isAValidAnswer(), ForQuestionCellAtPosition: position)
+        
     }
     
     
@@ -174,6 +192,14 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
         return super.gestureRecognizerShouldBegin(gestureRecognizer)
     }
     
+    //MARK: - Answer Listener methods
+    
+    public func changeAnswer(answer: Any?, ToStateValid valid: Bool) {
+        let position = self.currentQuestionPosition()
+        self.regDelegate!.answer(answer: answer, Isvalid: valid, ForQuestionCellAtPosition: position)
+    }
+
+    
     
     //MARK: - TableView Methods
     
@@ -232,6 +258,16 @@ public class RegisterTableView: UITableView,UITableViewDelegate,UITableViewDataS
     @available(iOS 2.0, *)
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = regDataSource.questionCellFor!(RegisterTableView: tableView as! RegisterTableView, AtPosition: indexPath.row)
+        
+        
+        if var questionCell = cell as? RegisterQuestion{
+            questionCell.answerListener = self
+            questionCell.setAnswer(answer: self.regDataSource.currentAnswerForQuestion(AtPosition: indexPath.row))
+        }
+        else{
+            assertionFailure("Your cell must implement RegisterQuestion protocol")
+        }
+        
         return cell!
     }
 }

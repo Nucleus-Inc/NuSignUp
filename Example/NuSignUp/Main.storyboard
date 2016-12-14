@@ -264,13 +264,13 @@
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="U8h-Pt-07E">
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8h-Pt-07E">
                                                     <rect key="frame" x="5" y="109" width="365" height="183"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="U8h-Pt-07E" secondAttribute="height" multiplier="365:168" constant="-32.589285714285666" id="19O-Xw-vLq"/>
                                                     </constraints>
-                                                    <date key="date" timeIntervalSinceReferenceDate="502763973.21013701">
-                                                        <!--2016-12-07 00:39:33 +0000-->
+                                                    <date key="date" timeIntervalSinceReferenceDate="-220836026.78986299">
+                                                        <!--1994-01-02 00:39:33 +0000-->
                                                     </date>
                                                     <locale key="locale" localeIdentifier="pt_BR"/>
                                                 </datePicker>

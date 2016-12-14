@@ -10,6 +10,13 @@ import UIKit
 import NuSignUp
 
 class DateQuestionCell: UITableViewCell,RegisterQuestion {
+    public var answerListener: AnswerListener!{
+        didSet{
+            self.answerListener.changeAnswer(answer: self.bornDatePicker.date, ToStateValid: self.isAValidAnswer())
+        }
+    }
+
+
 
     @IBOutlet weak var questionLabel: UILabel!
     
@@ -19,14 +26,11 @@ class DateQuestionCell: UITableViewCell,RegisterQuestion {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+
         // Initialization code
     }
 
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        bornDatePicker.date = Date()
-    }
-    
+       
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -37,6 +41,8 @@ class DateQuestionCell: UITableViewCell,RegisterQuestion {
         if let bornDate = answer as? Date{
             bornDatePicker.date = bornDate
         }
+        
+        self.answerListener.changeAnswer(answer: self.bornDatePicker.date, ToStateValid: self.isAValidAnswer())
     }
     public func answer() -> Any? {
         return bornDatePicker.date
@@ -47,7 +53,6 @@ class DateQuestionCell: UITableViewCell,RegisterQuestion {
         if Date().timeIntervalSince1970 - bornDatePicker.date.timeIntervalSince1970 > 3600*24{
             return true
         }
-        
         return false
     }
     

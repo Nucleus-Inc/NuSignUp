@@ -36,8 +36,8 @@
 		099D2C0C087CEB72F6D95435E635F47B /* Pods-NuSignUp_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		15BBB098ACE6D9546CD60E003C9CA764 /* RegisterButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
 		1680454F38C00B74B670764931CBAF6F /* RegisterMasks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegisterMasks.swift; sourceTree = "<group>"; };
-		1C29535811BE8AEB773C8D8DAD0C1C60 /* Pods_NuSignUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NuSignUp_Example.framework; path = "Pods-NuSignUp_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BD56BA7B1B0A235DCF9D7BD09D06948 /* NuSignUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NuSignUp.modulemap; sourceTree = "<group>"; };
+		1C29535811BE8AEB773C8D8DAD0C1C60 /* Pods_NuSignUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD56BA7B1B0A235DCF9D7BD09D06948 /* NuSignUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NuSignUp.modulemap; sourceTree = "<group>"; };
 		2E5CE8639F1B19F7C5F38A12EB8AD128 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31FF84167C6AD7F6625585D467C44286 /* NuSignUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NuSignUp-prefix.pch"; sourceTree = "<group>"; };
 		33947D1EF80F49878FDD3F4EDDE18073 /* Pods-NuSignUp_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NuSignUp_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -46,11 +46,11 @@
 		5B0CBF4DAC82F1F41EC4F73558BD1517 /* Pods-NuSignUp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NuSignUp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6417AC7B0C8710170977BD640989199C /* Pods-NuSignUp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NuSignUp_Example-dummy.m"; sourceTree = "<group>"; };
 		68F092DE9CA4B7DD19ECB3891D4E619E /* Pods-NuSignUp_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NuSignUp_Tests-dummy.m"; sourceTree = "<group>"; };
-		6ED20A9B5E034D80D63DC65DF62250D2 /* NuSignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NuSignUp.framework; path = NuSignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED20A9B5E034D80D63DC65DF62250D2 /* NuSignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuSignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA5D8EEC73230EA6786A2918D72C452 /* Pods-NuSignUp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		7B4B4A331148BA84E03A02DE1A77A017 /* Pods-NuSignUp_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NuSignUp_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AD37C1A87C3E50674D63303DFF0253C9 /* Pods-NuSignUp_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NuSignUp_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AD37C1A87C3E50674D63303DFF0253C9 /* Pods-NuSignUp_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NuSignUp_Tests.modulemap"; sourceTree = "<group>"; };
 		B4A1C56611D152FECC61F15030F1B988 /* Pods-NuSignUp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C46C8BCC265B9A94A2D011CDE642588E /* NuSignUp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NuSignUp.xcconfig; sourceTree = "<group>"; };
 		C765A3F9855A507EC1ABD4DEE042F550 /* Pods-NuSignUp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NuSignUp_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -59,12 +59,12 @@
 		CFF8CF86E2BBDE48F742FC350F343DE7 /* Pods-NuSignUp_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NuSignUp_Example-umbrella.h"; sourceTree = "<group>"; };
 		D5B7F9C9998216E39CAA1747689C4A36 /* NuSignUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NuSignUp-umbrella.h"; sourceTree = "<group>"; };
 		D6064E5FE6E0E8C8E6952ACFAA1957C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB4567CE5927837487A84F53CFE41CF8 /* Pods_NuSignUp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NuSignUp_Tests.framework; path = "Pods-NuSignUp_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4567CE5927837487A84F53CFE41CF8 /* Pods_NuSignUp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5F966A83D558CD64F797FF233FA7A2 /* Pods-NuSignUp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E4A9385FFF2745464E18A0A280B7F920 /* NuSignUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NuSignUp-dummy.m"; sourceTree = "<group>"; };
 		E759E0E11F6B56A73ECB67506E848748 /* Pods-NuSignUp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EEB72F8B93092F5DB04B0369AF65111F /* RegisterValidations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegisterValidations.swift; sourceTree = "<group>"; };
-		EF0E6CEFB5588A6D554C53968843B916 /* Pods-NuSignUp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NuSignUp_Example.modulemap"; sourceTree = "<group>"; };
+		EF0E6CEFB5588A6D554C53968843B916 /* Pods-NuSignUp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NuSignUp_Example.modulemap"; sourceTree = "<group>"; };
 		F2642DAE53C1C094D63F2D03D93F596A /* Pods-NuSignUp_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NuSignUp_Example-resources.sh"; sourceTree = "<group>"; };
 		F56C0F077C277F102FC499DD8E3FB45B /* Pods-NuSignUp_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NuSignUp_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FBA50D33DED0FD475425E5E51BE1DA0C /* Pods-NuSignUp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +134,6 @@
 				CADD689803473582BABE4016EC38FB5F /* RegisterTableView.swift */,
 				EEB72F8B93092F5DB04B0369AF65111F /* RegisterValidations.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -160,7 +159,6 @@
 			children = (
 				33A8DF9905B29782EF3C4F9F3CD66BD1 /* Classes */,
 			);
-			name = NuSignUp;
 			path = NuSignUp;
 			sourceTree = "<group>";
 		};
@@ -323,6 +321,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					A54705A7CD60FBC31FF561D4F234C1A5 = {
+						LastSwiftMigration = 0810;
+					};
+					D92BD1359C69093638D6CC8F98861529 = {
+						LastSwiftMigration = 0810;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -516,6 +522,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -551,6 +558,7 @@
 				PRODUCT_NAME = Pods_NuSignUp_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

@@ -28,7 +28,7 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUpNextButton()
         registerTableV.regDataSource = self
         registerTableV.regDelegate = self
     }
@@ -49,7 +49,12 @@ class ViewController: UIViewController,RegisterDataSource,RegisterDelegate {
         self.registerTableV.goToPreviousQuestion()
     }
     
-    
+    func setUpNextButton(){
+        nextButton.layer.masksToBounds = true
+        nextButton.layer.borderWidth = 1
+        nextButton.layer.borderColor = nextButton.currentTitleColor.cgColor
+    }
+
     //MARK: - RegisterDelegate methods
     
     public func answer(answer: Any?, Isvalid valid: Bool, ForQuestionCellAtPosition position: Int) {

@@ -70,7 +70,7 @@ open class RegisterButton: UIButton {
         
         if keyBoardFrame!.origin.y < self.frame.origin.y + size.height {
             
-            distToOrigin = (self.frame.origin.y + size.height) - (keyBoardFrame!.origin.y + 5)
+            distToOrigin = (self.frame.origin.y + size.height + 5) - (keyBoardFrame!.origin.y)
             
             let finalY = self.frame.origin.y - distToOrigin
                         

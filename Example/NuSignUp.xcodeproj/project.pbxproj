@@ -12,13 +12,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		660365364AA3A255930FAF58 /* Pods_NuSignUp_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3CC985B907A99BFEB25001 /* Pods_NuSignUp_Tests.framework */; };
-		88351B991DF7A6E30049663C /* DateQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88351B981DF7A6E30049663C /* DateQuestionCell.swift */; };
 		88DE6BC41DF763FD004CEA04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DE6BC31DF763FD004CEA04 /* Main.storyboard */; };
 		88F30FA61DF7548A00B92043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FA31DF7548A00B92043 /* AppDelegate.swift */; };
 		88F30FA81DF7548A00B92043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FA51DF7548A00B92043 /* ViewController.swift */; };
-		88F30FB41DF7568800B92043 /* BasicQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F30FB31DF7568800B92043 /* BasicQuestionCell.swift */; };
-		EE3E419F1DF8581E002B0624 /* CivilStateQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E419E1DF8581E002B0624 /* CivilStateQuestionCell.swift */; };
-		EEF0382C1E00172C005692B3 /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0382B1E00172C005692B3 /* RegisterTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,17 +40,13 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		728E17BDFDDFFD7E06A74E29 /* NuSignUp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NuSignUp.podspec; path = ../NuSignUp.podspec; sourceTree = "<group>"; };
 		76AFEB35C2B7A56EF8CA91EF /* Pods_NuSignUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88351B981DF7A6E30049663C /* DateQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateQuestionCell.swift; sourceTree = "<group>"; };
 		88DE6BC31DF763FD004CEA04 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		88F30FA31DF7548A00B92043 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88F30FA51DF7548A00B92043 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		88F30FB31DF7568800B92043 /* BasicQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicQuestionCell.swift; sourceTree = "<group>"; };
 		A17B4F5CBF510EED323735F0 /* Pods-NuSignUp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuSignUp_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A68F6441789F00DCDBE4D01E /* Pods-NuSignUp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuSignUp_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B8F1595FEE4166F872F70FBD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BAA762EAF151084249000722 /* Pods-NuSignUp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuSignUp_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EE3E419E1DF8581E002B0624 /* CivilStateQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivilStateQuestionCell.swift; sourceTree = "<group>"; };
-		EEF0382B1E00172C005692B3 /* RegisterTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +113,8 @@
 		607FACD21AFB9204008FA782 /* Example for NuSignUp */ = {
 			isa = PBXGroup;
 			children = (
-				EEF0382D1E00173B005692B3 /* RegisterComponents */,
-				88351B971DF7A6B30049663C /* RegisterCells */,
-				88F30FA31DF7548A00B92043 /* AppDelegate.swift */,
 				88F30FA51DF7548A00B92043 /* ViewController.swift */,
 				88DE6BC31DF763FD004CEA04 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -137,6 +125,8 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				88F30FA31DF7548A00B92043 /* AppDelegate.swift */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -169,24 +159,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		88351B971DF7A6B30049663C /* RegisterCells */ = {
-			isa = PBXGroup;
-			children = (
-				88F30FB31DF7568800B92043 /* BasicQuestionCell.swift */,
-				88351B981DF7A6E30049663C /* DateQuestionCell.swift */,
-				EE3E419E1DF8581E002B0624 /* CivilStateQuestionCell.swift */,
-			);
-			name = RegisterCells;
-			sourceTree = "<group>";
-		};
-		EEF0382D1E00173B005692B3 /* RegisterComponents */ = {
-			isa = PBXGroup;
-			children = (
-				EEF0382B1E00172C005692B3 /* RegisterTextField.swift */,
-			);
-			name = RegisterComponents;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,7 +171,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				CA064E43571EFB675B7FE289 /* [CP] Embed Pods Frameworks */,
-				772688426DD2247E1B492193 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,8 +189,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				C0449F06D8888D3B178C8F2A /* [CP] Embed Pods Frameworks */,
-				6D0FEAB10DBCB555E2732118 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,7 +212,6 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = T6C28BT29G;
 						LastSwiftMigration = 0810;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -293,60 +261,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6D0FEAB10DBCB555E2732118 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		772688426DD2247E1B492193 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C0449F06D8888D3B178C8F2A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CA064E43571EFB675B7FE289 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/InputMask/InputMask.framework",
+				"${BUILT_PRODUCTS_DIR}/NuSignUp/NuSignUp.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputMask.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NuSignUp.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -359,13 +287,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NuSignUp_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F9E0781729A700AB91237003 /* [CP] Check Pods Manifest.lock */ = {
@@ -374,13 +305,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NuSignUp_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -390,12 +324,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F30FB41DF7568800B92043 /* BasicQuestionCell.swift in Sources */,
-				EE3E419F1DF8581E002B0624 /* CivilStateQuestionCell.swift in Sources */,
-				EEF0382C1E00172C005692B3 /* RegisterTextField.swift in Sources */,
 				88F30FA81DF7548A00B92043 /* ViewController.swift in Sources */,
 				88F30FA61DF7548A00B92043 /* AppDelegate.swift in Sources */,
-				88351B991DF7A6E30049663C /* DateQuestionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -508,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -523,8 +453,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = T6C28BT29G;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NuSignUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -541,8 +472,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = T6C28BT29G;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NuSignUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

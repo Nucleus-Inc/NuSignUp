@@ -16,7 +16,12 @@
     "tag": "0.4.0"
   },
   "platforms": {
-    "ios": "8.3"
+    "ios": "10.0"
   },
-  "source_files": "NuSignUp/Classes/**/*"
+  "source_files": "NuSignUp/Classes/**/*",
+  "dependencies": {
+    "InputMask": [
+      "~> 3.4"
+    ]
+  }
 }

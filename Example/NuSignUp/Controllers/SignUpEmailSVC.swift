@@ -128,14 +128,14 @@ class SignUpEmailSVC: SignUpNameSVC {
     
     //MARK: - SignUpStepProtocol methods
     
-    
+    /*
     override func shouldPresentNextStepButton() -> Bool {
         if let text = answerTF.text{
             return SignUpValidations.isAValidEmailFormat(emailString: text) && !lastInvalidEmails.contains(text)
         }
         return false
     }
-    
+    */
     override func didTapNextStepButton(button: UIButton) {
         if !isServerSideValid {
             if let answer = answerTF.text, !lastInvalidEmails.contains(answer){

@@ -28,6 +28,7 @@
 		EE379E0120BEF59500E1422E /* ExampleSignUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379E0020BEF59500E1422E /* ExampleSignUpDelegate.swift */; };
 		EE379E0320BEF66600E1422E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379E0220BEF66600E1422E /* StartViewController.swift */; };
 		EE379E0520BF0D8400E1422E /* FirstStepSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379E0420BF0D8400E1422E /* FirstStepSVC.swift */; };
+		EE379E0720BF338400E1422E /* SignUpMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379E0620BF338400E1422E /* SignUpMask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		EE379E0020BEF59500E1422E /* ExampleSignUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSignUpDelegate.swift; sourceTree = "<group>"; };
 		EE379E0220BEF66600E1422E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		EE379E0420BF0D8400E1422E /* FirstStepSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepSVC.swift; sourceTree = "<group>"; };
+		EE379E0620BF338400E1422E /* SignUpMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 				EE379DF520BEC41C00E1422E /* UIAlertControllerShortcuts.swift */,
 				EE379DF720BEC83300E1422E /* LocalNotification.swift */,
 				EE379E0020BEF59500E1422E /* ExampleSignUpDelegate.swift */,
+				EE379E0620BF338400E1422E /* SignUpMask.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				EE379DF020BEC05500E1422E /* JLProgressView.swift in Sources */,
 				EE379DEC20BEBFDF00E1422E /* SignUpPasswordSVC.swift in Sources */,
 				EE379DF820BEC83300E1422E /* LocalNotification.swift in Sources */,
+				EE379E0720BF338400E1422E /* SignUpMask.swift in Sources */,
 				EE379DED20BEBFDF00E1422E /* SignUpPhoneNumberSVC.swift in Sources */,
 				EE379E0520BF0D8400E1422E /* FirstStepSVC.swift in Sources */,
 			);

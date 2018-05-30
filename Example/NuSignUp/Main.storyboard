@@ -465,6 +465,7 @@
                         <userDefinedRuntimeAttribute type="number" keyPath="stepNumber">
                             <integer key="value" value="3"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="regex" value="[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\ {0,1}"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="answerInfoTF" destination="3Ei-j5-YIa" id="FUD-Cd-w61"/>
@@ -1035,9 +1036,9 @@
         <image name="see-password-selected" width="34" height="34"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0l7-e2-JgI"/>
-        <segue reference="1XJ-T0-UAj"/>
-        <segue reference="Lje-aQ-HBY"/>
+        <segue reference="6Ok-A1-Dp0"/>
+        <segue reference="ybl-7Z-fhq"/>
+        <segue reference="F6W-W0-54c"/>
         <segue reference="DyE-Gb-WON"/>
     </inferredMetricsTieBreakers>
 </document>

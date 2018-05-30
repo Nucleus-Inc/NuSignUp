@@ -99,6 +99,30 @@ extension SignUpStepDelegate{
             dict[key] = answer
         }
     }
+    
+    public func answer(ForKey key:String)->Any?{
+        let subKeys:[String] = key.components(separatedBy: "->")
+        let k = subKeys.last!
+        var values = answers
+        
+        if let _ = values{
+            for pos in 0..<subKeys.count - 1{
+                let currentKey = subKeys[pos]
+                if let v = values![currentKey] as? [String:Any]{
+                    values = v
+                }
+                else{
+                    return nil
+                }
+            }
+            
+            if let values = values, let answer = values[k] as? String{
+                return answer
+            }
+        }
+        
+        return nil
+    }
 }
 
 

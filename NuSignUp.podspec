@@ -39,6 +39,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'Regex', '0.3.0'
-  s.dependency 'InputMask', '~> 3.4'
+  #s.dependency 'InputMask', '~> 3.4'
 
 end

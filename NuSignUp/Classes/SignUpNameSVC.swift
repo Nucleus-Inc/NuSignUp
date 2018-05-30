@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import InputMask
 
-open class SignUpNameSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
+open class SignUpNameSVC: SignUpStepVC {
 
     @IBOutlet weak public var answerTF: UITextField!
     /**
@@ -24,24 +23,14 @@ open class SignUpNameSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     @IBInspectable public var forceCapitalizeWords:Bool = false
 
     /**
-     Mask format you want to apply on text answer, accordingly to 'InputMask' lib
+     Regex to test the answer
      */
-    @IBInspectable public var mask:String?{
-        didSet{
-            setUpDelegates()
-        }
-    }
+    @IBInspectable public var regex:String?
     
     public var stepAnswer:String?{
-        get{
-            guard let _ = mask else{
-                return answerTF.text
-            }
-            return _extractedAnswer
-        }
+        return answerTF.text
     }
     
-    private var _extractedAnswer:String? = ""
     /**
      Minimum number of characters the answer has to contain
      If you define a mask this value will has the same value of 
@@ -50,8 +39,6 @@ open class SignUpNameSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
      */
     @IBInspectable public var minCharacters:Int = 0
     
-    private var maskDelegate:MaskedTextFieldDelegate?
-
     override open func viewDidLoad() {
         super.viewDidLoad()
         setUpTextField()
@@ -114,64 +101,24 @@ open class SignUpNameSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     
     override open func shouldPresentNextStepButton() -> Bool {
         if let text = stepAnswer{
-            return text.count >= minCharacters
+            guard let regex = regex else{
+                return text.count >= minCharacters
+            }
+            
+            let predicate = NSPredicate(format:"SELF MATCHES %@", regex)
+            let matches = predicate.evaluate(with: text)
+            return text.count >= minCharacters && matches
         }
         return false
     }
     
     //MARK: - UITextField methods
-    private func setUpDelegates(){
-        if  let mask = mask{
-            maskDelegate = MaskedTextFieldDelegate(format: mask)
-            maskDelegate?.listener = self
-            minCharacters = maskDelegate?.acceptableValueLength() ?? 0
-            if answerTF != nil{
-                answerTF.delegate = maskDelegate
-            }
-        }
-        else{
-            maskDelegate = nil
-        }
-    }
-    
-    
+
     private func setUpTextField(){
-        setUpDelegates()
-        let subKeys:[String] = self.key.components(separatedBy: "->")
-        let k = subKeys.last!
-        var values = self.delegate.answers
-        
-        if let _ = values{
-            for pos in 0..<subKeys.count - 1{
-                let currentKey = subKeys[pos]
-                if let v = values![currentKey] as? [String:Any]{
-                    values = v
-                }
-                else{
-                    return
-                }
-            }
-            
-            if let values = values, let answer = values[k] as? String{
-                if let maskDelegate = maskDelegate{
-                    maskDelegate.put(text: answer, into: answerTF)//answers[key] as? String
-                    _extractedAnswer = answer
-                }
-                else{
-                    answerTF.text = answer
-                }
-            }
-        }
+        answerTF.text = delegate.answer(ForKey: key) as? String
     }
     
     @IBAction open func didChangeText(_ sender: Any) {
-        self.didChangeStepAnswers()
-    }
-    
-    //MARK: - MaskedTextFieldDelegateListener methods
-    
-    public func textField(_ textField: UITextField, didFillMandatoryCharacters complete: Bool, didExtractValue value: String) {
-        _extractedAnswer = value
         self.didChangeStepAnswers()
     }
     

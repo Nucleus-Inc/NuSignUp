@@ -32,6 +32,7 @@ public class SignUpStack{
     
     /**
      Call this method if you want that 'SignUpStepVC' use as delegate a class that inherit from 'DefaultSUpSDelegate'.
+     Take a look on example project for more details.
      */
     public func baseStepDelegateType<T:DefaultSUpSDelegate>(_ type:T.Type){
         newDelegateInstance = {

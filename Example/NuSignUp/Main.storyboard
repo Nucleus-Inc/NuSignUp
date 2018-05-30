@@ -481,7 +481,7 @@
         <!--Sign Up PasswordSVC-->
         <scene sceneID="dU2-gp-6K3">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="DYD-D9-uUC" customClass="SignUpPasswordSVC" customModule="Upme_Professional" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="DYD-D9-uUC" customClass="SignUpPasswordSVC" customModule="NuSignUp_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gJF-iz-pXV"/>
                         <viewControllerLayoutGuide type="bottom" id="pYA-Ad-4jT"/>
@@ -564,7 +564,7 @@
                                     <action selector="nextStepAction:" destination="DYD-D9-uUC" eventType="touchUpInside" id="PG1-FP-Suv"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-dU-zV7" customClass="JLProgressView" customModule="Upme_Professional" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-dU-zV7" customClass="JLProgressView" customModule="NuSignUp_Example" customModuleProvider="target">
                                 <rect key="frame" x="21" y="172.5" width="333" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -642,7 +642,7 @@
         <!--Sign Up Check Data StepVC-->
         <scene sceneID="06b-T0-zvQ">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="i80-aD-f1P" customClass="SignUpCheckDataStepVC" customModule="Upme_Professional" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="i80-aD-f1P" customClass="SignUpCheckDataStepVC" customModule="NuSignUp_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N0e-Zd-RyV"/>
                         <viewControllerLayoutGuide type="bottom" id="hWo-9c-Xes"/>
@@ -684,16 +684,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wCD-4i-5S5">
-                                                    <rect key="frame" x="15" y="19.5" width="30" height="18"/>
+                                                    <rect key="frame" x="15" y="18.5" width="30" height="18"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xNG-er-3N2">
-                                                    <rect key="frame" x="15" y="40" width="40.5" height="18"/>
+                                                    <rect key="frame" x="15" y="39" width="43" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -766,7 +766,7 @@
         <!--Sign Up CodeSVC-->
         <scene sceneID="0lk-XT-F0T">
             <objects>
-                <viewController storyboardIdentifier="ValidateCodeStepVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kfb-Ih-MAP" customClass="SignUpCodeSVC" customModule="Upme_Professional" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ValidateCodeStepVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kfb-Ih-MAP" customClass="SignUpCodeSVC" customModule="NuSignUp_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TeA-Ya-4F5"/>
                         <viewControllerLayoutGuide type="bottom" id="CvH-dF-cGX"/>

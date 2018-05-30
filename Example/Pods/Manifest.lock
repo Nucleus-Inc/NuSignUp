@@ -1,9 +1,9 @@
 PODS:
   - InputMask (3.4.0)
-  - NuSignUp (0.4.0):
-    - InputMask (~> 3.4)
+  - NuSignUp (0.4.0)
 
 DEPENDENCIES:
+  - InputMask (~> 3.4)
   - NuSignUp (from `../`)
 
 SPEC REPOS:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   InputMask: c75abc7660ff719809edde03684f9114b947d67e
-  NuSignUp: 7143de282c5a39e4f82177a2ee77f38f838ca66c
+  NuSignUp: ec0d19925804b050f1e78a85d104f60a496123b7
 
-PODFILE CHECKSUM: 1dce246adad7f45b5b2d02030a1dc02fadc7985b
+PODFILE CHECKSUM: 50e5af0179c06ad5d2f1fe0cc9cc25798c54ce90
 
 COCOAPODS: 1.5.0

@@ -1,12 +1,13 @@
 //
 //  SignUpPasswordSVC.swift
-//  Upme-Professional
 //
 //  Created by Nucleus on 07/06/17.
 //  Copyright © 2017 Nucleus. All rights reserved.
 //
 
 import UIKit
+import NuSignUp
+
 
 
 class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
@@ -27,7 +28,7 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
     
     @IBOutlet weak var passwordStrengthView: JLProgressView!
     
-    private var key:String = ProfAccount_Keys.password
+    private var key:String = "password"
     private var scoreForPassword:[String:Int] = [:]
     @IBInspectable var minCharacters:Int = 0
     
@@ -51,15 +52,20 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
     }
     
 
-    /*
+    
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.identifier == SignUpStepSegues.nextStep.rawValue{
+            if let vc = segue.destination as? SignUpCheckDataStepVC{
+                vc.controller = ExampleSignUpCheckDataStepC()
+            }
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
     
     //MARK: - PasswordSVC
     private func addStepAnswer(){
@@ -75,10 +81,10 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
         switch score {
         case 0:
             color = UIColor(red: 200/255, green: 38/255, blue: 71/255, alpha: 1)//.red
-            message = "Fraca"
+            message = "Weak"
         case 1:
             color = UIColor(red: 200/255, green: 38/255, blue: 71/255, alpha: 1)//.red
-            message = "Fraca"
+            message = "Weak"
         case 2:
             color = UIColor(red: 254/255, green: 193/255, blue: 6/255, alpha: 1)
             message = "Regular"
@@ -87,7 +93,7 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
             message = "Regular"
         case 4:
             color = UIColor(red: 113/255, green: 186/255, blue: 81/255, alpha: 1)
-            message = "Forte"
+            message = "Strong"
         default:
             color = UIColor(red: 113/255, green: 186/255, blue: 81/255, alpha: 1)
         }
@@ -97,7 +103,7 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
         if password.count < self.minCharacters{
             value = 0
             color = UIColor(red: 200/255, green: 38/255, blue: 71/255, alpha: 1)//.red
-            message = "Muito Curta"
+            message = "Too Weak"
         }
         
         self.passwordStrengthView.updateToStep(value + 1, WithColor: color)
@@ -113,22 +119,20 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
                 super.didChangeStepAnswers()
             }
             else{
-                
-                UpmeGeneral_CRUD.checkStrength(Password: password, completion: { (success, score) in
-                    
-                    DispatchQueue.main.async {
-                        if success{
-                            print(password+" score: \(score)")
-                            self.updateStrengthView(ForScore: score,AndPassword: password)
-                        }
-                        else{
-                            self.passwordStrengthView.updateToStep(0, WithColor: nil)
-                            self.updateAnswerInfoLabel(text: self.defaultPInfoMessage, textColor: self.defaultPInfoColor!)
-                        }
-                        super.didChangeStepAnswers()
+                let score = 3
+                let success = true
+                DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+                    if success{
+                        print(password+" score: \(score)")
+                        self.updateStrengthView(ForScore: score,AndPassword: password)
                     }
-                })
-                
+                    else{
+                        self.passwordStrengthView.updateToStep(0, WithColor: nil)
+                        self.updateAnswerInfoLabel(text: self.defaultPInfoMessage, textColor: self.defaultPInfoColor!)
+                    }
+                    super.didChangeStepAnswers()
+                }
+
             }
             
         }
@@ -167,11 +171,11 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
             goToNextStep()
         }
         else{
-            let okAction  =  UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            
+            UIAlertControllerShorcuts.showOKAlert(OnVC: self, Title: "The typed values are not the same.", Message: nil,OKAction:{
+                (_) in
                 self.confirmationTF.becomeFirstResponder()
             })
-            
-            UIView.showAlert(OnVC: self, WithTitle: nil, Message: "Os valores não correspondem", AndActions: [okAction])
         }
     }
     
@@ -213,8 +217,8 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
             confirmInfoLabel.textColor = defaultConfirmColor
         }
         else{
-            confirmInfoLabel.textColor = RequestState.canceled.colorForState()
-            confirmInfoLabel.text = "Os valores não correspondem"
+            confirmInfoLabel.textColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            confirmInfoLabel.text = "The typed values are not the same."
         }
     }
     

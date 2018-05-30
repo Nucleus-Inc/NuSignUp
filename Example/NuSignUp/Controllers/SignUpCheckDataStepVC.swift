@@ -1,12 +1,12 @@
 //
 //  SignUpCheckDataStepVC.swift
-//  Upme-Professional
 //
 //  Created by Nucleus on 24/07/17.
 //  Copyright © 2017 Nucleus. All rights reserved.
 //
 
 import UIKit
+import NuSignUp
 
 public protocol SignUpCheckDataStepC{
     
@@ -39,7 +39,6 @@ class SignUpCheckDataStepVC: SignUpStepVC,UITableViewDelegate,UITableViewDataSou
     
     
     override func viewDidLoad() {
-        showBackgroundImg = false
         super.viewDidLoad()
         setUpTableView()
         // Do any additional setup after loading the view.

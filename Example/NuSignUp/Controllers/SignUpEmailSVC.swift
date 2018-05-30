@@ -1,12 +1,12 @@
 //
 //  SignUpEmailSVC.swift
-//  Upme-Professional
 //
 //  Created by José Lucas Souza das Chagas on 06/06/17.
 //  Copyright © 2017 Nucleus. All rights reserved.
 //
 
 import UIKit
+import NuSignUp
 
 class SignUpEmailSVC: SignUpNameSVC {
     
@@ -20,7 +20,7 @@ class SignUpEmailSVC: SignUpNameSVC {
 
     
     override func viewDidLoad() {
-        key = ProfAccount_Keys.email
+        key = "email"
         defaultMessage = answerInfoTF.text
         defaultColor = answerInfoTF.textColor
         super.viewDidLoad()
@@ -60,9 +60,9 @@ class SignUpEmailSVC: SignUpNameSVC {
         lastInvalidEmails.contains(answerTF.text!) ? showAnswerInfoErrMessage() : showAnswerInfoDefaultMessage()
     }
     
-    private func showAnswerInfoErrMessage(_ message:String="Esse email está em uso"){
+    private func showAnswerInfoErrMessage(_ message:String="This email is in use."){
         self.answerInfoTF.text = message//"Email em uso"
-        self.answerInfoTF.textColor = RequestState.canceled.colorForState()
+        self.answerInfoTF.textColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
     }
     
     private func showAnswerInfoDefaultMessage(){
@@ -93,42 +93,37 @@ class SignUpEmailSVC: SignUpNameSVC {
         
         self.loadingMode(Loading: true)
         showActivity()
-        //let alert = UIView.showLoadingAlert(OnVC: self, WithTitle: "Validando")
-        //ActivityIndicatorHelper.showLoadingActivity(AtView: self.view, withDetailText: "Validando", animated: true)
         
-        Professional_CRUD.checkAvailabilityOf(key: key, value: self.answerTF.text!) { (success, isAvailable) in
-            DispatchQueue.main.async {
-                self.hideActivity()
-                self.loadingMode(Loading: false)
-                if success{
-                    if isAvailable{
-                        
-                        self.isServerSideValid = true
-                        print("Add answer on answers")
-                        self.addStepAnswer()
-                        self.goToNextStep()
-                        
-                    }
-                    else{
-                        self.answerTF.becomeFirstResponder()
-                        self.isServerSideValid = false
-                        self.lastInvalidEmails.append(self.answerTF.text!)
-                        self.showAnswerInfoErrMessage("Esse email está em uso")
-                        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                        UIView.showAlert(OnVC: self, WithTitle:nil , Message: "Esse email está em uso. Experimente outro", AndActions: [okAction])
-                    }
+        DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+            self.hideActivity()
+            self.loadingMode(Loading: false)
+            let success = true
+            let isAvailable = true
+            
+            if success{
+                if isAvailable{
+                    
+                    self.isServerSideValid = true
+                    print("Add answer on answers")
+                    self.addStepAnswer()
+                    self.goToNextStep()
+                    
                 }
                 else{
                     self.answerTF.becomeFirstResponder()
-                    //self.lastInvalidEmails.append(self.answerTF.text!)
-                    //self.showAnswerInfoErrMessage()
-                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                    UIView.showAlert(OnVC: self, WithTitle:nil , Message: "Ocorreu um problema na validação", AndActions: [okAction])
+                    self.isServerSideValid = false
+                    self.lastInvalidEmails.append(self.answerTF.text!)
+                    self.showAnswerInfoErrMessage("This email is in use")
+
+                    UIAlertControllerShorcuts.showOKAlert(OnVC: self, Title: nil, Message: "This email is in use. Try another one.", OKAction: nil)
                 }
             }
+            else{
+                self.answerTF.becomeFirstResponder()
+
+                UIAlertControllerShorcuts.showOKAlert(OnVC: self, Title: nil, Message: "It was not possible to validate your email.", OKAction: nil)
+            }
         }
-        
-        
     }
     
     //MARK: - SignUpStepProtocol methods
@@ -165,7 +160,7 @@ class SignUpEmailSVC: SignUpNameSVC {
 
     private func setUpTextField(){
         if let answers = delegate.answers{
-            self.answerTF.text = answers[ProfAccount_Keys.email] as? String
+            self.answerTF.text = answers[key] as? String
         }
     }
     

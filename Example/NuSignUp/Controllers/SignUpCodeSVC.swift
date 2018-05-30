@@ -1,6 +1,5 @@
 //
 //  SignUpCodeSVC.swift
-//  Upme-Professional
 //
 //  Created by José Lucas Souza das Chagas on 07/06/17.
 //  Copyright © 2017 Nucleus. All rights reserved.
@@ -8,6 +7,12 @@
 
 import UIKit
 import InputMask
+import NuSignUp
+
+enum CodeTransport:String{
+    case sms = "sms"
+    case email = "email"
+}
 
 class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     @IBOutlet weak var sendAgainButton: UIButton!
@@ -45,7 +50,6 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
         defaultColor = answerInfoTF.textColor
         setUpTextField()
         setUpQuestionInfoLabel()
-        
         self.didChangeStepAnswers()
         // Do any additional setup after loading the view.
     }
@@ -55,6 +59,8 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
         super.viewDidAppear(animated)
         codeTFs[0].becomeFirstResponder()
         delegate.updateAppearanceOf(NextStepButton: nextStepButton)
+        
+        sendCodeAgain()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -111,8 +117,8 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     }
     
     private func showAnswerInfoErrMessage(){
-        self.answerInfoTF.text = "Código inválido"
-        self.answerInfoTF.textColor = RequestState.canceled.colorForState()
+        self.answerInfoTF.text = "Invalid code"
+        self.answerInfoTF.textColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
     }
     
     private func showAnswerInfoDefaultMessage(){
@@ -123,24 +129,23 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     
     @IBAction func codeNotReceivedAction(_ sender: UIButton) {
 
-        let alertC = UIAlertController(title: "Validação", message: "Enviar código Novamente", preferredStyle: .actionSheet)
+        let alertC = UIAlertController(title: "Validation", message: "Send code again", preferredStyle: .actionSheet)
         
-        if let unmaskedNumber = self.delegate.answers![ProfAccount_Keys.phone_number] as? String{
-            let number = unmaskedNumber.replacingOccurrences(of: "55", with: "")
-            let toNumber = UIAlertAction(title: "Por SMS - "+number, style: .default) { (_) in
+        if let unmaskedNumber = self.delegate.answers!["phoneNumber"] as? String{
+            let toNumber = UIAlertAction(title: "SMS - "+unmaskedNumber, style: .default) { (_) in
                 self.sendCodeAgain(By:.sms)
             }
             alertC.addAction(toNumber)
         }
         
-        if let email = self.delegate.answers![ProfAccount_Keys.email] as? String{
-            let toEmail = UIAlertAction(title: "Por Email - "+email, style: .default) { (_) in
+        if let email = self.delegate.answers!["email"] as? String{
+            let toEmail = UIAlertAction(title: "Email - "+email, style: .default) { (_) in
                 self.sendCodeAgain(By:.email)
             }
             alertC.addAction(toEmail)
         }
 
-        let cancel = UIAlertAction(title: "Cancelar", style: .cancel) { (_) in}
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (_) in}
         alertC.addAction(cancel)
         
         if let popoverController = alertC.popoverPresentationController {// IPAD
@@ -162,17 +167,8 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     }
 
     internal func sendCodeAgain(By by:CodeTransport = .sms){
-        let jwtBodyDict = User.getBodyOfToken(User.getToken()!)!
-        if let id = jwtBodyDict[JWT_Keys.id] as? String{
-            Professional_CRUD.requestNewCode(ID: id,By: by, completion: { (success, jsonData) in
-                if success{
-                    print(jsonData ?? "sendCodeAgain - no data")
-                }
-                else{
-                    print("ERROR")
-                    print(jsonData ?? "sendCodeAgain - no data")
-                }
-            })
+        DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+            LocalNotification.showValidationCodeNotif(WithCode: "1239")
         }
     }
     
@@ -180,68 +176,42 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
      This method tries to validate the current account with typed code
      */
     private func validateAccount(){
+        let alert = UIAlertController(title: "Validating", message: nil, preferredStyle: .alert)
+        self.present(alert, animated: true, completion: nil)
         
-        //let alert = UIView.showLoadingAlert(OnVC: self, WithTitle: "Validando")
-        let jwtBodyDict = User.getBodyOfToken(User.getToken()!)!
-
-        if let id = jwtBodyDict[JWT_Keys.id] as? String{
-            //ActivityIndicatorHelper.showLoadingActivity(AtView: self.view, withDetailText: "Verificando", animated: true)
-            let alert = UIAlertController(title: "Verificando", message: nil, preferredStyle: .alert)
-            self.present(alert, animated: true, completion: nil)
-            
-            self.loadingMode(Loading: true)
-            
-            Professional_CRUD.validateAccountWith(ID: id,Code:typedCode()!, completion: { (success,jsonData) in
-                
-                DispatchQueue.main.async {
-                    self.codeDelegate.isServerSideValid = success
-                    //ActivityIndicatorHelper.hideActivity(AtView: self.view, animated: true, async: true)
-                    alert.dismiss(animated: true, completion: {
+        self.loadingMode(Loading: true)
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            let success = true
+            let validCode = true
+            DispatchQueue.main.async {
+                self.codeDelegate.isServerSideValid = validCode
+                alert.dismiss(animated: true, completion: {
+                    
+                    self.loadingMode(Loading: false)
+                    
+                    if success && validCode{
+                        UIAlertControllerShorcuts.showOKAlert(OnVC: self, Title: "Account Validation", Message: "Your account was validated with success.", OKAction: { (_) in
+                            self.goToNextStep()
+                        })
+                    }
+                    else{
                         
-                        self.loadingMode(Loading: false)
-                        
-                        if success{
-                            
-                            if let dict = jsonData, let professional = Professional(JSON: dict){
-                                
-                                UpmeSingleton.sharedInstance.professional = professional
-                                
-                                UpmeSingleton.sharedInstance.professional?.save(UpdateIfExists: true)
-                                
-                                UpmeSingleton.sharedInstance.cleanUpOtherProfessionalsData()
-                                
-                            }
-                            
-                            print("Open the app")
-                            let okAction = UIAlertAction(title: "OK", style: .default, handler: { (acion) in
-                                self.goToNextStep()
-                            })
-                            
-                            UIView.showAlert(OnVC: self, WithTitle: nil, Message: "Conta ativada com sucesso", AndActions: [okAction])
-                        }
-                        else{
-                            
-                            self.codeTFs[0].becomeFirstResponder()
-                            if let data = jsonData{
-                                if let code = RequestError.errorOnDict(data), code == RequestError.Code.AUT_005{
-                                    self.lastInvalidCodes.append(self.typedCode()!)
-                                }
-                                RequestError.showAlertFor(data: data, onVC: self)
-                            }
-                            else{
-                                let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                                UIView.showAlert(OnVC: self, WithTitle: "Erro", Message: "Não foi possivel validar a sua conta", AndActions: [okAction])
-                            }
-                            
+                        if !validCode{
+                            self.lastInvalidCodes.append(self.typedCode()!)
                             self.clearCode()
                         }
-                        
-                        self.updateAnswerInfoMessage()
-
-                    })
+                        else{
+                            UIAlertControllerShorcuts.showOKAlert(OnVC: self, Title: "Error", Message: "It was not possible to validate your account.")
+                        }
+                    }
                     
-                }
-            })
+                    self.updateAnswerInfoMessage()
+                    
+                })
+                
+            }
         }
     }
     
@@ -262,26 +232,6 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
         }
         return false
     }
-
-    override func goToNextStep() {
-        switch delegate.reviewMode {
-        case .none:
-            
-            if let _ = UpmeSingleton.sharedInstance.professional{
-                super.goToNextStep()
-            }
-            else{
-                self.view.endEditing(true)
-                self.navigationController!.dismiss(animated: true, completion: nil)
-                /*if let appDelegate = UIApplication.shared.delegate as? AppDelegate{
-                 appDelegate.window?.rootViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "UpmeTabBarC")
-                }*/
-            }
-            
-        default:
-            super.goToNextStep()
-        }
-    }
     
     override func didTapNextStepButton(button: UIButton) {
         super.didTapNextStepButton(button: button)
@@ -295,8 +245,8 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
             }
             else{
                 self.codeTFs[0].becomeFirstResponder()
-                let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                UIView.showAlert(OnVC: self, WithTitle:nil , Message: "O código \(typedCode()!) é inválido", AndActions: [okAction])
+                
+                UIAlertControllerShorcuts.showOKAlert(OnVC: self, Title: "The code \(typedCode()!) is invalid.", Message: "Ask for a new code.")
                 self.clearCode()
             }
         }
@@ -308,8 +258,8 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     //MARK: - UILabel methods
     
     internal func setUpQuestionInfoLabel(){
-        let number = (self.delegate.answers![ProfAccount_Keys.phone_number] as! String).replacingOccurrences(of: "55", with: "")
-        questionInfoLabel.text = "Um sms com o código foi enviado para o número "+(SignUpMask.brPhone.applyOnText(text: number))!
+        let number = (self.delegate.answers!["phoneNumber"] as! String)
+        questionInfoLabel.text = "A SMS was send to the number "+number
     }
 
     //MARK: - UITextField methods
@@ -363,11 +313,18 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     }
 }
 
-class SignUpCodeDelegate:DefaultSUpSDelegate{
+/**
+ Override from the same class of 'SignUpConfig.baseStepsDelegate'
+ */
+class SignUpCodeDelegate:ExampleSignUpDelegate{
     
     var isServerSideValid:Bool = false
     
+    required init() {
+        super.init()
+    }
+    
     override func updateAppearanceOf(NextStepButton button: UIButton) {
-        button.setTitle(isServerSideValid ? "Próximo" : "Verificar", for: .normal)
+        button.setTitle(isServerSideValid ? "Next" : "Validate", for: .normal)
     }
 }

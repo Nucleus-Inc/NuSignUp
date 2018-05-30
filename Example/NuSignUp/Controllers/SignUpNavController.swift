@@ -1,15 +1,14 @@
 //
 //  SignUpNavController.swift
-//  Upme-Professional
 //
 //  Created by Nucleus on 08/06/17.
 //  Copyright © 2017 Nucleus. All rights reserved.
 //
 
 import UIKit
+import NuSignUp
 
-
-class SignUpNavController: UINavigationController,SignUpNavigationC {
+class SignUpNavController: UINavigationController,SignUpStackC {
 
     private var progressView:UIProgressView!
 
@@ -41,15 +40,9 @@ class SignUpNavController: UINavigationController,SignUpNavigationC {
 
     
     private func setUpNavigationAppearance(){
-        let tintColor = UIColor(red: 90/255, green: 0, blue: 28/255, alpha: 1)
-        //self.navC.setNavigationBarHidden(true, animated: false)
-        self.navigationBar.barTintColor = UIColor.white//UIColor(red: 194/255, green: 142/255, blue: 74/255, alpha: 1)
-        self.navigationBar.tintColor = tintColor
+        self.navigationBar.barTintColor = UIColor.white
         self.navigationBar.isTranslucent = true
-        
         self.navigationBar.backgroundColor = UIColor.clear//insivible
-        self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:tintColor,
-                                                  NSAttributedStringKey.font:UIFont.systemFont(ofSize: CGFloat(13), weight: UIFont.Weight.bold)]
         self.navigationBar.shadowImage = UIImage()
         self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         
@@ -68,7 +61,7 @@ class SignUpNavController: UINavigationController,SignUpNavigationC {
         }
         else{
             progressView = UIProgressView()
-            progressView.progressTintColor = UIColor(red: 90/255, green: 0/255, blue: 28/255, alpha: 1)
+            progressView.progressTintColor = self.navigationBar.tintColor
             progressView.trackTintColor = UIColor.lightGray.withAlphaComponent(0.3)
             progressView.translatesAutoresizingMaskIntoConstraints = false
             

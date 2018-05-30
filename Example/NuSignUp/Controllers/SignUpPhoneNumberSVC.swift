@@ -1,12 +1,12 @@
 //
 //  SignUpPhoneNumberSVC.swift
-//  Upme-Professional
 //
 //  Created by Nucleus on 08/06/17.
 //  Copyright © 2017 Nucleus. All rights reserved.
 //
 
 import UIKit
+import NuSignUp
 
 class SignUpPhoneNumberSVC: SignUpNameSVC {
     
@@ -30,29 +30,14 @@ class SignUpPhoneNumberSVC: SignUpNameSVC {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-        if segue.identifier == SignUpStepSegues.nextStep.rawValue{
-            let vc = segue.destination as! SignUpCheckDataStepVC
-            vc.controller = UpmeP1CheckDataStepC()
-        }
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    
-    
     //MARK: - PhoneNumberSVC
     private func updateAnswerInfoMessage(){
         lastInvalidNumbers.contains(stepAnswer!) ? showAnswerInfoErrMessage() : showAnswerInfoDefaultMessage()
     }
     
     private func showAnswerInfoErrMessage(){
-        self.answerInfoTF.text = "Telefone já cadastrado"
-        self.answerInfoTF.textColor = RequestState.canceled.colorForState()
+        self.answerInfoTF.text = "This phone number is in use."
+        self.answerInfoTF.textColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
     }
     
     private func showAnswerInfoDefaultMessage(){
@@ -92,34 +77,34 @@ class SignUpPhoneNumberSVC: SignUpNameSVC {
         
         showActivity()
 
-        Professional_CRUD.checkAvailabilityOf(key: key, value: stepAnswer!) { (success, isAvailable) in
-            DispatchQueue.main.async {
-                self.hideActivity()
-                self.loadingMode(Loading: false)
-                if success{
-                    if isAvailable{
-                        
-                        self.isServerSideValid = true
-                        print("Add answer on answers")
-                        self.delegate.addStepAnswer(answer: self.stepAnswer!, forKey: self.key)
-                        self.goToNextStep()
-                        
-                    }
-                    else{
-                        self.answerTF.becomeFirstResponder()
-                        self.isServerSideValid = false
-                        self.lastInvalidNumbers.append(self.stepAnswer!)
-                        self.showAnswerInfoErrMessage()
-                        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                        UIView.showAlert(OnVC: self, WithTitle:nil , Message: "Esse número está em uso. Experimente outro", AndActions: [okAction])
-                    }
+        let success = true
+        let isAvailable = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.hideActivity()
+            self.loadingMode(Loading: false)
+            if success{
+                if isAvailable{
+                    
+                    self.isServerSideValid = true
+                    print("Add answer on answers")
+                    self.delegate.addStepAnswer(answer: self.stepAnswer!, forKey: self.key)
+                    self.goToNextStep()
+                    
                 }
                 else{
                     self.answerTF.becomeFirstResponder()
-                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                    UIView.showAlert(OnVC: self, WithTitle:nil , Message: "Ocorreu um problema na validação", AndActions: [okAction])
+                    self.isServerSideValid = false
+                    self.lastInvalidNumbers.append(self.stepAnswer!)
+                    self.showAnswerInfoErrMessage()
+                    
+                    UIAlertControllerShorcuts.showOKAlert(OnVC: self, Title: nil, Message: "This phone number is in use. Try another one.", OKAction: nil)
                 }
             }
+            else{
+                self.answerTF.becomeFirstResponder()
+                UIAlertControllerShorcuts.showOKAlert(OnVC: self, Title: nil, Message: "It was not possible to validate your phone number.", OKAction: nil)
+            }
+
         }
     }
     
@@ -141,8 +126,6 @@ class SignUpPhoneNumberSVC: SignUpNameSVC {
                 validatePhoneNumberOnServer()
             }
             else{
-                /*let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                 UIView.showAlert(OnVC: self, WithTitle:nil , Message: "Email já cadastrado", AndActions: [okAction])*/
                 self.showAnswerInfoErrMessage()
             }
         }

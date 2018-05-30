@@ -19,9 +19,6 @@ public class SignUpStack{
     public static var config:SignUpStack{
         guard let i = instance else{
             instance = SignUpStack()
-            
-            
-            
             return instance!
         }
         return i
@@ -34,11 +31,13 @@ public class SignUpStack{
     }
     
     /**
-     Call this method if you do not want that 'SignUpStepVC'
+     Call this method if you want that 'SignUpStepVC' use as delegate a class that inherit from 'DefaultSUpSDelegate'.
      */
     public func baseStepDelegateType<T:DefaultSUpSDelegate>(_ type:T.Type){
         newDelegateInstance = {
             return T()
         }
     }
+    
+    
 }

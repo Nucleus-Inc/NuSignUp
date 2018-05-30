@@ -44,7 +44,7 @@
 		E0C6D890F30C121ACBDB6CB69C19581E /* ReversedMaskTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B945798D1346ECC3DEC1D1A4823AFB09 /* ReversedMaskTextFieldDelegate.swift */; };
 		E5170574EF7B6A3530D223FD5980CEBE /* InterfaceBuilderSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E270BC1FF7AA46B160A92794C42628F2 /* InterfaceBuilderSupport.swift */; };
 		E78A9EBB303B6478559F2AEF7F8EE7D0 /* FormatSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA93D6D12DF6416CCD2E1B4CD131E6 /* FormatSanitizer.swift */; };
-		EE379DFF20BEEFA800E1422E /* SignUpStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379DFD20BEEAE600E1422E /* SignUpStack.swift */; };
+		EE379E0920BF3D2800E1422E /* SignUpStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379E0820BF3D2800E1422E /* SignUpStack.swift */; };
 		F96180E0A5D820795B961E98F09C8964 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EAEE4EBB3BB6FBFD2DCB94E2C9A71 /* State.swift */; };
 		FD794DD24A21C3D18B99ECFD2ADB6C3E /* SignUpStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BA3BA192D4C4CEE0DBF45E52B728F /* SignUpStepVC.swift */; };
 /* End PBXBuildFile section */
@@ -143,7 +143,7 @@
 		E3410B5BD7E8BE6F4F7E6124AD8CE5C5 /* InputMask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputMask.xcconfig; sourceTree = "<group>"; };
 		E4F4FB653F4D63E6ABACB79ACECF6BEC /* Pods_NuSignUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BE762CE739F4B4EC3CF3856878874A /* InputMask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InputMask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE379DFD20BEEAE600E1422E /* SignUpStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStack.swift; sourceTree = "<group>"; };
+		EE379E0820BF3D2800E1422E /* SignUpStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpStack.swift; path = NuSignUp/Classes/SignUpStack.swift; sourceTree = "<group>"; };
 		EFB6D87B56AF057309103B48A7DB7305 /* Pods-NuSignUp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F2051740124A272C330581E394F66F3D /* InputMask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InputMask-dummy.m"; sourceTree = "<group>"; };
 		F45528F38B40AC4FFA0E1378AD5EA5CB /* Notation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notation.swift; path = Source/InputMask/InputMask/Classes/Model/Notation.swift; sourceTree = "<group>"; };
@@ -280,7 +280,7 @@
 		6E370F3D4FA86B5510B4BA0BF668D7E9 /* NuSignUp */ = {
 			isa = PBXGroup;
 			children = (
-				EE379DFD20BEEAE600E1422E /* SignUpStack.swift */,
+				EE379E0820BF3D2800E1422E /* SignUpStack.swift */,
 				851CB24C306888E77BCD93D8AA6C9E6D /* DefaultSignUpStepC.swift */,
 				B8F4E286CA27FD8C4D0E02695D8935A0 /* SignUpExtensions.swift */,
 				5322A7E3972706D9E389FEFF38D748D7 /* SignUpHelper.swift */,
@@ -535,7 +535,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A796876CC0B336A5DD8AAF794D032414 /* DefaultSignUpStepC.swift in Sources */,
-				EE379DFF20BEEFA800E1422E /* SignUpStack.swift in Sources */,
 				C45356DAA0AD8853C457DCF5CDB8CB4A /* NuSignUp-dummy.m in Sources */,
 				D1D96AF5163091B0FB54166E0290608F /* SignUpExtensions.swift in Sources */,
 				C58F58D1D0A1BCAFB0C236A48C7F88EF /* SignUpHelper.swift in Sources */,
@@ -553,6 +552,7 @@
 				9205CC519D437F11620BD9ABC7276CC4 /* CaretStringIterator.swift in Sources */,
 				7DB767CAC8D72839304C7C62293F3A7E /* Compiler.swift in Sources */,
 				A51E8B0D55F16B1A212F87A61309C7D0 /* EOLState.swift in Sources */,
+				EE379E0920BF3D2800E1422E /* SignUpStack.swift in Sources */,
 				2F14656E207A77C872213FAFDDF8CE6E /* FixedState.swift in Sources */,
 				E78A9EBB303B6478559F2AEF7F8EE7D0 /* FormatSanitizer.swift in Sources */,
 				05A7856300DBA738A946EED6311BCAA9 /* FreeState.swift in Sources */,

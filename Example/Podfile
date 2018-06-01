@@ -3,6 +3,8 @@ use_frameworks!
 target 'NuSignUp_Example' do
   pod 'NuSignUp', :path => '../'
 
+  pod 'InputMask', '~> 3.4'#add mask to text on TextField
+
   target 'NuSignUp_Tests' do
     inherit! :search_paths
 

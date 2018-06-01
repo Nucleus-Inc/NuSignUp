@@ -15,15 +15,15 @@ public protocol SignUpStackC{
 
 public enum SignUpStepSegues:String{
     case nextStep = "nextStep"
-    case reviewStepNextStep = "reviewStepNS"
-    case reviewSectionNextStep = "reviewSectionNS"
+    //case reviewStepNextStep = "reviewStepNS"
+    //case reviewSectionNextStep = "reviewSectionNS"
 }
 
 public enum SignUpReviewMode:Int{
     case none = 0
-    case section = 1
+    //case section = 1
     case step_pop = 2
-    case step_push = 3
+    //case step_push = 3
 }
 
 public typealias PopReviewBlock = (_ updatedAnswers:[String:Any]?)->Void

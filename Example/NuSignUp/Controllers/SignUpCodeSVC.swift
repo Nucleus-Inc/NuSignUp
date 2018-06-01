@@ -32,8 +32,7 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     var lastInvalidCodes:[String] = []
 
     private var codeDelegate:SignUpCodeDelegate = SignUpCodeDelegate()
-    
-    
+        
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.delegate = codeDelegate

@@ -22,7 +22,7 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
         }
     }
     
-    public var delegate: SignUpStepDelegate = SignUpStack.config.newDelegateInstance()
+    open var delegate: SignUpStepDelegate = SignUpStack.config.newDelegateInstance()
     
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -95,10 +95,10 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
         let reviewMode = self.delegate.reviewMode
         let answers = delegate.answers
         switch reviewMode {
-        case .section:
+        /*case .section:
             self.performSegue(withIdentifier: SignUpStepSegues.reviewSectionNextStep.rawValue, sender: answers)
         case .step_push:
-            self.performSegue(withIdentifier: SignUpStepSegues.reviewStepNextStep.rawValue, sender: answers)
+            self.performSegue(withIdentifier: SignUpStepSegues.reviewStepNextStep.rawValue, sender: answers)*/
         case .step_pop:
             if let nav = self.navigationController{
                 nav.popViewController(animated: true)

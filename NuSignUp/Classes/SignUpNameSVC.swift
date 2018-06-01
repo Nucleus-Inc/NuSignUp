@@ -33,9 +33,6 @@ open class SignUpNameSVC: SignUpStepVC {
     
     /**
      Minimum number of characters the answer has to contain
-     If you define a mask this value will has the same value of 
-     
-     'MaskedTextFieldDelegate.acceptableTextLength'
      */
     @IBInspectable public var minCharacters:Int = 0
     

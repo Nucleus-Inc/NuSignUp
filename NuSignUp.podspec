@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NuSignUp'
   s.version          = '0.4.0'
-  s.summary          = 'The basic configuration of signup'
+  s.summary          = 'The basic configuration of a sign up flow, it is like a pattern. ;)'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-" This a library that execute all the basic configuration necessary to create a simple sigup view"
+"Most applications need a sign up flow, so thinking about it I created this project with all basic configurations to turn the process faster and easy to customize. So if you are looking a way to make the sign up flow of your application and do not know how to start, this is the project you are looking for."
                        DESC
 
   s.homepage         = 'https://github.com/Nucleus-Inc/NuSignUp'

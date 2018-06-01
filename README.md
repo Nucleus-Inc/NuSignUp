@@ -1,7 +1,6 @@
 # NuSignUp
 
 [![CI Status](http://img.shields.io/travis/Nucleus-Inc/NuSignUp.svg?style=flat)](https://travis-ci.org/Nucleus-Inc/NuSignUp)
-[![CI Status](http://img.shields.io/travis/José Lucas/NuSignUp.svg?style=flat)](https://travis-ci.org/José Lucas/NuSignUp)
 [![Version](https://img.shields.io/cocoapods/v/NuSignUp.svg?style=flat)](http://cocoapods.org/pods/NuSignUp)
 [![License](https://img.shields.io/cocoapods/l/NuSignUp.svg?style=flat)](http://cocoapods.org/pods/NuSignUp)
 [![Platform](https://img.shields.io/cocoapods/p/NuSignUp.svg?style=flat)](http://cocoapods.org/pods/NuSignUp)

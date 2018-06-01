@@ -11,14 +11,22 @@ import UserNotifications
 
 class LocalNotification{
     
-    class func showValidationCodeNotif(WithCode code:String){
+    class func showValidationCodeNotif(WithCode code:String,Delay delay:TimeInterval = 3){
         let content = UNMutableNotificationContent()
 
         content.title = "NuSignUp Example"
         content.body = "VALIDATION CODE: "+code//"Avaliação \(index + 1) de \(times.count)"
         
         let id = "\(Date().timeIntervalSince1970)"
-        let localNotif = UNNotificationRequest(identifier: id, content: content, trigger: nil)
+        
+        var trigger:UNCalendarNotificationTrigger?
+        if delay > 0{
+            let calendar = Calendar.current
+            let component = calendar.dateComponents([.year,.day,.month,.hour,.minute,.second], from: Date()+delay)
+            trigger = UNCalendarNotificationTrigger(dateMatching: component, repeats: false)
+        }
+
+        let localNotif = UNNotificationRequest(identifier: id, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(localNotif, withCompletionHandler: { (error) in
             guard let _ = error else{
                 return

@@ -58,8 +58,6 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
         super.viewDidAppear(animated)
         codeTFs[0].becomeFirstResponder()
         delegate.updateAppearanceOf(NextStepButton: nextStepButton)
-        
-        sendCodeAgain()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -127,7 +125,7 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
 
     
     @IBAction func codeNotReceivedAction(_ sender: UIButton) {
-
+        self.view.endEditing(true)
         let alertC = UIAlertController(title: "Validation", message: "Send code again", preferredStyle: .actionSheet)
         
         if let unmaskedNumber = self.delegate.answers!["phoneNumber"] as? String{
@@ -166,9 +164,7 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     }
 
     internal func sendCodeAgain(By by:CodeTransport = .sms){
-        DispatchQueue.main.asyncAfter(deadline: .now()+1) {
-            LocalNotification.showValidationCodeNotif(WithCode: "1239")
-        }
+        LocalNotification.showValidationCodeNotif(WithCode: "1239")
     }
     
     /**
@@ -258,7 +254,7 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     
     internal func setUpQuestionInfoLabel(){
         let number = (self.delegate.answers!["phoneNumber"] as! String)
-        questionInfoLabel.text = "A SMS was send to the number "+number
+        questionInfoLabel.text = "A SMS was send to the number "+number+". This is only an example so any code is valid ;)"
     }
 
     //MARK: - UITextField methods

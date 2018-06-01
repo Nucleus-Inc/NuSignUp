@@ -22,13 +22,13 @@
 		EE379DF220BEC0AE00E1422E /* SignUpCheckDataStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379DF120BEC0AD00E1422E /* SignUpCheckDataStepVC.swift */; };
 		EE379DF420BEC0B200E1422E /* ExampleSignUpCheckDataStepC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379DF320BEC0B200E1422E /* ExampleSignUpCheckDataStepC.swift */; };
 		EE379DF620BEC41C00E1422E /* UIAlertControllerShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379DF520BEC41C00E1422E /* UIAlertControllerShortcuts.swift */; };
-		EE379DF820BEC83300E1422E /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379DF720BEC83300E1422E /* LocalNotification.swift */; };
 		EE379DFA20BEDBB500E1422E /* SignUpNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379DF920BEDBB400E1422E /* SignUpNavController.swift */; };
 		EE379DFC20BEE3E900E1422E /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379DFB20BEE3E900E1422E /* FinishViewController.swift */; };
 		EE379E0120BEF59500E1422E /* ExampleSignUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379E0020BEF59500E1422E /* ExampleSignUpDelegate.swift */; };
 		EE379E0320BEF66600E1422E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379E0220BEF66600E1422E /* StartViewController.swift */; };
 		EE379E0520BF0D8400E1422E /* FirstStepSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379E0420BF0D8400E1422E /* FirstStepSVC.swift */; };
 		EE379E0720BF338400E1422E /* SignUpMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379E0620BF338400E1422E /* SignUpMask.swift */; };
+		EE8F605420C19104005979C8 /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8F605320C19104005979C8 /* LocalNotification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,13 +68,13 @@
 		EE379DF120BEC0AD00E1422E /* SignUpCheckDataStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpCheckDataStepVC.swift; sourceTree = "<group>"; };
 		EE379DF320BEC0B200E1422E /* ExampleSignUpCheckDataStepC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleSignUpCheckDataStepC.swift; sourceTree = "<group>"; };
 		EE379DF520BEC41C00E1422E /* UIAlertControllerShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerShortcuts.swift; sourceTree = "<group>"; };
-		EE379DF720BEC83300E1422E /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		EE379DF920BEDBB400E1422E /* SignUpNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNavController.swift; sourceTree = "<group>"; };
 		EE379DFB20BEE3E900E1422E /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		EE379E0020BEF59500E1422E /* ExampleSignUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSignUpDelegate.swift; sourceTree = "<group>"; };
 		EE379E0220BEF66600E1422E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		EE379E0420BF0D8400E1422E /* FirstStepSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepSVC.swift; sourceTree = "<group>"; };
 		EE379E0620BF338400E1422E /* SignUpMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMask.swift; sourceTree = "<group>"; };
+		EE8F605320C19104005979C8 /* LocalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,8 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				EE379DEF20BEC05500E1422E /* JLProgressView.swift */,
+				EE8F605320C19104005979C8 /* LocalNotification.swift */,
 				EE379DF520BEC41C00E1422E /* UIAlertControllerShortcuts.swift */,
-				EE379DF720BEC83300E1422E /* LocalNotification.swift */,
 				EE379E0020BEF59500E1422E /* ExampleSignUpDelegate.swift */,
 				EE379E0620BF338400E1422E /* SignUpMask.swift */,
 			);
@@ -388,6 +388,7 @@
 				EE379E0320BEF66600E1422E /* StartViewController.swift in Sources */,
 				EE379DF420BEC0B200E1422E /* ExampleSignUpCheckDataStepC.swift in Sources */,
 				EE379DF620BEC41C00E1422E /* UIAlertControllerShortcuts.swift in Sources */,
+				EE8F605420C19104005979C8 /* LocalNotification.swift in Sources */,
 				EE379DBE20BEBE6400E1422E /* SignUpEmailSVC.swift in Sources */,
 				EE379DC420BEBEA800E1422E /* SignUpCodeSVC.swift in Sources */,
 				EE379DFC20BEE3E900E1422E /* FinishViewController.swift in Sources */,
@@ -396,7 +397,6 @@
 				EE379DFA20BEDBB500E1422E /* SignUpNavController.swift in Sources */,
 				EE379DF020BEC05500E1422E /* JLProgressView.swift in Sources */,
 				EE379DEC20BEBFDF00E1422E /* SignUpPasswordSVC.swift in Sources */,
-				EE379DF820BEC83300E1422E /* LocalNotification.swift in Sources */,
 				EE379E0720BF338400E1422E /* SignUpMask.swift in Sources */,
 				EE379DED20BEBFDF00E1422E /* SignUpPhoneNumberSVC.swift in Sources */,
 				EE379E0520BF0D8400E1422E /* FirstStepSVC.swift in Sources */,

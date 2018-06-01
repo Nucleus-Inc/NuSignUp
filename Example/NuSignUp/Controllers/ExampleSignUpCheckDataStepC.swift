@@ -17,8 +17,9 @@ public class ExampleSignUpCheckDataStepC:SignUpCheckDataStepC{
     
     public func didTapNextStep(_ answers:[String : Any], onVC vc: UIViewController, completion: @escaping (Bool,[String:Any]?) -> ()) {
         
+        LocalNotification.showValidationCodeNotif(WithCode: "1235",Delay: 5)
         completion(true,[:])
-
+        
     }
     
     

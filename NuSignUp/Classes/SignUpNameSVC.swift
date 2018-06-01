@@ -101,7 +101,7 @@ open class SignUpNameSVC: SignUpStepVC {
             guard let regex = regex else{
                 return text.count >= minCharacters
             }
-            
+            //http://nshipster.com/nsregularexpression/
             let predicate = NSPredicate(format:"SELF MATCHES %@", regex)
             let matches = predicate.evaluate(with: text)
             return text.count >= minCharacters && matches

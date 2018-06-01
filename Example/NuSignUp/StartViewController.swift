@@ -8,6 +8,7 @@
 
 import UIKit
 import NuSignUp
+import UserNotifications
 
 class StartViewController: UIViewController {
 
@@ -15,6 +16,21 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         SignUpStack.config.baseStepDelegateType(ExampleSignUpDelegate.self)
         // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UNUserNotificationCenter.current().requestAuthorization(options:[.alert, .sound]) {
+            (granted, error) in
+            print("Permission granted: \(granted)")
+            guard granted else {
+                UIAlertControllerShorcuts.showOKAlert(OnVC: self, Title: "Local Notification", Message: "These notifications will only be used to simulate receiving a code for sign up.")
+                return
+            }
+        }
+
     }
 
     override func didReceiveMemoryWarning() {

@@ -47,9 +47,11 @@ override open func viewWillAppear(_ animated: Bool) {
 Each Sign Up Step VC must implement `SignUpStepController`.
 
 Steps that are an instance of `SignUpStepVC` or `SignUpNameSVC` or inherits from one of them have by default its delegate value equals to `DefaultSUpSDelegate` instance. 
+
 Probably you will need to make your changes and `DefaultSUpSDelegate` implementation of `SignUpStepDelegate` protocol will not be enough, for these cases you have two options:
 
-- Option 1: Your Step is an instance of `SignUpStepVC` or `SignUpNameSVC`
+- Option 1: Your Step is an instance of `SignUpStepVC` or `SignUpNameSVC`.
+
 You can change its `delegate` param value by calling:
 
 ```swift
@@ -59,7 +61,9 @@ SignUpStack.config.baseStepDelegateType(ExampleSignUpDelegate.self)
 Remember that doing it all your steps that are an instance of  `SignUpStepVC` will use `ExampleSignUpDelegate` instance as its delegate.
 
 - Option 2: Your Step inherits from `SignUpStepVC` or `SignUpNameSVC`. 
+
 Only change its delegate value.
+
 Take a look on Example project specifically on `SignUpCodeSVC` class for a safe way to do it.
 
 

@@ -25,9 +25,9 @@ open class SignUpNameSVC: SignUpStepVC {
     /**
      Regex to test the answer
      */
-    @IBInspectable public var regex:String?
+    @IBInspectable open var regex:String?
     
-    public var stepAnswer:String?{
+    open var stepAnswer:String?{
         return answerTF.text
     }
     
@@ -87,6 +87,16 @@ open class SignUpNameSVC: SignUpStepVC {
         self.answerTF.rightViewMode = .never
     }
     
+    //return TRUE if regex == nil
+    open func matchesRegex(text:String)->Bool{
+        //http://nshipster.com/nsregularexpression/
+        guard let regex = regex else{
+            return true
+        }
+        let predicate = NSPredicate(format:"SELF MATCHES %@", regex)
+        return predicate.evaluate(with: text)
+    }
+    
     //MARK: - SignUpStepController methods
     override open func didTapNextStepButton(button: UIButton) {
         super.didTapNextStepButton(button: button)
@@ -98,13 +108,7 @@ open class SignUpNameSVC: SignUpStepVC {
     
     override open func shouldPresentNextStepButton() -> Bool {
         if let text = stepAnswer{
-            guard let regex = regex else{
-                return text.count >= minCharacters
-            }
-            //http://nshipster.com/nsregularexpression/
-            let predicate = NSPredicate(format:"SELF MATCHES %@", regex)
-            let matches = predicate.evaluate(with: text)
-            return text.count >= minCharacters && matches
+            return text.count >= minCharacters && matchesRegex(text: text)
         }
         return false
     }

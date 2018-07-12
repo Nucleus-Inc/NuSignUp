@@ -9,6 +9,7 @@ import UIKit
 import NuSignUp
 
 class SignUpPhoneNumberSVC: SignUpNameSVC {
+    var maskRegex:String? = "([0-9]{3})([0-9]{3})([0-9]{4})"
     
     private var defaultMessage:String?
     private var defaultColor:UIColor?
@@ -17,7 +18,12 @@ class SignUpPhoneNumberSVC: SignUpNameSVC {
     internal var sendingData:Bool = false
     
     var lastInvalidNumbers:[String] = []
+    
+    var unmaskedAnswer: String?{
+        return self.stepAnswer?.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "-", with: "")
+    }
 
+    
     override func viewDidLoad() {
         defaultMessage = answerInfoTF.text
         defaultColor = answerInfoTF.textColor
@@ -45,18 +51,6 @@ class SignUpPhoneNumberSVC: SignUpNameSVC {
         self.answerInfoTF.textColor = defaultColor
     }
     
-    /*
-    override func addStepAnswer() {
-        guard let _ = answers else{
-            self.answers = [String:Any]()
-            self.answers![key] = stepAnswer!
-            return
-        }
-        
-        self.answers![key] = stepAnswer!
-    }
-     */
-        
     private func showActivity(){
         let view = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         view.hidesWhenStopped = true
@@ -69,7 +63,17 @@ class SignUpPhoneNumberSVC: SignUpNameSVC {
         self.answerTF.rightView = nil
         self.answerTF.rightViewMode = .never
     }
-
+    
+    override func didChangeText(_ sender: Any) {
+        if let maskRegex = maskRegex{
+            let text = answerTF.text ?? ""
+            let newText = text.replacingOccurrences(of: maskRegex, with: "($1) $2-$3", options: [.regularExpression,.anchored], range: nil)
+            self.answerTF.text = newText
+        }
+        super.didChangeText(sender)
+    }
+    
+    
     //MARK: - Server methods
     
     private func validatePhoneNumberOnServer(){
@@ -131,7 +135,7 @@ class SignUpPhoneNumberSVC: SignUpNameSVC {
         }
         else{
             print("Add answer on answers")
-            delegate.addStepAnswer(answer: self.stepAnswer!, forKey: self.key)
+            delegate.addStepAnswer(answer: self.unmaskedAnswer!, forKey: self.key)
             goToNextStep()
         }
         

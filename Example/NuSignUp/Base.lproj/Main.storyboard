@@ -259,7 +259,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                 <connections>
-                                    <action selector="didChangeText:" destination="eGE-9f-dMb" eventType="editingChanged" id="YVY-S1-Dpi"/>
+                                    <action selector="didChangeText:" destination="eGE-9f-dMb" eventType="editingChanged" id="0d9-pe-PLM"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9H-OD-Nv0">
@@ -333,6 +333,7 @@
                         <userDefinedRuntimeAttribute type="number" keyPath="stepNumber">
                             <integer key="value" value="2"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="regex" value="\([0-9]{3}\)\ [0-9]{3}\-[0-9]{4}"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="answerInfoTF" destination="ODr-eY-Csm" id="4X7-1d-3bs"/>
@@ -1036,7 +1037,7 @@
         <image name="see-password-selected" width="34" height="34"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0l7-e2-JgI"/>
+        <segue reference="6Ok-A1-Dp0"/>
         <segue reference="ybl-7Z-fhq"/>
         <segue reference="F6W-W0-54c"/>
         <segue reference="RNZ-uh-Y54"/>

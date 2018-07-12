@@ -133,7 +133,8 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
             let animationDuration = keyboardInfo[UIKeyboardAnimationDurationUserInfoKey]
             
             let bottomY  = self.view.frame.height - self.buttonDistToBottom.constant
-            let quantToMove = (bottomY + 5) - keyBoardFrame.origin.y - self.navigationController!.navigationBar.frame.height
+            let navHeight = self.navigationController?.navigationBar.frame.height ?? 0
+            let quantToMove = (bottomY + 5) - keyBoardFrame.origin.y - navHeight
             
             buttonDistToBottom.constant += quantToMove + nextStepButton.frame.height //+ 20
             UIView.animate(withDuration: animationDuration as! TimeInterval, animations: {

@@ -22,7 +22,7 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
         }
     }
     
-    open var delegate: SignUpStepDelegate = SignUpStack.config.newDelegateInstance()
+    open var delegate: SignUpStepDelegate = SignUpStack.config.delegateInstance
     
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -48,22 +48,7 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override open func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let step = segue.destination as? SignUpStepController{
-            step.delegate.answers = delegate.answers
-        }
-        else if let navStep = segue.destination as? UINavigationController, let _ = navStep.viewControllers[0] as? SignUpStepController{
-            //step.answers = answers
-        }
         
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    
     
     @IBAction func nextStepAction(_ sender: UIButton) {
         didTapNextStepButton(button: sender)

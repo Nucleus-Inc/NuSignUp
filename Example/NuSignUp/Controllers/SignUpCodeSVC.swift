@@ -35,11 +35,14 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
         
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        codeDelegate.answers = delegate.answers
         self.delegate = codeDelegate
+        print("")
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        codeDelegate.answers = delegate.answers
         self.delegate = codeDelegate
     }
     

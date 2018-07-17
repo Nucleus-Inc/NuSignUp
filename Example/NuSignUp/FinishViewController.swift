@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NuSignUp
 
 class FinishViewController: UIViewController {
 
@@ -23,6 +24,7 @@ class FinishViewController: UIViewController {
     
     @IBAction func restart(_ sender: UIButton) {
         let presentingVC = self.presentingViewController
+        SignUpStack.config.finishSignUp()
         self.dismiss(animated: true) {
             presentingVC?.dismiss(animated: true, completion: nil)
         }

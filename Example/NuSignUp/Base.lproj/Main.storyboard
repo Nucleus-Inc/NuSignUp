@@ -333,7 +333,7 @@
                         <userDefinedRuntimeAttribute type="number" keyPath="stepNumber">
                             <integer key="value" value="2"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="regex" value="\([0-9]{3}\)\ [0-9]{3}\-[0-9]{4}"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="regex" value="\+[1]\ \([0-9]{3}\)\ [0-9]{3}\-[0-9]{4}"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="answerInfoTF" destination="ODr-eY-Csm" id="4X7-1d-3bs"/>

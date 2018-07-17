@@ -9,7 +9,8 @@ import UIKit
 import NuSignUp
 
 class SignUpPhoneNumberSVC: SignUpNameSVC {
-    var maskRegex:String? = "([0-9]{3})([0-9]{3})([0-9]{4})"
+    var maskRegex:String? = "([0-9]{3})([0-9]{3})([0-9]{4})" //USA
+    var replacementRole:String? = "+1 ($1) $2-$3" //USA
     
     private var defaultMessage:String?
     private var defaultColor:UIColor?
@@ -20,7 +21,7 @@ class SignUpPhoneNumberSVC: SignUpNameSVC {
     var lastInvalidNumbers:[String] = []
     
     var unmaskedAnswer: String?{
-        return self.stepAnswer?.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "-", with: "")
+        return self.stepAnswer?.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "").replacingOccurrences(of: "-", with: "").replacingOccurrences(of: "+", with: "")
     }
 
     
@@ -65,9 +66,9 @@ class SignUpPhoneNumberSVC: SignUpNameSVC {
     }
     
     override func didChangeText(_ sender: Any) {
-        if let maskRegex = maskRegex{
+        if let maskRegex = maskRegex, let replacement = replacementRole{
             let text = answerTF.text ?? ""
-            let newText = text.replacingOccurrences(of: maskRegex, with: "($1) $2-$3", options: [.regularExpression,.anchored], range: nil)
+            let newText = text.replacingOccurrences(of: maskRegex, with: replacement, options: [.regularExpression,.anchored], range: nil)
             self.answerTF.text = newText
         }
         super.didChangeText(sender)

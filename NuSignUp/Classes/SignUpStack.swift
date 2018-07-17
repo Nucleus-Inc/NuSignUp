@@ -26,18 +26,19 @@ public class SignUpStack{
     
     private init(){}
     
-    var newDelegateInstance:NewDelegateIntance = {
-        return DefaultSUpSDelegate()
-    }
+    var delegateInstance:SignUpStepDelegate = DefaultSUpSDelegate()
     
+    
+    
+    public func finishSignUp(){
+        delegateInstance.answers?.removeAll()
+    }
     /**
      Call this method if you want that 'SignUpStepVC' use as delegate a class that inherit from 'DefaultSUpSDelegate'.
      Take a look on example project for more details.
      */
     public func baseStepDelegateType<T:DefaultSUpSDelegate>(_ type:T.Type){
-        newDelegateInstance = {
-            return T()
-        }
+        delegateInstance = T()
     }
     
     

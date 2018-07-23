@@ -44,7 +44,7 @@
 		E5170574EF7B6A3530D223FD5980CEBE /* InterfaceBuilderSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E270BC1FF7AA46B160A92794C42628F2 /* InterfaceBuilderSupport.swift */; };
 		E78A9EBB303B6478559F2AEF7F8EE7D0 /* FormatSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA93D6D12DF6416CCD2E1B4CD131E6 /* FormatSanitizer.swift */; };
 		EC0CE324CAC0BB6CB18CB2B4A17D8B98 /* DefaultSignUpStepC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63814EEA8739227D86ABF8E075268660 /* DefaultSignUpStepC.swift */; };
-		EE1824C12105F053004DDC83 /* InfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1824C02105F053004DDC83 /* InfoLabel.swift */; };
+		EE1824C421060CEA004DDC83 /* InfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1824C221060CE4004DDC83 /* InfoLabel.swift */; };
 		EF1429E290701B164A8FAFFC247E3DB4 /* SignUpStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110745C9380AA014EA548DFEF15FB6AD /* SignUpStack.swift */; };
 		F96180E0A5D820795B961E98F09C8964 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EAEE4EBB3BB6FBFD2DCB94E2C9A71 /* State.swift */; };
 /* End PBXBuildFile section */
@@ -137,7 +137,7 @@
 		E3410B5BD7E8BE6F4F7E6124AD8CE5C5 /* InputMask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputMask.xcconfig; sourceTree = "<group>"; };
 		E4F4FB653F4D63E6ABACB79ACECF6BEC /* Pods_NuSignUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BE762CE739F4B4EC3CF3856878874A /* InputMask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InputMask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE1824C02105F053004DDC83 /* InfoLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoLabel.swift; sourceTree = "<group>"; };
+		EE1824C221060CE4004DDC83 /* InfoLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoLabel.swift; path = NuSignUp/Classes/InfoLabel.swift; sourceTree = "<group>"; };
 		EFB6D87B56AF057309103B48A7DB7305 /* Pods-NuSignUp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F2051740124A272C330581E394F66F3D /* InputMask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InputMask-dummy.m"; sourceTree = "<group>"; };
 		F45528F38B40AC4FFA0E1378AD5EA5CB /* Notation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notation.swift; path = Source/InputMask/InputMask/Classes/Model/Notation.swift; sourceTree = "<group>"; };
@@ -350,7 +350,7 @@
 		FD845D3F281F9988972543E17807672E /* NuSignUp */ = {
 			isa = PBXGroup;
 			children = (
-				EE1824C02105F053004DDC83 /* InfoLabel.swift */,
+				EE1824C221060CE4004DDC83 /* InfoLabel.swift */,
 				63814EEA8739227D86ABF8E075268660 /* DefaultSignUpStepC.swift */,
 				B28B91C6E2D5A1B6134F7A8EB99C18F7 /* SignUpExtensions.swift */,
 				1FBD77B3C7F6D3D281C4990DA2891B71 /* SignUpHelper.swift */,
@@ -552,7 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE1824C12105F053004DDC83 /* InfoLabel.swift in Sources */,
+				EE1824C421060CEA004DDC83 /* InfoLabel.swift in Sources */,
 				EC0CE324CAC0BB6CB18CB2B4A17D8B98 /* DefaultSignUpStepC.swift in Sources */,
 				3EE527FDB4C79B87BA62FAB1D45270D2 /* NuSignUp-dummy.m in Sources */,
 				9363CA940DA440C4D4FA6ADB6C5A2083 /* SignUpExtensions.swift in Sources */,

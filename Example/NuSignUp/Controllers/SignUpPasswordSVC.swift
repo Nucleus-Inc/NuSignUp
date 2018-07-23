@@ -17,13 +17,11 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
 
     @IBOutlet weak var seePasswordButton: UIButton!
 
-    @IBOutlet weak var confirmInfoLabel: UILabel!
+    @IBOutlet weak var confirmInfoLabel: InfoLabel!
     private var defaultConfirmMessage:String?
-    private var defaultConfirmColor:UIColor?
     
-    @IBOutlet weak var answerInfoLabel: UILabel!
+    @IBOutlet weak var answerInfoLabel: InfoLabel!
     private var defaultPInfoMessage:String?
-    private var defaultPInfoColor:UIColor?
 
     
     @IBOutlet weak var passwordStrengthView: JLProgressView!
@@ -77,37 +75,44 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
         var color:UIColor!
         var value:Int = score
         var message:String!
+        var style:InfoLabel.Style = .normal
         
         switch score {
         case 0:
-            color = UIColor(red: 200/255, green: 38/255, blue: 71/255, alpha: 1)//.red
+            color = answerInfoLabel.errorTextColor
+            style = .error
             message = "Weak"
         case 1:
-            color = UIColor(red: 200/255, green: 38/255, blue: 71/255, alpha: 1)//.red
+            color = answerInfoLabel.errorTextColor
+            style = .error
             message = "Weak"
         case 2:
-            color = UIColor(red: 254/255, green: 193/255, blue: 6/255, alpha: 1)
+            color = answerInfoLabel.warningTextColor
+            style = .warning
             message = "Regular"
         case 3:
-            color = UIColor(red: 254/255, green: 193/255, blue: 6/255, alpha: 1)
+            color = answerInfoLabel.warningTextColor
+            style = .warning
             message = "Regular"
         case 4:
-            color = UIColor(red: 113/255, green: 186/255, blue: 81/255, alpha: 1)
+            color = answerInfoLabel.successTextColor
+            style = .success
             message = "Strong"
         default:
-            color = UIColor(red: 113/255, green: 186/255, blue: 81/255, alpha: 1)
+            color = answerInfoLabel.successTextColor
+            style = .success
         }
         
         self.scoreForPassword[password] = score
         
         if password.count < self.minCharacters{
             value = 0
-            color = UIColor(red: 200/255, green: 38/255, blue: 71/255, alpha: 1)//.red
+            style = .error
             message = "Too Weak"
         }
         
         self.passwordStrengthView.updateToStep(value + 1, WithColor: color)
-        self.updateAnswerInfoLabel(text: message, textColor: color)
+        self.updateAnswerInfoLabel(text: message,style: style)
     }
     
     private func updatePasswordStrength(){
@@ -128,7 +133,7 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
                     }
                     else{
                         self.passwordStrengthView.updateToStep(0, WithColor: nil)
-                        self.updateAnswerInfoLabel(text: self.defaultPInfoMessage, textColor: self.defaultPInfoColor!)
+                        self.updateAnswerInfoLabel(text: self.defaultPInfoMessage,style: .normal)
                     }
                     super.didChangeStepAnswers()
                 }
@@ -138,7 +143,7 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
         }
         else{
             passwordStrengthView.updateToStep(0, WithColor: nil)
-            updateAnswerInfoLabel(text: defaultPInfoMessage, textColor: defaultPInfoColor!)
+            updateAnswerInfoLabel(text: defaultPInfoMessage,style: .normal)
             super.didChangeStepAnswers()
         }
         
@@ -200,24 +205,21 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
     
     private func setUpLabels(){
         defaultConfirmMessage = confirmInfoLabel.text
-        defaultConfirmColor = confirmInfoLabel.textColor
-        
-        defaultPInfoColor = answerInfoLabel.textColor
         defaultPInfoMessage = answerInfoLabel.text
     }
     
-    private func updateAnswerInfoLabel(text:String?,textColor:UIColor){
-        answerInfoLabel.textColor = textColor
+    private func updateAnswerInfoLabel(text:String?,style:InfoLabel.Style){
+        answerInfoLabel.style = style
         answerInfoLabel.text = text
     }
     
     private func updateConfirmLabel(){
         if checkEquality() || !confirmationTF.isEditing{
             confirmInfoLabel.text = defaultConfirmMessage
-            confirmInfoLabel.textColor = defaultConfirmColor
+            confirmInfoLabel.style = .normal
         }
         else{
-            confirmInfoLabel.textColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            confirmInfoLabel.style = .error
             confirmInfoLabel.text = "The typed values are not the same."
         }
     }

@@ -21,10 +21,9 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     
     @IBOutlet var codeTFs: [UITextField]!
     
-    @IBOutlet weak var answerInfoTF: UILabel!
+    @IBOutlet weak var answerInfoTF: InfoLabel!
     
     private var defaultMessage:String?
-    private var defaultColor:UIColor?
     
     @IBInspectable var minCharacters:Int = 0
     
@@ -49,7 +48,6 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     override func viewDidLoad() {
         super.viewDidLoad()
         defaultMessage = answerInfoTF.text
-        defaultColor = answerInfoTF.textColor
         setUpTextField()
         setUpQuestionInfoLabel()
         self.didChangeStepAnswers()
@@ -118,12 +116,12 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
     
     private func showAnswerInfoErrMessage(){
         self.answerInfoTF.text = "Invalid code"
-        self.answerInfoTF.textColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        self.answerInfoTF.style = .error
     }
     
     private func showAnswerInfoDefaultMessage(){
+        self.answerInfoTF.style = .normal
         self.answerInfoTF.text = defaultMessage
-        self.answerInfoTF.textColor = defaultColor
     }
 
     

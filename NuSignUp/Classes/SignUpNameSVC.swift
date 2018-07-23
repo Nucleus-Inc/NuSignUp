@@ -13,7 +13,7 @@ open class SignUpNameSVC: SignUpStepVC {
     /**
      Some aditional information about the necessary answer.
      */
-    @IBOutlet weak public var answerInfoTF: UILabel!
+    @IBOutlet weak public var answerInfoTF: InfoLabel!
 
     /**
      The key for the respective answer

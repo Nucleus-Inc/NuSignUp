@@ -11,7 +11,6 @@ import NuSignUp
 class SignUpEmailSVC: SignUpNameSVC {
     
     private var defaultMessage:String?
-    private var defaultColor:UIColor?
     
     private var isServerSideValid:Bool = false
     private var lastInvalidEmails:[String] = [String]()
@@ -22,7 +21,6 @@ class SignUpEmailSVC: SignUpNameSVC {
     override func viewDidLoad() {
         key = "email"
         defaultMessage = answerInfoTF.text
-        defaultColor = answerInfoTF.textColor
         super.viewDidLoad()
         setUpTextField()
         //self.didChangeStepAnswers()
@@ -62,12 +60,12 @@ class SignUpEmailSVC: SignUpNameSVC {
     
     private func showAnswerInfoErrMessage(_ message:String="This email is in use."){
         self.answerInfoTF.text = message//"Email em uso"
-        self.answerInfoTF.textColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        self.answerInfoTF.style = .error
     }
     
     private func showAnswerInfoDefaultMessage(){
         self.answerInfoTF.text = defaultMessage
-        self.answerInfoTF.textColor = defaultColor
+        self.answerInfoTF.style = .normal
     }
     
     

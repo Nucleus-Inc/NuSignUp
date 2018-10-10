@@ -108,6 +108,7 @@ class SignUpPasswordSVC: SignUpStepVC, UITextFieldDelegate {
         if password.count < self.minCharacters{
             value = 0
             style = .error
+            color = answerInfoLabel.errorTextColor
             message = "Too Weak"
         }
         

@@ -13,6 +13,7 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
     @IBOutlet weak public var nextStepButton: UIButton!
     
     @IBOutlet weak public var buttonDistToBottom: NSLayoutConstraint!
+    private var defaultDistToBottom:CGFloat = 5
     
     @IBInspectable public var stepNumber:Int = 0
     
@@ -26,6 +27,7 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
     
     override open func viewDidLoad() {
         super.viewDidLoad()
+        defaultDistToBottom = buttonDistToBottom.constant
         delegate.setUpNextStepButton(button: nextStepButton)
     }
     
@@ -116,18 +118,23 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
         
         if let keyBoardFrame = (keyboardInfo[UIKeyboardFrameEndUserInfoKey] as AnyObject).cgRectValue{
             let animationDuration = keyboardInfo[UIKeyboardAnimationDurationUserInfoKey]
-            
+            /*
             let bottomY  = self.view.frame.height - self.buttonDistToBottom.constant
             let navHeight = self.navigationController?.navigationBar.frame.height ?? 0
             let quantToMove = (bottomY + 5) - keyBoardFrame.origin.y - navHeight
             
-            buttonDistToBottom.constant += quantToMove + nextStepButton.frame.height //+ 20
+            buttonDistToBottom.constant += quantToMove + nextStepButton.frame.height //+ 20*/
+            
+            let bottomY  = nextStepButton.frame.origin.y + nextStepButton.frame.height
+            let quantToMove = (bottomY + 5) - keyBoardFrame.origin.y
+            
+            buttonDistToBottom.constant += quantToMove
             UIView.animate(withDuration: animationDuration as! TimeInterval, animations: {
                 self.view.layoutIfNeeded()
             }, completion: {(finished) in
                 
             })
-            
+ 
         }
         
     }
@@ -135,7 +142,7 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
     
     override open func keyboardWillDisappear(keyboardInfo: [String : Any]) {
         let animationDuration = keyboardInfo[UIKeyboardAnimationDurationUserInfoKey]
-        buttonDistToBottom.constant = 5
+        buttonDistToBottom.constant = defaultDistToBottom
         UIView.animate(withDuration: animationDuration as! TimeInterval, animations: {
             self.view.layoutIfNeeded()
         }, completion: {(finished) in

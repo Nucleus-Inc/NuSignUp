@@ -26,7 +26,7 @@ public class SignUpStack{
     
     private init(){}
     
-    var delegateInstance:SignUpStepDelegate = DefaultSUpSDelegate()
+    public private(set) var delegateInstance:SignUpStepDelegate = DefaultSUpSDelegate()
     
     
     

@@ -17,18 +17,14 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
     
     @IBInspectable public var stepNumber:Int = 0
     
-    @IBInspectable public var isOptional: Bool = false{
-        didSet{
-            delegate.isOptional = isOptional
-        }
-    }
+    @IBInspectable open var isOptional: Bool = false
     
     open var delegate: SignUpStepDelegate = SignUpStack.config.delegateInstance
     
     override open func viewDidLoad() {
         super.viewDidLoad()
         defaultDistToBottom = buttonDistToBottom.constant
-        delegate.setUpNextStepButton(button: nextStepButton)
+        delegate.setUpNextStepButton(button: nextStepButton,IsStepOptional: isOptional)
     }
     
     override open func viewWillAppear(_ animated: Bool) {
@@ -70,7 +66,7 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
      This method works with your implementation of 'shouldPresentNextStepButton' to present or not 'nextStepButton'
      */
     open func didChangeStepAnswers() {
-        shouldPresentNextStepButton() || delegate.isOptional ? delegate.presentNextStepButton(button: nextStepButton) : delegate.hideNextStepButton(button: nextStepButton)
+        shouldPresentNextStepButton() || isOptional ? delegate.presentNextStepButton(button: nextStepButton) : delegate.hideNextStepButton(button: nextStepButton)
     }
     
     
@@ -108,7 +104,7 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
      */
     open func shouldPresentNextStepButton() -> Bool {
         //TODO: Add your own implementation process for this step.
-        return delegate.isOptional
+        return isOptional
     }
     
     //MARK:KeyboardListener methods

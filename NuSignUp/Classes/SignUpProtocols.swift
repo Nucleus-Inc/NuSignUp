@@ -27,9 +27,7 @@ public enum SignUpReviewMode:Int{
 }
 
 public typealias PopReviewBlock = (_ updatedAnswers:[String:Any]?)->Void
-public protocol SignUpStepDelegate:class{
-    var isOptional:Bool{get set}
-    
+public protocol SignUpStepDelegate:class{    
     /**
      All the answers added til this step
      */
@@ -49,7 +47,7 @@ public protocol SignUpStepDelegate:class{
     /**
      Set all basic configurations on button, for example if it must be hidden or not, set its default title etc.
      */
-    func setUpNextStepButton(button:UIButton)
+    func setUpNextStepButton(button:UIButton,IsStepOptional isOptional:Bool)
     /**
      Add all necessary code to update button appearance, like its title based on some change, for example based on changes on 'reviewMode'
      */
@@ -126,7 +124,7 @@ extension SignUpStepDelegate{
 }
 
 
-public protocol SignUpStepController{
+public protocol SignUpStepController{    
     var delegate:SignUpStepDelegate{get set}
     /**
      This method must be called everytime user make some change on his step answer

@@ -13,7 +13,6 @@ open class DefaultSUpSDelegate:SignUpStepDelegate{
     open var finishReviewBlock: PopReviewBlock?
     open var reviewMode:SignUpReviewMode = .none
     open var answers: [String : Any]?
-    open var isOptional: Bool = false
     
     public required init(){}
     
@@ -22,7 +21,7 @@ open class DefaultSUpSDelegate:SignUpStepDelegate{
     /**
      This implementation only decide based on 'isOptional' variable if should present or not the button.
      */
-    open func setUpNextStepButton(button: UIButton) {
+    open func setUpNextStepButton(button: UIButton, IsStepOptional isOptional: Bool) {
         isOptional ? presentNextStepButton(button: button) : hideNextStepButton(button: button)
     }
     

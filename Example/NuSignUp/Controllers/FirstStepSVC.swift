@@ -28,7 +28,7 @@ class FirstStepSVC: SignUpNameSVC {
             self.navigationItem.leftBarButtonItem = closeAllBtn
         }
     }
-    
+        
     @objc
     private func closeAllBtnAction(sender:Any){
         let yesAction = UIAlertAction(title: "Yes", style: .default) { (_) in

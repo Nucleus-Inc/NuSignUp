@@ -115,7 +115,7 @@ open class SignUpNameSVC: SignUpStepVC {
     
     //MARK: - UITextField methods
 
-    private func setUpTextField(){
+    open func setUpTextField(){
         answerTF.text = delegate.answer(ForKey: key) as? String
     }
     

@@ -156,7 +156,7 @@ class SignUpEmailSVC: SignUpNameSVC {
     
     //MARK: - UITextField methods
 
-    private func setUpTextField(){
+    override func setUpTextField(){
         if let answers = delegate.answers{
             self.answerTF.text = answers[key] as? String
         }

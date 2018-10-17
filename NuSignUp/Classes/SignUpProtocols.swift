@@ -114,7 +114,7 @@ extension SignUpStepDelegate{
                 }
             }
             
-            if let values = values, let answer = values[k] as? String{
+            if let values = values, let answer = values[k]{
                 return answer
             }
         }

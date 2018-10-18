@@ -107,10 +107,11 @@ open class SignUpNameSVC: SignUpStepVC {
     }
     
     override open func shouldPresentNextStepButton() -> Bool {
+        var present:Bool = false
         if let text = stepAnswer{
-            return text.count >= minCharacters && matchesRegex(text: text)
+            present = text.count >= minCharacters && matchesRegex(text: text)
         }
-        return false
+        return isOptional || present
     }
     
     //MARK: - UITextField methods

@@ -83,6 +83,8 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
         case .step_push:
             self.performSegue(withIdentifier: SignUpStepSegues.reviewStepNextStep.rawValue, sender: answers)*/
         case .step_pop:
+            delegate.reviewMode = .none
+            
             if let nav = self.navigationController{
                 nav.popViewController(animated: true)
             }

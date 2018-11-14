@@ -51,7 +51,7 @@ class SignUpPhoneNumberSVC: SignUpNameSVC {
     }
     
     private func showActivity(){
-        let view = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let view = UIActivityIndicatorView(style: .gray)
         view.hidesWhenStopped = true
         view.startAnimating()
         self.answerTF.rightView = view

@@ -38,19 +38,19 @@ extension NSObject{
     }
     
     fileprivate func addWillShowKeyboardObserver(){
-        NotificationCenter.default.addObserver(self, selector: #selector(NSObject.showkeyBoardTarget(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(NSObject.showkeyBoardTarget(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
     }
     
     fileprivate func removeWillShowKeyboardObserver(){
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
     }
     
     fileprivate func addWillHideKeyboardObserver(){
-        NotificationCenter.default.addObserver(self, selector: #selector(NSObject.hideKeyBoardTarget(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(NSObject.hideKeyBoardTarget(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     fileprivate func removeWillHideKeyboardObserver(){
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     @objc final private func showkeyBoardTarget(_ notification:Notification){

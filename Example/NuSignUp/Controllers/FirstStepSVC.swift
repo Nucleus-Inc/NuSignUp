@@ -31,8 +31,9 @@ class FirstStepSVC: SignUpNameSVC {
         
     @objc
     private func closeAllBtnAction(sender:Any){
+        self.view.endEditing(true)
         let yesAction = UIAlertAction(title: "Yes", style: .default) { (_) in
-            self.navigationController?.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
         }
         let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
         let alertC = UIAlertController(title: "Cancel Sign up", message: "You will lose all added informations.\n\nDo you want to continue?", preferredStyle: .alert)

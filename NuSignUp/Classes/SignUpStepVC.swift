@@ -29,6 +29,7 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
     
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationItem.hidesBackButton = delegate.reviewMode != .none
         //setUpNavigationAppearance()
         startListeningKeyboard()
         if let navc = self.navigationController as? SignUpStackC{
@@ -114,8 +115,8 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
     
     override open func keyboardWillAppear(keyboardInfo: [String : Any]) {
         
-        if let keyBoardFrame = (keyboardInfo[UIKeyboardFrameEndUserInfoKey] as AnyObject).cgRectValue{
-            let animationDuration = keyboardInfo[UIKeyboardAnimationDurationUserInfoKey]
+        if let keyBoardFrame = (keyboardInfo[UIResponder.keyboardFrameEndUserInfoKey] as AnyObject).cgRectValue{
+            let animationDuration = keyboardInfo[UIResponder.keyboardAnimationDurationUserInfoKey]
             /*
             let bottomY  = self.view.frame.height - self.buttonDistToBottom.constant
             let navHeight = self.navigationController?.navigationBar.frame.height ?? 0
@@ -139,7 +140,7 @@ open class SignUpStepVC: UIViewController,SignUpStepController {
     
     
     override open func keyboardWillDisappear(keyboardInfo: [String : Any]) {
-        let animationDuration = keyboardInfo[UIKeyboardAnimationDurationUserInfoKey]
+        let animationDuration = keyboardInfo[UIResponder.keyboardAnimationDurationUserInfoKey]
         buttonDistToBottom.constant = defaultDistToBottom
         UIView.animate(withDuration: animationDuration as! TimeInterval, animations: {
             self.view.layoutIfNeeded()

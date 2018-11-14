@@ -81,6 +81,17 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func cancelBtnAction(_ sender: Any) {
+        let yesAction = UIAlertAction(title: "Yes", style: .default) { (_) in
+            self.dismiss(animated: true, completion: nil)
+        }
+        let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
+        let alertC = UIAlertController(title: "Cancel Sign up", message: "Do you want to interrupt your account activation?", preferredStyle: .alert)
+        alertC.addAction(yesAction)
+        alertC.addAction(noAction)
+        self.present(alertC, animated: true, completion: nil)
+
+    }
     
     //MARK: - CodeSVC
     

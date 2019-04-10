@@ -7,410 +7,417 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0114CD57076F9C0A2F44A64E99EBA1DE /* PolyMaskTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F7D5F93CD7801A9295AEB58B03973 /* PolyMaskTextFieldDelegate.swift */; };
-		05A7856300DBA738A946EED6311BCAA9 /* FreeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C3B8F9507ABDB80536C4066B32EC2 /* FreeState.swift */; };
-		17EEF18DC766E776CA56DE904DA11141 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		2F14656E207A77C872213FAFDDF8CE6E /* FixedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88008CA922F7745F47DE9FFF507ECEAC /* FixedState.swift */; };
-		347A4ED6DF74D32EA6A629C5D75567F3 /* InputMask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2051740124A272C330581E394F66F3D /* InputMask-dummy.m */; };
-		38FBAA4C0AF4F1966AF3E5980277937A /* CaretString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDF4FDA9B24E8B40BC832A1A677BC52 /* CaretString.swift */; };
-		3E2DDE6402E08D18775265C2D110B717 /* InputMask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDCE37EAA128ECC329F21DB296ADA3DC /* InputMask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EE527FDB4C79B87BA62FAB1D45270D2 /* NuSignUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30539E87C5252CBA350127674CD215F6 /* NuSignUp-dummy.m */; };
-		46957E874645D240586DEF139EBAE781 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		481448326D2F2718B24720B075A654A2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED4E2286C1E587FC9FAE5BEC4D5797C /* String.swift */; };
-		6EC78E1D6CCE731E2C48B826FDB8DBBC /* SignUpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD77B3C7F6D3D281C4990DA2891B71 /* SignUpHelper.swift */; };
-		7DB767CAC8D72839304C7C62293F3A7E /* Compiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1934F6D3D45FC675AB2C0D63FECC7A7C /* Compiler.swift */; };
-		843E4F0AC5E8B6A2EED0DCF2C00431B9 /* MaskedTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C208B17CF8BF3304B95972F2676A930 /* MaskedTextFieldDelegate.swift */; };
-		876378135DDBBC6BF5CD63830036C4E9 /* OptionalValueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9332C2468ECB35EF81F607210DC849 /* OptionalValueState.swift */; };
-		8DA109901B30A859CB66621FB8D8B1A5 /* Notation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45528F38B40AC4FFA0E1378AD5EA5CB /* Notation.swift */; };
-		9205CC519D437F11620BD9ABC7276CC4 /* CaretStringIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7FC53BA0EDA10B2F026A1D98F8D987 /* CaretStringIterator.swift */; };
-		9255143BA3AD4507E9C0119A9992CFDF /* Pods-NuSignUp_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 148AEBED83B1DAE7489A29E81A050F73 /* Pods-NuSignUp_Tests-dummy.m */; };
-		929ECBE518128D96519F8401379C9B24 /* Next.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1AD0E3B2252FA3042529CC144926C0 /* Next.swift */; };
-		9363CA940DA440C4D4FA6ADB6C5A2083 /* SignUpExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B91C6E2D5A1B6134F7A8EB99C18F7 /* SignUpExtensions.swift */; };
-		9997A6FC15DFDCE5108D9DF7355DD112 /* Pods-NuSignUp_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD409DCF87D840DAD550C87D9BFB5C9 /* Pods-NuSignUp_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BB9BB58B40A7FF28C19CC0DCB2C0A03 /* InputMask.h in Headers */ = {isa = PBXBuildFile; fileRef = 81ED6ABCD6D680070E9F8EB5C1DF42CD /* InputMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A03EDD9058B55AC24B4494194672D8A5 /* SignUpNameSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9F7595F455E995FEA39187561BC2F /* SignUpNameSVC.swift */; };
-		A3B20E8DB52CF513D70CD547590757C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A3D8B718ABE7028B50CE581482729A49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A51E8B0D55F16B1A212F87A61309C7D0 /* EOLState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C857BD6F51119DF6A89961050B77A27 /* EOLState.swift */; };
-		AFD7889C08519DA0810128E537E31C54 /* NuSignUp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 004456DA39E0B01C94EE3A8D2A58637B /* NuSignUp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0D945D15E2AE6DE214A2836F38F7DFC /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712A839CC66ABC98D7C410F30DDDCF9A /* Mask.swift */; };
-		B25E8F7BFA439091B8EA195745F224D2 /* NSCharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E01F339B961ABEB9F7C1941710424F /* NSCharacterSet.swift */; };
-		B7B477ADB83C6EC4629A3238B4AEADAE /* Pods-NuSignUp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 517164B444728642750B82B55225C549 /* Pods-NuSignUp_Example-dummy.m */; };
-		C02B050C3EAD63F73A46CE48A0DDD756 /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2F16ACF67A3AC73F523477F408458 /* SignUpProtocols.swift */; };
-		C1B704E625102BD3832794460D060AE8 /* ValueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A6909B35E162564A5076C4EDC7EAEC /* ValueState.swift */; };
-		CAE7E64C1A26A5E5D0AA7502255F14B6 /* Pods-NuSignUp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E7F6E950E99F2817A9973F421BECCF0 /* Pods-NuSignUp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAC5FF60C9D601E0B3B1DC269CAB6B6A /* SignUpStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D27CDCD0BC6A12D3E624675080DE7 /* SignUpStepVC.swift */; };
-		E0C6D890F30C121ACBDB6CB69C19581E /* ReversedMaskTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B945798D1346ECC3DEC1D1A4823AFB09 /* ReversedMaskTextFieldDelegate.swift */; };
-		E5170574EF7B6A3530D223FD5980CEBE /* InterfaceBuilderSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E270BC1FF7AA46B160A92794C42628F2 /* InterfaceBuilderSupport.swift */; };
-		E78A9EBB303B6478559F2AEF7F8EE7D0 /* FormatSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA93D6D12DF6416CCD2E1B4CD131E6 /* FormatSanitizer.swift */; };
-		EC0CE324CAC0BB6CB18CB2B4A17D8B98 /* DefaultSignUpStepC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63814EEA8739227D86ABF8E075268660 /* DefaultSignUpStepC.swift */; };
-		EE1824C421060CEA004DDC83 /* InfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1824C221060CE4004DDC83 /* InfoLabel.swift */; };
-		EF1429E290701B164A8FAFFC247E3DB4 /* SignUpStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110745C9380AA014EA548DFEF15FB6AD /* SignUpStack.swift */; };
-		F96180E0A5D820795B961E98F09C8964 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EAEE4EBB3BB6FBFD2DCB94E2C9A71 /* State.swift */; };
+		00EA3C221101F9849265045F5BF77892 /* SignUpNameSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B16B10B13F0F68F3EBD8D1482D7C0 /* SignUpNameSVC.swift */; };
+		0DD5723778CE620C8A02FF7FA0D7AE7D /* ValueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416303B6444B6FC3F9E86622FE0C0A48 /* ValueState.swift */; };
+		18E7232B670F3C4127BF08551BCCD455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		1DCB3EC0A0E319AB5F7C8F639B84713D /* UITextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A7342A3D7D23E9517E39519663CC10 /* UITextInput.swift */; };
+		20380CDA979EDBEDF4AFF0B8F319625C /* OptionalValueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D854FFB2CE05E6B087662853C153B77 /* OptionalValueState.swift */; };
+		21C0F8736149C063DE094F58ACE0AB8F /* SignUpExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949BF72D27B89E9B94BA1E6BF245EC84 /* SignUpExtensions.swift */; };
+		27940FCADC864B7B1BCBBC4A74E43D13 /* Pods-NuSignUp_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3051C3862687176D2306B2241E2C56C6 /* Pods-NuSignUp_Tests-dummy.m */; };
+		3C247B71B69F72BC9C44ADBFD76118F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		4AF986C3997DB0922C04268F33E7AD80 /* ReversedMaskTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5806944C9686DEA800BB1F53C2E3FA /* ReversedMaskTextFieldDelegate.swift */; };
+		4B24A2A04C403AE228021FFACB16E350 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE58372D1EDFE39373645784EAA026B /* State.swift */; };
+		4CB8862554214D1BDECAD53AAC440AB1 /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CD4176DEA30EEA7001974154207B1D /* SignUpProtocols.swift */; };
+		4DDE8D2E2954C35C149B33C89A93D163 /* FreeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89969325B09786DF3EEE2F22E4488D5 /* FreeState.swift */; };
+		4FAAA154C80510238A589692A5472F1B /* InputMask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E721671B65348DC0889B1C5CDBC723 /* InputMask-dummy.m */; };
+		5705B005D4C21AABBE627BB1C19AD986 /* Notation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3FE20951EB784CE6B5F4946823B721 /* Notation.swift */; };
+		57AD5B47E3D8992A1A4811BAB00A2EB5 /* Compiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8479D15D4A3A41C3318D661CC9EC3B2 /* Compiler.swift */; };
+		5B5261D879AE9ECA692B354CBBCCE9A3 /* MaskedTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BAA689D6FFAA411FD02499CA068CFA /* MaskedTextFieldDelegate.swift */; };
+		62B0E6D850D6B354E4D98F8997EE8A0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		7140E876ADAC4DFCC68660FDAD5795D4 /* NuSignUp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 151F1CF13935C863491BCEAB1F72DFF9 /* NuSignUp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77D5B30B4828FF56E46B9668526E2E97 /* CaretStringIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C707AF2124F6543CC395B93FAAC57FC3 /* CaretStringIterator.swift */; };
+		79D6D39B7D6244D5B16AA93462E7C6B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		7E7E045FD3DA294DB9344F9458515E41 /* InputMask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66FB5DBC70A7CC1BFE565EB00ADD859E /* InputMask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8005A0ACA100A3ADD78B3F912BCE9BAE /* InterfaceBuilderSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11988402ECA1D7B09616428FFF447408 /* InterfaceBuilderSupport.swift */; };
+		831BA0166A5B2303ED514DE2AC724BC7 /* EOLState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DF8FE1FE49BA2A24D9E4DB5B193D38 /* EOLState.swift */; };
+		845E5809580A08C1180E929900B47401 /* SignUpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD04099AF7C946E15CB260D28029AB9 /* SignUpHelper.swift */; };
+		87D9DC3374202D15694280563D0A3F3C /* InputMask.h in Headers */ = {isa = PBXBuildFile; fileRef = 9418E8A51B0800CDC6CEE16C34CCA088 /* InputMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		907C3F7B522331AD6379A0BC0169D1AC /* PolyMaskTextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002C096EDF3DBDA6A7B9903B84FF20B /* PolyMaskTextViewDelegate.swift */; };
+		9CB649FE9484C91816D35ABCA125B1A9 /* SignUpStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC2A3719A7C294C4811DA68AC6CF57 /* SignUpStack.swift */; };
+		A25537A20C89A7011E79CD4CA428F2B5 /* CaretString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C292DE322106466B25382E995789A895 /* CaretString.swift */; };
+		A8A862312891E3B93C6EE078D193DE09 /* FormatSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C747307B1478BD31A2EE07C7448D5905 /* FormatSanitizer.swift */; };
+		A95EF50D35E56688644387DCAA4D3E23 /* DefaultSignUpStepC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1FA9766F745B9A234E0D3DAD76F24 /* DefaultSignUpStepC.swift */; };
+		AC279B5B9535B224B1F1A990681D40D1 /* NuSignUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9589B2230F1188ECFF0223E87594988 /* NuSignUp-dummy.m */; };
+		B6C8EEA341F726DB989217F445E20745 /* MaskedTextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB372F87886338E00AC31F6F4F4D737 /* MaskedTextViewDelegate.swift */; };
+		B6F811DE8AA6FE3F3AB06DC61F628E65 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB83FDC3D2C4C1BCF0BAA194DA85B69 /* Mask.swift */; };
+		BB744F8D8F219BE220EA035AF5B66796 /* Pods-NuSignUp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD68709BDB5A209D5B5B238E0A799B4 /* Pods-NuSignUp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFFE0E3BAA336608A682B432BA274F0D /* NSCharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B978886D60D50D94F784BBDDDE1226 /* NSCharacterSet.swift */; };
+		D0E9E21027DD4554AB081FB04B656288 /* Pods-NuSignUp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B348440FAF27295E7FFA8606ED434447 /* Pods-NuSignUp_Example-dummy.m */; };
+		D1051EA302D783770BA91BA87C30E2F5 /* InfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011CC7C947484594D18FC40B96BC70C /* InfoLabel.swift */; };
+		D245AFC315B7E0A9F3A696CB565B2672 /* PolyMaskTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72352417E5EDFB66E2087DB2FC35459 /* PolyMaskTextFieldDelegate.swift */; };
+		D85A669B839860099C0F3E2A5663167C /* Pods-NuSignUp_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 429EB416152357CEC0BE8C2EDF397D3C /* Pods-NuSignUp_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF32DDD4C67EC12C00FB552E7A070C57 /* Next.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F2762CE3EFD88EBBE0685BE85EA10 /* Next.swift */; };
+		E47CFF00DF93FD001418EEF79F41B1D5 /* SignUpStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A30DA0EA07B33592FC62C7D5FB8DC9 /* SignUpStepVC.swift */; };
+		E7BB375714924CC9DD0E6FA1343F3020 /* MaskedTextInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4E2A473F704187E8B1542A484D5664 /* MaskedTextInputDelegate.swift */; };
+		EEBFB4910EAF3702D9D7C4FD5AC5753B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF44C33525E097512078B1C12F40FB /* String.swift */; };
+		FADD49F8EDF477201C8D61F17FC7BC21 /* FixedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC813A561F94FB916443CF54F67AFB6B /* FixedState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		33551BBE25A63EED641C991AB81B7DDF /* PBXContainerItemProxy */ = {
+		3B4C54CBFEF9C3025D8D0FAD4153B74E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3BF2BE90D1D7F39F6175F966755DEA99;
+			remoteGlobalIDString = F1C7A074D0B347D404877431B080718D;
+			remoteInfo = InputMask;
+		};
+		3E6A6DF666A6E9C0DB5F196E71606583 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88DC5DECCDB3DAD2C0AB522AB9641F78;
 			remoteInfo = "Pods-NuSignUp_Example";
 		};
-		897B0AE1952558A46720CAB14C8773F2 /* PBXContainerItemProxy */ = {
+		4ACC25132516241F2CAE73ED2EA6D965 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0C4B840700B66AD0FC678231CBEE8938;
+			remoteGlobalIDString = 11A356E02B54BE2D3F3B73508D11B346;
 			remoteInfo = NuSignUp;
-		};
-		CCD96095B7E9225A3162C68F0EB3140E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F4A71676FE8EECF4ADE1EFCFEB625ECE;
-			remoteInfo = InputMask;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		004456DA39E0B01C94EE3A8D2A58637B /* NuSignUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NuSignUp-umbrella.h"; sourceTree = "<group>"; };
-		057C3B8F9507ABDB80536C4066B32EC2 /* FreeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FreeState.swift; path = Source/InputMask/InputMask/Classes/Model/State/FreeState.swift; sourceTree = "<group>"; };
-		110745C9380AA014EA548DFEF15FB6AD /* SignUpStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpStack.swift; path = NuSignUp/Classes/SignUpStack.swift; sourceTree = "<group>"; };
-		1252DF1531935FB9D599167BE404A5F3 /* Pods-NuSignUp_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NuSignUp_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		148AEBED83B1DAE7489A29E81A050F73 /* Pods-NuSignUp_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NuSignUp_Tests-dummy.m"; sourceTree = "<group>"; };
-		16561AECE684674E54D49E57567ECFC3 /* Pods_NuSignUp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1934F6D3D45FC675AB2C0D63FECC7A7C /* Compiler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compiler.swift; path = Source/InputMask/InputMask/Classes/Helper/Compiler.swift; sourceTree = "<group>"; };
-		1E7F6E950E99F2817A9973F421BECCF0 /* Pods-NuSignUp_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NuSignUp_Example-umbrella.h"; sourceTree = "<group>"; };
-		1F1EAEE4EBB3BB6FBFD2DCB94E2C9A71 /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Source/InputMask/InputMask/Classes/Model/State.swift; sourceTree = "<group>"; };
-		1FBD77B3C7F6D3D281C4990DA2891B71 /* SignUpHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpHelper.swift; path = NuSignUp/Classes/SignUpHelper.swift; sourceTree = "<group>"; };
-		22D2DAC6F7CEEC404F8C8D3CC4396142 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2393BC45C7D0E76A8A7198949D4CF776 /* Pods-NuSignUp_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		243D590CBE97FD58B32ED6EEDC4B07B7 /* Pods-NuSignUp_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NuSignUp_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		304DE49C8FA1EFD1AB0DF2C31D7DD6DA /* Pods-NuSignUp_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NuSignUp_Tests-resources.sh"; sourceTree = "<group>"; };
-		30539E87C5252CBA350127674CD215F6 /* NuSignUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NuSignUp-dummy.m"; sourceTree = "<group>"; };
-		313D27CDCD0BC6A12D3E624675080DE7 /* SignUpStepVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpStepVC.swift; path = NuSignUp/Classes/SignUpStepVC.swift; sourceTree = "<group>"; };
-		38D955D34BB2913E7265F4A8A20B63BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F1AD0E3B2252FA3042529CC144926C0 /* Next.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Next.swift; path = Source/InputMask/InputMask/Classes/Model/Next.swift; sourceTree = "<group>"; };
-		403EDD0A8404BF7038D8789F6E9BD6D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		517164B444728642750B82B55225C549 /* Pods-NuSignUp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NuSignUp_Example-dummy.m"; sourceTree = "<group>"; };
-		518767956ECDDD5110CAFC50F188EE73 /* InputMask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputMask-prefix.pch"; sourceTree = "<group>"; };
-		63814EEA8739227D86ABF8E075268660 /* DefaultSignUpStepC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultSignUpStepC.swift; path = NuSignUp/Classes/DefaultSignUpStepC.swift; sourceTree = "<group>"; };
-		64B0353E450B0193A3504DE6584B3D7E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		684D84657A85789F408627DAEF37C64E /* NuSignUp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = NuSignUp.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6C208B17CF8BF3304B95972F2676A930 /* MaskedTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskedTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/MaskedTextFieldDelegate.swift; sourceTree = "<group>"; };
-		6DD409DCF87D840DAD550C87D9BFB5C9 /* Pods-NuSignUp_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NuSignUp_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6E44595EA31617C881BC691CE1ACE5FA /* Pods-NuSignUp_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NuSignUp_Example-resources.sh"; sourceTree = "<group>"; };
-		6F3EA86D093160885B8169C4D64D6A25 /* NuSignUp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NuSignUp.xcconfig; sourceTree = "<group>"; };
-		712A839CC66ABC98D7C410F30DDDCF9A /* Mask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mask.swift; path = Source/InputMask/InputMask/Classes/Mask.swift; sourceTree = "<group>"; };
-		766F7D5F93CD7801A9295AEB58B03973 /* PolyMaskTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PolyMaskTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/PolyMaskTextFieldDelegate.swift; sourceTree = "<group>"; };
-		817EC483C246602CB1B6717FDC9A4B39 /* Pods-NuSignUp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		81ED6ABCD6D680070E9F8EB5C1DF42CD /* InputMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InputMask.h; path = Source/InputMask/InputMask/Classes/InputMask.h; sourceTree = "<group>"; };
-		84B9F7595F455E995FEA39187561BC2F /* SignUpNameSVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpNameSVC.swift; path = NuSignUp/Classes/SignUpNameSVC.swift; sourceTree = "<group>"; };
-		88008CA922F7745F47DE9FFF507ECEAC /* FixedState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FixedState.swift; path = Source/InputMask/InputMask/Classes/Model/State/FixedState.swift; sourceTree = "<group>"; };
-		88444E24C5BF53EE646D8BC173997EF9 /* Pods-NuSignUp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8A7C9D8A963F6B3BCC0AEF682173686D /* NuSignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuSignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CBFF41E54B49EF3C46E09ABD8D34E55 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		90413A57189261CA3E7C52C146C051B5 /* Pods-NuSignUp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NuSignUp_Example-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B7FC53BA0EDA10B2F026A1D98F8D987 /* CaretStringIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaretStringIterator.swift; path = Source/InputMask/InputMask/Classes/Helper/CaretStringIterator.swift; sourceTree = "<group>"; };
-		9C857BD6F51119DF6A89961050B77A27 /* EOLState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EOLState.swift; path = Source/InputMask/InputMask/Classes/Model/State/EOLState.swift; sourceTree = "<group>"; };
-		9ED4E2286C1E587FC9FAE5BEC4D5797C /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Source/InputMask/InputMask/Classes/Helper/String.swift; sourceTree = "<group>"; };
-		A17606EFF649856977940536E788779A /* Pods-NuSignUp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NuSignUp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A1BA5241CA48E8A44A7422D157DBF906 /* NuSignUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NuSignUp-prefix.pch"; sourceTree = "<group>"; };
-		A9CA93D6D12DF6416CCD2E1B4CD131E6 /* FormatSanitizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatSanitizer.swift; path = Source/InputMask/InputMask/Classes/Helper/FormatSanitizer.swift; sourceTree = "<group>"; };
-		AFF2F16ACF67A3AC73F523477F408458 /* SignUpProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpProtocols.swift; path = NuSignUp/Classes/SignUpProtocols.swift; sourceTree = "<group>"; };
-		B28B91C6E2D5A1B6134F7A8EB99C18F7 /* SignUpExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpExtensions.swift; path = NuSignUp/Classes/SignUpExtensions.swift; sourceTree = "<group>"; };
-		B7A6909B35E162564A5076C4EDC7EAEC /* ValueState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueState.swift; path = Source/InputMask/InputMask/Classes/Model/State/ValueState.swift; sourceTree = "<group>"; };
-		B945798D1346ECC3DEC1D1A4823AFB09 /* ReversedMaskTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReversedMaskTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/ReversedMaskTextFieldDelegate.swift; sourceTree = "<group>"; };
-		BB322FBF757DA23DDA3D5E45BC2BC2C4 /* InputMask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InputMask.modulemap; sourceTree = "<group>"; };
-		BB92E2965B9CF6B930789C006B37C9EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEDF4FDA9B24E8B40BC832A1A677BC52 /* CaretString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaretString.swift; path = Source/InputMask/InputMask/Classes/Model/CaretString.swift; sourceTree = "<group>"; };
-		C21C3E0588724D032D9C2B40C16097EA /* NuSignUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NuSignUp.modulemap; sourceTree = "<group>"; };
-		C26E4FBD754AD7EADDA5A201989CBA87 /* Pods-NuSignUp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NuSignUp_Example.modulemap"; sourceTree = "<group>"; };
-		C50475606E5DF58B89D81B61724C263A /* Pods-NuSignUp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CA9332C2468ECB35EF81F607210DC849 /* OptionalValueState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalValueState.swift; path = Source/InputMask/InputMask/Classes/Model/State/OptionalValueState.swift; sourceTree = "<group>"; };
-		D4AF795D024BD66C4D4628B6A4FA3CF9 /* Pods-NuSignUp_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NuSignUp_Tests.modulemap"; sourceTree = "<group>"; };
-		DDCE37EAA128ECC329F21DB296ADA3DC /* InputMask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputMask-umbrella.h"; sourceTree = "<group>"; };
-		E270BC1FF7AA46B160A92794C42628F2 /* InterfaceBuilderSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterfaceBuilderSupport.swift; path = Source/InputMask/InputMask/Classes/View/InterfaceBuilderSupport.swift; sourceTree = "<group>"; };
-		E3410B5BD7E8BE6F4F7E6124AD8CE5C5 /* InputMask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputMask.xcconfig; sourceTree = "<group>"; };
-		E4F4FB653F4D63E6ABACB79ACECF6BEC /* Pods_NuSignUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8BE762CE739F4B4EC3CF3856878874A /* InputMask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InputMask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE1824C221060CE4004DDC83 /* InfoLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoLabel.swift; path = NuSignUp/Classes/InfoLabel.swift; sourceTree = "<group>"; };
-		EFB6D87B56AF057309103B48A7DB7305 /* Pods-NuSignUp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F2051740124A272C330581E394F66F3D /* InputMask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InputMask-dummy.m"; sourceTree = "<group>"; };
-		F45528F38B40AC4FFA0E1378AD5EA5CB /* Notation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notation.swift; path = Source/InputMask/InputMask/Classes/Model/Notation.swift; sourceTree = "<group>"; };
-		F4E01F339B961ABEB9F7C1941710424F /* NSCharacterSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSCharacterSet.swift; path = Source/InputMask/InputMask/Classes/Helper/NSCharacterSet.swift; sourceTree = "<group>"; };
-		F986C6C6EAC82EA8E06CBD834371544B /* Pods-NuSignUp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0A41DBBF3DE8D892F0B8024359BDAABB /* Pods-NuSignUp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NuSignUp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		11988402ECA1D7B09616428FFF447408 /* InterfaceBuilderSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterfaceBuilderSupport.swift; path = Source/InputMask/InputMask/Classes/View/InterfaceBuilderSupport.swift; sourceTree = "<group>"; };
+		151F1CF13935C863491BCEAB1F72DFF9 /* NuSignUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NuSignUp-umbrella.h"; sourceTree = "<group>"; };
+		152D3CF3A93EDE0D90EB807C1B63A498 /* InputMask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputMask-prefix.pch"; sourceTree = "<group>"; };
+		15A30DA0EA07B33592FC62C7D5FB8DC9 /* SignUpStepVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpStepVC.swift; path = NuSignUp/Classes/SignUpStepVC.swift; sourceTree = "<group>"; };
+		1A0C3F288B85351FA83A87952802CA02 /* Pods-NuSignUp_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1CE2F61040A605BD5F89AD22AEDFB2B7 /* NuSignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuSignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E13F95A71683841F7982909B726095 /* NuSignUp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NuSignUp.xcconfig; sourceTree = "<group>"; };
+		24A7342A3D7D23E9517E39519663CC10 /* UITextInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITextInput.swift; path = Source/InputMask/InputMask/Classes/View/UITextInput.swift; sourceTree = "<group>"; };
+		2B5806944C9686DEA800BB1F53C2E3FA /* ReversedMaskTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReversedMaskTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/ReversedMaskTextFieldDelegate.swift; sourceTree = "<group>"; };
+		2C7B16B10B13F0F68F3EBD8D1482D7C0 /* SignUpNameSVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpNameSVC.swift; path = NuSignUp/Classes/SignUpNameSVC.swift; sourceTree = "<group>"; };
+		3051C3862687176D2306B2241E2C56C6 /* Pods-NuSignUp_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NuSignUp_Tests-dummy.m"; sourceTree = "<group>"; };
+		3756E1EE08467BBA7A68B56452297D58 /* Pods-NuSignUp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NuSignUp_Example.modulemap"; sourceTree = "<group>"; };
+		37CE13C8A7EA633EE493AB36CB5F3895 /* Pods-NuSignUp_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NuSignUp_Tests.modulemap"; sourceTree = "<group>"; };
+		38AE521B2DA8A1D21B2B5C2425DB8F96 /* NuSignUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NuSignUp.modulemap; sourceTree = "<group>"; };
+		3C224D015BAEB0E157C1ED4F2F7DDE5D /* InputMask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InputMask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF2513D94082469CE96E6FE2C93B75E /* InputMask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputMask.xcconfig; sourceTree = "<group>"; };
+		416303B6444B6FC3F9E86622FE0C0A48 /* ValueState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueState.swift; path = Source/InputMask/InputMask/Classes/Model/State/ValueState.swift; sourceTree = "<group>"; };
+		429EB416152357CEC0BE8C2EDF397D3C /* Pods-NuSignUp_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NuSignUp_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4BD68709BDB5A209D5B5B238E0A799B4 /* Pods-NuSignUp_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NuSignUp_Example-umbrella.h"; sourceTree = "<group>"; };
+		4F224D0453BDF367C70129F9B165BE31 /* NuSignUp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NuSignUp.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4FE58372D1EDFE39373645784EAA026B /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Source/InputMask/InputMask/Classes/Model/State.swift; sourceTree = "<group>"; };
+		5011CC7C947484594D18FC40B96BC70C /* InfoLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfoLabel.swift; path = NuSignUp/Classes/InfoLabel.swift; sourceTree = "<group>"; };
+		52C88877693AE4640E959A7E314B6E03 /* NuSignUp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NuSignUp-Info.plist"; sourceTree = "<group>"; };
+		53E0700A8F55A4814B2D1C1C46D05D50 /* Pods-NuSignUp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		552583E0D1C8AF828806C5C2B9BFA695 /* NuSignUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NuSignUp-prefix.pch"; sourceTree = "<group>"; };
+		57CF44C33525E097512078B1C12F40FB /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Source/InputMask/InputMask/Classes/Helper/String.swift; sourceTree = "<group>"; };
+		5D854FFB2CE05E6B087662853C153B77 /* OptionalValueState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalValueState.swift; path = Source/InputMask/InputMask/Classes/Model/State/OptionalValueState.swift; sourceTree = "<group>"; };
+		5DD04099AF7C946E15CB260D28029AB9 /* SignUpHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpHelper.swift; path = NuSignUp/Classes/SignUpHelper.swift; sourceTree = "<group>"; };
+		60834FB55485D6CA6FE5CB734E92EFC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		66FB5DBC70A7CC1BFE565EB00ADD859E /* InputMask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputMask-umbrella.h"; sourceTree = "<group>"; };
+		6A3AC800EF021B44B98B8F211014F99A /* Pods_NuSignUp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		743592C6FFB8A9D48E69D8B6F6B9494D /* Pods-NuSignUp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NuSignUp_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7DB83FDC3D2C4C1BCF0BAA194DA85B69 /* Mask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mask.swift; path = Source/InputMask/InputMask/Classes/Mask.swift; sourceTree = "<group>"; };
+		7F4E2A473F704187E8B1542A484D5664 /* MaskedTextInputDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskedTextInputDelegate.swift; path = Source/InputMask/InputMask/Classes/View/MaskedTextInputDelegate.swift; sourceTree = "<group>"; };
+		7FCE209AEF07581D2E75CCEF3722D9F7 /* Pods_NuSignUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87CD4176DEA30EEA7001974154207B1D /* SignUpProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpProtocols.swift; path = NuSignUp/Classes/SignUpProtocols.swift; sourceTree = "<group>"; };
+		8D1C0BE5E6209233D88FA01432EF9516 /* Pods-NuSignUp_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Tests-Info.plist"; sourceTree = "<group>"; };
+		913F10962D21B1789C829998A8CB9B95 /* Pods-NuSignUp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9418E8A51B0800CDC6CEE16C34CCA088 /* InputMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InputMask.h; path = Source/InputMask/InputMask/Classes/InputMask.h; sourceTree = "<group>"; };
+		949BF72D27B89E9B94BA1E6BF245EC84 /* SignUpExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpExtensions.swift; path = NuSignUp/Classes/SignUpExtensions.swift; sourceTree = "<group>"; };
+		95E721671B65348DC0889B1C5CDBC723 /* InputMask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InputMask-dummy.m"; sourceTree = "<group>"; };
+		97BAA689D6FFAA411FD02499CA068CFA /* MaskedTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskedTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/MaskedTextFieldDelegate.swift; sourceTree = "<group>"; };
+		9CB372F87886338E00AC31F6F4F4D737 /* MaskedTextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskedTextViewDelegate.swift; path = Source/InputMask/InputMask/Classes/View/MaskedTextViewDelegate.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EC1FA9766F745B9A234E0D3DAD76F24 /* DefaultSignUpStepC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultSignUpStepC.swift; path = NuSignUp/Classes/DefaultSignUpStepC.swift; sourceTree = "<group>"; };
+		A4DF8FE1FE49BA2A24D9E4DB5B193D38 /* EOLState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EOLState.swift; path = Source/InputMask/InputMask/Classes/Model/State/EOLState.swift; sourceTree = "<group>"; };
+		A7523D92A5DDC98C8209690A2BAEC7F8 /* Pods-NuSignUp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B002C096EDF3DBDA6A7B9903B84FF20B /* PolyMaskTextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PolyMaskTextViewDelegate.swift; path = Source/InputMask/InputMask/Classes/View/PolyMaskTextViewDelegate.swift; sourceTree = "<group>"; };
+		B348440FAF27295E7FFA8606ED434447 /* Pods-NuSignUp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NuSignUp_Example-dummy.m"; sourceTree = "<group>"; };
+		BA683ED8F44CBEE310D8C3076A40B5A3 /* Pods-NuSignUp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C292DE322106466B25382E995789A895 /* CaretString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaretString.swift; path = Source/InputMask/InputMask/Classes/Model/CaretString.swift; sourceTree = "<group>"; };
+		C45677483CBE2ACCA08D130255D47985 /* Pods-NuSignUp_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Example-Info.plist"; sourceTree = "<group>"; };
+		C707AF2124F6543CC395B93FAAC57FC3 /* CaretStringIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaretStringIterator.swift; path = Source/InputMask/InputMask/Classes/Helper/CaretStringIterator.swift; sourceTree = "<group>"; };
+		C747307B1478BD31A2EE07C7448D5905 /* FormatSanitizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatSanitizer.swift; path = Source/InputMask/InputMask/Classes/Helper/FormatSanitizer.swift; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEADB0F133248DFFAB335D6BBC0EBCBE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D9589B2230F1188ECFF0223E87594988 /* NuSignUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NuSignUp-dummy.m"; sourceTree = "<group>"; };
+		DA3FE20951EB784CE6B5F4946823B721 /* Notation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notation.swift; path = Source/InputMask/InputMask/Classes/Model/Notation.swift; sourceTree = "<group>"; };
+		DC813A561F94FB916443CF54F67AFB6B /* FixedState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FixedState.swift; path = Source/InputMask/InputMask/Classes/Model/State/FixedState.swift; sourceTree = "<group>"; };
+		DD0F2762CE3EFD88EBBE0685BE85EA10 /* Next.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Next.swift; path = Source/InputMask/InputMask/Classes/Model/Next.swift; sourceTree = "<group>"; };
+		E01C0F4032E62C7D1CAAA5FD01B274A3 /* Pods-NuSignUp_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NuSignUp_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E3DFDCE2246997C26FC2D6CFD689AD68 /* Pods-NuSignUp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E854D46C26B466540178C4A50EEF5DBC /* InputMask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InputMask.modulemap; sourceTree = "<group>"; };
+		E89969325B09786DF3EEE2F22E4488D5 /* FreeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FreeState.swift; path = Source/InputMask/InputMask/Classes/Model/State/FreeState.swift; sourceTree = "<group>"; };
+		F2B978886D60D50D94F784BBDDDE1226 /* NSCharacterSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSCharacterSet.swift; path = Source/InputMask/InputMask/Classes/Helper/NSCharacterSet.swift; sourceTree = "<group>"; };
+		F6E19471C7128E4EE4B4560E63A537D6 /* InputMask-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InputMask-Info.plist"; sourceTree = "<group>"; };
+		F72352417E5EDFB66E2087DB2FC35459 /* PolyMaskTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PolyMaskTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/PolyMaskTextFieldDelegate.swift; sourceTree = "<group>"; };
+		F8479D15D4A3A41C3318D661CC9EC3B2 /* Compiler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compiler.swift; path = Source/InputMask/InputMask/Classes/Helper/Compiler.swift; sourceTree = "<group>"; };
+		FCFC2A3719A7C294C4811DA68AC6CF57 /* SignUpStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpStack.swift; path = NuSignUp/Classes/SignUpStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		070156DCBA5360CB011A5D500007E34B /* Frameworks */ = {
+		0DD8B4C3EF6F6661469FFEBF598C4EBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3B20E8DB52CF513D70CD547590757C9 /* Foundation.framework in Frameworks */,
+				18E7232B670F3C4127BF08551BCCD455 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0EBFDA802EE83B590F7F7ABAA1C94ED8 /* Frameworks */ = {
+		519F1206A17CBDDF1437B39B8F17AD8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46957E874645D240586DEF139EBAE781 /* Foundation.framework in Frameworks */,
+				3C247B71B69F72BC9C44ADBFD76118F4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0F2D58E0A14FD7595E5F3F05D78806BF /* Frameworks */ = {
+		762CA1F85EFC5A41B5030B4984D73E45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17EEF18DC766E776CA56DE904DA11141 /* Foundation.framework in Frameworks */,
+				62B0E6D850D6B354E4D98F8997EE8A0E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D2AC74E52AF8CEB41B34BAEE5A25C44 /* Frameworks */ = {
+		8B84774EB80B297069C0D4D2D652E146 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3D8B718ABE7028B50CE581482729A49 /* Foundation.framework in Frameworks */,
+				79D6D39B7D6244D5B16AA93462E7C6B7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00D098C2C31770AA30CABF2F487411F1 /* Pod */ = {
+		23950CBB867B658FEF82D29AACB8FB49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8CBFF41E54B49EF3C46E09ABD8D34E55 /* LICENSE */,
-				684D84657A85789F408627DAEF37C64E /* NuSignUp.podspec */,
-				22D2DAC6F7CEEC404F8C8D3CC4396142 /* README.md */,
+				3C224D015BAEB0E157C1ED4F2F7DDE5D /* InputMask.framework */,
+				1CE2F61040A605BD5F89AD22AEDFB2B7 /* NuSignUp.framework */,
+				7FCE209AEF07581D2E75CCEF3722D9F7 /* Pods_NuSignUp_Example.framework */,
+				6A3AC800EF021B44B98B8F211014F99A /* Pods_NuSignUp_Tests.framework */,
 			);
-			name = Pod;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		0FF2FFB60122E356BA81BA67845DD4A5 /* Support Files */ = {
+		3A2794C57D8FCDBEB1546984992BDD21 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				403EDD0A8404BF7038D8789F6E9BD6D1 /* Info.plist */,
-				BB322FBF757DA23DDA3D5E45BC2BC2C4 /* InputMask.modulemap */,
-				E3410B5BD7E8BE6F4F7E6124AD8CE5C5 /* InputMask.xcconfig */,
-				F2051740124A272C330581E394F66F3D /* InputMask-dummy.m */,
-				518767956ECDDD5110CAFC50F188EE73 /* InputMask-prefix.pch */,
-				DDCE37EAA128ECC329F21DB296ADA3DC /* InputMask-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/InputMask";
-			sourceTree = "<group>";
-		};
-		2E19C3DF5351126852C4D37F0896E0B7 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FD845D3F281F9988972543E17807672E /* NuSignUp */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		31A1DCEF2FAF42957D6B8ADCBEA1F058 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E6EA52D921C2129210AAC4F1CE1A13ED /* InputMask */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		55D5F128D8ACCB47C2A199C3725B7868 /* Pods-NuSignUp_Example */ = {
-			isa = PBXGroup;
-			children = (
-				38D955D34BB2913E7265F4A8A20B63BA /* Info.plist */,
-				C26E4FBD754AD7EADDA5A201989CBA87 /* Pods-NuSignUp_Example.modulemap */,
-				A17606EFF649856977940536E788779A /* Pods-NuSignUp_Example-acknowledgements.markdown */,
-				F986C6C6EAC82EA8E06CBD834371544B /* Pods-NuSignUp_Example-acknowledgements.plist */,
-				517164B444728642750B82B55225C549 /* Pods-NuSignUp_Example-dummy.m */,
-				90413A57189261CA3E7C52C146C051B5 /* Pods-NuSignUp_Example-frameworks.sh */,
-				6E44595EA31617C881BC691CE1ACE5FA /* Pods-NuSignUp_Example-resources.sh */,
-				1E7F6E950E99F2817A9973F421BECCF0 /* Pods-NuSignUp_Example-umbrella.h */,
-				817EC483C246602CB1B6717FDC9A4B39 /* Pods-NuSignUp_Example.debug.xcconfig */,
-				88444E24C5BF53EE646D8BC173997EF9 /* Pods-NuSignUp_Example.release.xcconfig */,
-			);
-			name = "Pods-NuSignUp_Example";
-			path = "Target Support Files/Pods-NuSignUp_Example";
-			sourceTree = "<group>";
-		};
-		57E2ECD43618C7DFC4BEBA990130F30C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				55D5F128D8ACCB47C2A199C3725B7868 /* Pods-NuSignUp_Example */,
-				83F08164219074C4238D3F50F70681EE /* Pods-NuSignUp_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		723C6638B622AB75A257C5F9CB8A7352 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BB92E2965B9CF6B930789C006B37C9EE /* Info.plist */,
-				C21C3E0588724D032D9C2B40C16097EA /* NuSignUp.modulemap */,
-				6F3EA86D093160885B8169C4D64D6A25 /* NuSignUp.xcconfig */,
-				30539E87C5252CBA350127674CD215F6 /* NuSignUp-dummy.m */,
-				A1BA5241CA48E8A44A7422D157DBF906 /* NuSignUp-prefix.pch */,
-				004456DA39E0B01C94EE3A8D2A58637B /* NuSignUp-umbrella.h */,
+				38AE521B2DA8A1D21B2B5C2425DB8F96 /* NuSignUp.modulemap */,
+				22E13F95A71683841F7982909B726095 /* NuSignUp.xcconfig */,
+				D9589B2230F1188ECFF0223E87594988 /* NuSignUp-dummy.m */,
+				52C88877693AE4640E959A7E314B6E03 /* NuSignUp-Info.plist */,
+				552583E0D1C8AF828806C5C2B9BFA695 /* NuSignUp-prefix.pch */,
+				151F1CF13935C863491BCEAB1F72DFF9 /* NuSignUp-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/NuSignUp";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		3B7A51F9AB9729F26AEB85F282AA80B7 /* InputMask */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				2E19C3DF5351126852C4D37F0896E0B7 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				31A1DCEF2FAF42957D6B8ADCBEA1F058 /* Pods */,
-				7DF2D7F5069427396486163C816B835B /* Products */,
-				57E2ECD43618C7DFC4BEBA990130F30C /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		7DF2D7F5069427396486163C816B835B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E8BE762CE739F4B4EC3CF3856878874A /* InputMask.framework */,
-				8A7C9D8A963F6B3BCC0AEF682173686D /* NuSignUp.framework */,
-				E4F4FB653F4D63E6ABACB79ACECF6BEC /* Pods_NuSignUp_Example.framework */,
-				16561AECE684674E54D49E57567ECFC3 /* Pods_NuSignUp_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		83F08164219074C4238D3F50F70681EE /* Pods-NuSignUp_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				64B0353E450B0193A3504DE6584B3D7E /* Info.plist */,
-				D4AF795D024BD66C4D4628B6A4FA3CF9 /* Pods-NuSignUp_Tests.modulemap */,
-				1252DF1531935FB9D599167BE404A5F3 /* Pods-NuSignUp_Tests-acknowledgements.markdown */,
-				2393BC45C7D0E76A8A7198949D4CF776 /* Pods-NuSignUp_Tests-acknowledgements.plist */,
-				148AEBED83B1DAE7489A29E81A050F73 /* Pods-NuSignUp_Tests-dummy.m */,
-				243D590CBE97FD58B32ED6EEDC4B07B7 /* Pods-NuSignUp_Tests-frameworks.sh */,
-				304DE49C8FA1EFD1AB0DF2C31D7DD6DA /* Pods-NuSignUp_Tests-resources.sh */,
-				6DD409DCF87D840DAD550C87D9BFB5C9 /* Pods-NuSignUp_Tests-umbrella.h */,
-				C50475606E5DF58B89D81B61724C263A /* Pods-NuSignUp_Tests.debug.xcconfig */,
-				EFB6D87B56AF057309103B48A7DB7305 /* Pods-NuSignUp_Tests.release.xcconfig */,
-			);
-			name = "Pods-NuSignUp_Tests";
-			path = "Target Support Files/Pods-NuSignUp_Tests";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E6EA52D921C2129210AAC4F1CE1A13ED /* InputMask */ = {
-			isa = PBXGroup;
-			children = (
-				BEDF4FDA9B24E8B40BC832A1A677BC52 /* CaretString.swift */,
-				9B7FC53BA0EDA10B2F026A1D98F8D987 /* CaretStringIterator.swift */,
-				1934F6D3D45FC675AB2C0D63FECC7A7C /* Compiler.swift */,
-				9C857BD6F51119DF6A89961050B77A27 /* EOLState.swift */,
-				88008CA922F7745F47DE9FFF507ECEAC /* FixedState.swift */,
-				A9CA93D6D12DF6416CCD2E1B4CD131E6 /* FormatSanitizer.swift */,
-				057C3B8F9507ABDB80536C4066B32EC2 /* FreeState.swift */,
-				81ED6ABCD6D680070E9F8EB5C1DF42CD /* InputMask.h */,
-				E270BC1FF7AA46B160A92794C42628F2 /* InterfaceBuilderSupport.swift */,
-				712A839CC66ABC98D7C410F30DDDCF9A /* Mask.swift */,
-				6C208B17CF8BF3304B95972F2676A930 /* MaskedTextFieldDelegate.swift */,
-				3F1AD0E3B2252FA3042529CC144926C0 /* Next.swift */,
-				F45528F38B40AC4FFA0E1378AD5EA5CB /* Notation.swift */,
-				F4E01F339B961ABEB9F7C1941710424F /* NSCharacterSet.swift */,
-				CA9332C2468ECB35EF81F607210DC849 /* OptionalValueState.swift */,
-				766F7D5F93CD7801A9295AEB58B03973 /* PolyMaskTextFieldDelegate.swift */,
-				B945798D1346ECC3DEC1D1A4823AFB09 /* ReversedMaskTextFieldDelegate.swift */,
-				1F1EAEE4EBB3BB6FBFD2DCB94E2C9A71 /* State.swift */,
-				9ED4E2286C1E587FC9FAE5BEC4D5797C /* String.swift */,
-				B7A6909B35E162564A5076C4EDC7EAEC /* ValueState.swift */,
-				0FF2FFB60122E356BA81BA67845DD4A5 /* Support Files */,
+				C292DE322106466B25382E995789A895 /* CaretString.swift */,
+				C707AF2124F6543CC395B93FAAC57FC3 /* CaretStringIterator.swift */,
+				F8479D15D4A3A41C3318D661CC9EC3B2 /* Compiler.swift */,
+				A4DF8FE1FE49BA2A24D9E4DB5B193D38 /* EOLState.swift */,
+				DC813A561F94FB916443CF54F67AFB6B /* FixedState.swift */,
+				C747307B1478BD31A2EE07C7448D5905 /* FormatSanitizer.swift */,
+				E89969325B09786DF3EEE2F22E4488D5 /* FreeState.swift */,
+				9418E8A51B0800CDC6CEE16C34CCA088 /* InputMask.h */,
+				11988402ECA1D7B09616428FFF447408 /* InterfaceBuilderSupport.swift */,
+				7DB83FDC3D2C4C1BCF0BAA194DA85B69 /* Mask.swift */,
+				97BAA689D6FFAA411FD02499CA068CFA /* MaskedTextFieldDelegate.swift */,
+				7F4E2A473F704187E8B1542A484D5664 /* MaskedTextInputDelegate.swift */,
+				9CB372F87886338E00AC31F6F4F4D737 /* MaskedTextViewDelegate.swift */,
+				DD0F2762CE3EFD88EBBE0685BE85EA10 /* Next.swift */,
+				DA3FE20951EB784CE6B5F4946823B721 /* Notation.swift */,
+				F2B978886D60D50D94F784BBDDDE1226 /* NSCharacterSet.swift */,
+				5D854FFB2CE05E6B087662853C153B77 /* OptionalValueState.swift */,
+				F72352417E5EDFB66E2087DB2FC35459 /* PolyMaskTextFieldDelegate.swift */,
+				B002C096EDF3DBDA6A7B9903B84FF20B /* PolyMaskTextViewDelegate.swift */,
+				2B5806944C9686DEA800BB1F53C2E3FA /* ReversedMaskTextFieldDelegate.swift */,
+				4FE58372D1EDFE39373645784EAA026B /* State.swift */,
+				57CF44C33525E097512078B1C12F40FB /* String.swift */,
+				24A7342A3D7D23E9517E39519663CC10 /* UITextInput.swift */,
+				416303B6444B6FC3F9E86622FE0C0A48 /* ValueState.swift */,
+				AFF1AE0263A0FBE081FB7BDE3CDCE65A /* Support Files */,
 			);
 			path = InputMask;
 			sourceTree = "<group>";
 		};
-		FD845D3F281F9988972543E17807672E /* NuSignUp */ = {
+		889749FC986FFE057BF0E5F47DD29C4F /* Pods-NuSignUp_Example */ = {
 			isa = PBXGroup;
 			children = (
-				EE1824C221060CE4004DDC83 /* InfoLabel.swift */,
-				63814EEA8739227D86ABF8E075268660 /* DefaultSignUpStepC.swift */,
-				B28B91C6E2D5A1B6134F7A8EB99C18F7 /* SignUpExtensions.swift */,
-				1FBD77B3C7F6D3D281C4990DA2891B71 /* SignUpHelper.swift */,
-				84B9F7595F455E995FEA39187561BC2F /* SignUpNameSVC.swift */,
-				AFF2F16ACF67A3AC73F523477F408458 /* SignUpProtocols.swift */,
-				110745C9380AA014EA548DFEF15FB6AD /* SignUpStack.swift */,
-				313D27CDCD0BC6A12D3E624675080DE7 /* SignUpStepVC.swift */,
-				00D098C2C31770AA30CABF2F487411F1 /* Pod */,
-				723C6638B622AB75A257C5F9CB8A7352 /* Support Files */,
+				3756E1EE08467BBA7A68B56452297D58 /* Pods-NuSignUp_Example.modulemap */,
+				0A41DBBF3DE8D892F0B8024359BDAABB /* Pods-NuSignUp_Example-acknowledgements.markdown */,
+				53E0700A8F55A4814B2D1C1C46D05D50 /* Pods-NuSignUp_Example-acknowledgements.plist */,
+				B348440FAF27295E7FFA8606ED434447 /* Pods-NuSignUp_Example-dummy.m */,
+				743592C6FFB8A9D48E69D8B6F6B9494D /* Pods-NuSignUp_Example-frameworks.sh */,
+				C45677483CBE2ACCA08D130255D47985 /* Pods-NuSignUp_Example-Info.plist */,
+				4BD68709BDB5A209D5B5B238E0A799B4 /* Pods-NuSignUp_Example-umbrella.h */,
+				E3DFDCE2246997C26FC2D6CFD689AD68 /* Pods-NuSignUp_Example.debug.xcconfig */,
+				913F10962D21B1789C829998A8CB9B95 /* Pods-NuSignUp_Example.release.xcconfig */,
+			);
+			name = "Pods-NuSignUp_Example";
+			path = "Target Support Files/Pods-NuSignUp_Example";
+			sourceTree = "<group>";
+		};
+		8C2ABADCE9F9D1BD1A99AAC71BB97A7D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4239EC89E68CC4DE005F31A2C0B7E20 /* NuSignUp */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AFF1AE0263A0FBE081FB7BDE3CDCE65A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E854D46C26B466540178C4A50EEF5DBC /* InputMask.modulemap */,
+				3EF2513D94082469CE96E6FE2C93B75E /* InputMask.xcconfig */,
+				95E721671B65348DC0889B1C5CDBC723 /* InputMask-dummy.m */,
+				F6E19471C7128E4EE4B4560E63A537D6 /* InputMask-Info.plist */,
+				152D3CF3A93EDE0D90EB807C1B63A498 /* InputMask-prefix.pch */,
+				66FB5DBC70A7CC1BFE565EB00ADD859E /* InputMask-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/InputMask";
+			sourceTree = "<group>";
+		};
+		C43C338992568187828384AD825902E5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				889749FC986FFE057BF0E5F47DD29C4F /* Pods-NuSignUp_Example */,
+				F09CBBB4B8543AC673BD20F3CB4B7261 /* Pods-NuSignUp_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8C2ABADCE9F9D1BD1A99AAC71BB97A7D /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D4FDCDA7DE1BD3FAF19BB3CE380E147A /* Pods */,
+				23950CBB867B658FEF82D29AACB8FB49 /* Products */,
+				C43C338992568187828384AD825902E5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4239EC89E68CC4DE005F31A2C0B7E20 /* NuSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				9EC1FA9766F745B9A234E0D3DAD76F24 /* DefaultSignUpStepC.swift */,
+				5011CC7C947484594D18FC40B96BC70C /* InfoLabel.swift */,
+				949BF72D27B89E9B94BA1E6BF245EC84 /* SignUpExtensions.swift */,
+				5DD04099AF7C946E15CB260D28029AB9 /* SignUpHelper.swift */,
+				2C7B16B10B13F0F68F3EBD8D1482D7C0 /* SignUpNameSVC.swift */,
+				87CD4176DEA30EEA7001974154207B1D /* SignUpProtocols.swift */,
+				FCFC2A3719A7C294C4811DA68AC6CF57 /* SignUpStack.swift */,
+				15A30DA0EA07B33592FC62C7D5FB8DC9 /* SignUpStepVC.swift */,
+				F84B55377D9CEF3CEF81926BB1FBEE8F /* Pod */,
+				3A2794C57D8FCDBEB1546984992BDD21 /* Support Files */,
 			);
 			name = NuSignUp;
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		D4FDCDA7DE1BD3FAF19BB3CE380E147A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B7A51F9AB9729F26AEB85F282AA80B7 /* InputMask */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F09CBBB4B8543AC673BD20F3CB4B7261 /* Pods-NuSignUp_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				37CE13C8A7EA633EE493AB36CB5F3895 /* Pods-NuSignUp_Tests.modulemap */,
+				E01C0F4032E62C7D1CAAA5FD01B274A3 /* Pods-NuSignUp_Tests-acknowledgements.markdown */,
+				1A0C3F288B85351FA83A87952802CA02 /* Pods-NuSignUp_Tests-acknowledgements.plist */,
+				3051C3862687176D2306B2241E2C56C6 /* Pods-NuSignUp_Tests-dummy.m */,
+				8D1C0BE5E6209233D88FA01432EF9516 /* Pods-NuSignUp_Tests-Info.plist */,
+				429EB416152357CEC0BE8C2EDF397D3C /* Pods-NuSignUp_Tests-umbrella.h */,
+				A7523D92A5DDC98C8209690A2BAEC7F8 /* Pods-NuSignUp_Tests.debug.xcconfig */,
+				BA683ED8F44CBEE310D8C3076A40B5A3 /* Pods-NuSignUp_Tests.release.xcconfig */,
+			);
+			name = "Pods-NuSignUp_Tests";
+			path = "Target Support Files/Pods-NuSignUp_Tests";
+			sourceTree = "<group>";
+		};
+		F84B55377D9CEF3CEF81926BB1FBEE8F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				60834FB55485D6CA6FE5CB734E92EFC6 /* LICENSE */,
+				4F224D0453BDF367C70129F9B165BE31 /* NuSignUp.podspec */,
+				CEADB0F133248DFFAB335D6BBC0EBCBE /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		28BCC95DFEABD10A47EF4E833D624601 /* Headers */ = {
+		0566EB97A602456A0DF27E0E195FF5BB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFD7889C08519DA0810128E537E31C54 /* NuSignUp-umbrella.h in Headers */,
+				D85A669B839860099C0F3E2A5663167C /* Pods-NuSignUp_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D31509A80FF8B8EC3ED01C1DA7953C0 /* Headers */ = {
+		870FD9A9620D9C8229121022C30B9726 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9997A6FC15DFDCE5108D9DF7355DD112 /* Pods-NuSignUp_Tests-umbrella.h in Headers */,
+				BB744F8D8F219BE220EA035AF5B66796 /* Pods-NuSignUp_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		776FDAB6A9F5DDD180CF69AD914F83BA /* Headers */ = {
+		9FA0A3C1D9E6FE66BFF621E00C12117E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E2DDE6402E08D18775265C2D110B717 /* InputMask-umbrella.h in Headers */,
-				9BB9BB58B40A7FF28C19CC0DCB2C0A03 /* InputMask.h in Headers */,
+				7E7E045FD3DA294DB9344F9458515E41 /* InputMask-umbrella.h in Headers */,
+				87D9DC3374202D15694280563D0A3F3C /* InputMask.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5BDC3A1084438D25185DB72FA899376 /* Headers */ = {
+		EFC169260F6A400B67AC5E19A72C46D6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAE7E64C1A26A5E5D0AA7502255F14B6 /* Pods-NuSignUp_Example-umbrella.h in Headers */,
+				7140E876ADAC4DFCC68660FDAD5795D4 /* NuSignUp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C4B840700B66AD0FC678231CBEE8938 /* NuSignUp */ = {
+		11A356E02B54BE2D3F3B73508D11B346 /* NuSignUp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AEDF23C9382C45DA6B57CC94C707A2A /* Build configuration list for PBXNativeTarget "NuSignUp" */;
+			buildConfigurationList = 90D9476C42F6E4BD19EAB8FD03E5CE82 /* Build configuration list for PBXNativeTarget "NuSignUp" */;
 			buildPhases = (
-				FBB9F21184157F2A197676156BDCBDC8 /* Sources */,
-				070156DCBA5360CB011A5D500007E34B /* Frameworks */,
-				28BCC95DFEABD10A47EF4E833D624601 /* Headers */,
+				EFC169260F6A400B67AC5E19A72C46D6 /* Headers */,
+				EE2A57DD2BDD05A3FEDFCDCB0A2DC40E /* Sources */,
+				8B84774EB80B297069C0D4D2D652E146 /* Frameworks */,
+				DAC80478E3D745FBF9A392F5C5A8CBDF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -418,53 +425,37 @@
 			);
 			name = NuSignUp;
 			productName = NuSignUp;
-			productReference = 8A7C9D8A963F6B3BCC0AEF682173686D /* NuSignUp.framework */;
+			productReference = 1CE2F61040A605BD5F89AD22AEDFB2B7 /* NuSignUp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3BF2BE90D1D7F39F6175F966755DEA99 /* Pods-NuSignUp_Example */ = {
+		88DC5DECCDB3DAD2C0AB522AB9641F78 /* Pods-NuSignUp_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9562E82AA4BFE8D230740D4AAC1D3E65 /* Build configuration list for PBXNativeTarget "Pods-NuSignUp_Example" */;
+			buildConfigurationList = 66903E58E069C525527A40CDF0E54D5F /* Build configuration list for PBXNativeTarget "Pods-NuSignUp_Example" */;
 			buildPhases = (
-				1AAB697194129CEB102A44B1ABF14B2E /* Sources */,
-				6D2AC74E52AF8CEB41B34BAEE5A25C44 /* Frameworks */,
-				F5BDC3A1084438D25185DB72FA899376 /* Headers */,
+				870FD9A9620D9C8229121022C30B9726 /* Headers */,
+				7FDDCA1762D475BC92794CD84749204A /* Sources */,
+				0DD8B4C3EF6F6661469FFEBF598C4EBC /* Frameworks */,
+				7F1EDBFFEE73BDBEEA118EF0ECF5157A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2BDD34458D0A25794D5617BBD56E2A0B /* PBXTargetDependency */,
-				47B9F5A07FEC44C62BFF62267305A42B /* PBXTargetDependency */,
+				AF71280BF3AC2E98154E040ACA595F9B /* PBXTargetDependency */,
+				9F9F591B96090398D896AC0FBAA95F75 /* PBXTargetDependency */,
 			);
 			name = "Pods-NuSignUp_Example";
 			productName = "Pods-NuSignUp_Example";
-			productReference = E4F4FB653F4D63E6ABACB79ACECF6BEC /* Pods_NuSignUp_Example.framework */;
+			productReference = 7FCE209AEF07581D2E75CCEF3722D9F7 /* Pods_NuSignUp_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CCD4C8F02EA0567505265F7327423273 /* Pods-NuSignUp_Tests */ = {
+		F1C7A074D0B347D404877431B080718D /* InputMask */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8638DBBDF1E56DFBB2CBEEF60A8C81B /* Build configuration list for PBXNativeTarget "Pods-NuSignUp_Tests" */;
+			buildConfigurationList = 646415233295C458AD704C373DF52398 /* Build configuration list for PBXNativeTarget "InputMask" */;
 			buildPhases = (
-				0725535DA9ACA6691F916702BBB30752 /* Sources */,
-				0F2D58E0A14FD7595E5F3F05D78806BF /* Frameworks */,
-				5D31509A80FF8B8EC3ED01C1DA7953C0 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EE19A2B5B47B34DF43331730FACF3418 /* PBXTargetDependency */,
-			);
-			name = "Pods-NuSignUp_Tests";
-			productName = "Pods-NuSignUp_Tests";
-			productReference = 16561AECE684674E54D49E57567ECFC3 /* Pods_NuSignUp_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F4A71676FE8EECF4ADE1EFCFEB625ECE /* InputMask */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 97DA00E90059EA950485EE032F0EF0DA /* Build configuration list for PBXNativeTarget "InputMask" */;
-			buildPhases = (
-				83E2F5AC42C7CF5EFA011989143B8D28 /* Sources */,
-				0EBFDA802EE83B590F7F7ABAA1C94ED8 /* Frameworks */,
-				776FDAB6A9F5DDD180CF69AD914F83BA /* Headers */,
+				9FA0A3C1D9E6FE66BFF621E00C12117E /* Headers */,
+				0558479F73D109A7F86BD017BD07B43D /* Sources */,
+				762CA1F85EFC5A41B5030B4984D73E45 /* Frameworks */,
+				0C39B808C669FEC89FFFB81E16657BF6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -472,132 +463,186 @@
 			);
 			name = InputMask;
 			productName = InputMask;
-			productReference = E8BE762CE739F4B4EC3CF3856878874A /* InputMask.framework */;
+			productReference = 3C224D015BAEB0E157C1ED4F2F7DDE5D /* InputMask.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA5E44FEFB06A7EF931FAAF96DD20192 /* Pods-NuSignUp_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3167719F88FD9AA5E0175BF06F82E05A /* Build configuration list for PBXNativeTarget "Pods-NuSignUp_Tests" */;
+			buildPhases = (
+				0566EB97A602456A0DF27E0E195FF5BB /* Headers */,
+				4550BC5FFA412E1DC5C4329ECE45CCFA /* Sources */,
+				519F1206A17CBDDF1437B39B8F17AD8F /* Frameworks */,
+				3AAB98E1F38331BC61F07742376B90F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5496BA8623EE3666D4F99D25B38E76E9 /* PBXTargetDependency */,
+			);
+			name = "Pods-NuSignUp_Tests";
+			productName = "Pods-NuSignUp_Tests";
+			productReference = 6A3AC800EF021B44B98B8F211014F99A /* Pods_NuSignUp_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				TargetAttributes = {
-					0C4B840700B66AD0FC678231CBEE8938 = {
-						LastSwiftMigration = 1010;
+					11A356E02B54BE2D3F3B73508D11B346 = {
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7DF2D7F5069427396486163C816B835B /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 23950CBB867B658FEF82D29AACB8FB49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F4A71676FE8EECF4ADE1EFCFEB625ECE /* InputMask */,
-				0C4B840700B66AD0FC678231CBEE8938 /* NuSignUp */,
-				3BF2BE90D1D7F39F6175F966755DEA99 /* Pods-NuSignUp_Example */,
-				CCD4C8F02EA0567505265F7327423273 /* Pods-NuSignUp_Tests */,
+				F1C7A074D0B347D404877431B080718D /* InputMask */,
+				11A356E02B54BE2D3F3B73508D11B346 /* NuSignUp */,
+				88DC5DECCDB3DAD2C0AB522AB9641F78 /* Pods-NuSignUp_Example */,
+				FA5E44FEFB06A7EF931FAAF96DD20192 /* Pods-NuSignUp_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		0C39B808C669FEC89FFFB81E16657BF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AAB98E1F38331BC61F07742376B90F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F1EDBFFEE73BDBEEA118EF0ECF5157A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC80478E3D745FBF9A392F5C5A8CBDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		0725535DA9ACA6691F916702BBB30752 /* Sources */ = {
+		0558479F73D109A7F86BD017BD07B43D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9255143BA3AD4507E9C0119A9992CFDF /* Pods-NuSignUp_Tests-dummy.m in Sources */,
+				A25537A20C89A7011E79CD4CA428F2B5 /* CaretString.swift in Sources */,
+				77D5B30B4828FF56E46B9668526E2E97 /* CaretStringIterator.swift in Sources */,
+				57AD5B47E3D8992A1A4811BAB00A2EB5 /* Compiler.swift in Sources */,
+				831BA0166A5B2303ED514DE2AC724BC7 /* EOLState.swift in Sources */,
+				FADD49F8EDF477201C8D61F17FC7BC21 /* FixedState.swift in Sources */,
+				A8A862312891E3B93C6EE078D193DE09 /* FormatSanitizer.swift in Sources */,
+				4DDE8D2E2954C35C149B33C89A93D163 /* FreeState.swift in Sources */,
+				4FAAA154C80510238A589692A5472F1B /* InputMask-dummy.m in Sources */,
+				8005A0ACA100A3ADD78B3F912BCE9BAE /* InterfaceBuilderSupport.swift in Sources */,
+				B6F811DE8AA6FE3F3AB06DC61F628E65 /* Mask.swift in Sources */,
+				5B5261D879AE9ECA692B354CBBCCE9A3 /* MaskedTextFieldDelegate.swift in Sources */,
+				E7BB375714924CC9DD0E6FA1343F3020 /* MaskedTextInputDelegate.swift in Sources */,
+				B6C8EEA341F726DB989217F445E20745 /* MaskedTextViewDelegate.swift in Sources */,
+				DF32DDD4C67EC12C00FB552E7A070C57 /* Next.swift in Sources */,
+				5705B005D4C21AABBE627BB1C19AD986 /* Notation.swift in Sources */,
+				BFFE0E3BAA336608A682B432BA274F0D /* NSCharacterSet.swift in Sources */,
+				20380CDA979EDBEDF4AFF0B8F319625C /* OptionalValueState.swift in Sources */,
+				D245AFC315B7E0A9F3A696CB565B2672 /* PolyMaskTextFieldDelegate.swift in Sources */,
+				907C3F7B522331AD6379A0BC0169D1AC /* PolyMaskTextViewDelegate.swift in Sources */,
+				4AF986C3997DB0922C04268F33E7AD80 /* ReversedMaskTextFieldDelegate.swift in Sources */,
+				4B24A2A04C403AE228021FFACB16E350 /* State.swift in Sources */,
+				EEBFB4910EAF3702D9D7C4FD5AC5753B /* String.swift in Sources */,
+				1DCB3EC0A0E319AB5F7C8F639B84713D /* UITextInput.swift in Sources */,
+				0DD5723778CE620C8A02FF7FA0D7AE7D /* ValueState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AAB697194129CEB102A44B1ABF14B2E /* Sources */ = {
+		4550BC5FFA412E1DC5C4329ECE45CCFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7B477ADB83C6EC4629A3238B4AEADAE /* Pods-NuSignUp_Example-dummy.m in Sources */,
+				27940FCADC864B7B1BCBBC4A74E43D13 /* Pods-NuSignUp_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83E2F5AC42C7CF5EFA011989143B8D28 /* Sources */ = {
+		7FDDCA1762D475BC92794CD84749204A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38FBAA4C0AF4F1966AF3E5980277937A /* CaretString.swift in Sources */,
-				9205CC519D437F11620BD9ABC7276CC4 /* CaretStringIterator.swift in Sources */,
-				7DB767CAC8D72839304C7C62293F3A7E /* Compiler.swift in Sources */,
-				A51E8B0D55F16B1A212F87A61309C7D0 /* EOLState.swift in Sources */,
-				2F14656E207A77C872213FAFDDF8CE6E /* FixedState.swift in Sources */,
-				E78A9EBB303B6478559F2AEF7F8EE7D0 /* FormatSanitizer.swift in Sources */,
-				05A7856300DBA738A946EED6311BCAA9 /* FreeState.swift in Sources */,
-				347A4ED6DF74D32EA6A629C5D75567F3 /* InputMask-dummy.m in Sources */,
-				E5170574EF7B6A3530D223FD5980CEBE /* InterfaceBuilderSupport.swift in Sources */,
-				B0D945D15E2AE6DE214A2836F38F7DFC /* Mask.swift in Sources */,
-				843E4F0AC5E8B6A2EED0DCF2C00431B9 /* MaskedTextFieldDelegate.swift in Sources */,
-				929ECBE518128D96519F8401379C9B24 /* Next.swift in Sources */,
-				8DA109901B30A859CB66621FB8D8B1A5 /* Notation.swift in Sources */,
-				B25E8F7BFA439091B8EA195745F224D2 /* NSCharacterSet.swift in Sources */,
-				876378135DDBBC6BF5CD63830036C4E9 /* OptionalValueState.swift in Sources */,
-				0114CD57076F9C0A2F44A64E99EBA1DE /* PolyMaskTextFieldDelegate.swift in Sources */,
-				E0C6D890F30C121ACBDB6CB69C19581E /* ReversedMaskTextFieldDelegate.swift in Sources */,
-				F96180E0A5D820795B961E98F09C8964 /* State.swift in Sources */,
-				481448326D2F2718B24720B075A654A2 /* String.swift in Sources */,
-				C1B704E625102BD3832794460D060AE8 /* ValueState.swift in Sources */,
+				D0E9E21027DD4554AB081FB04B656288 /* Pods-NuSignUp_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBB9F21184157F2A197676156BDCBDC8 /* Sources */ = {
+		EE2A57DD2BDD05A3FEDFCDCB0A2DC40E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE1824C421060CEA004DDC83 /* InfoLabel.swift in Sources */,
-				EC0CE324CAC0BB6CB18CB2B4A17D8B98 /* DefaultSignUpStepC.swift in Sources */,
-				3EE527FDB4C79B87BA62FAB1D45270D2 /* NuSignUp-dummy.m in Sources */,
-				9363CA940DA440C4D4FA6ADB6C5A2083 /* SignUpExtensions.swift in Sources */,
-				6EC78E1D6CCE731E2C48B826FDB8DBBC /* SignUpHelper.swift in Sources */,
-				A03EDD9058B55AC24B4494194672D8A5 /* SignUpNameSVC.swift in Sources */,
-				C02B050C3EAD63F73A46CE48A0DDD756 /* SignUpProtocols.swift in Sources */,
-				EF1429E290701B164A8FAFFC247E3DB4 /* SignUpStack.swift in Sources */,
-				DAC5FF60C9D601E0B3B1DC269CAB6B6A /* SignUpStepVC.swift in Sources */,
+				A95EF50D35E56688644387DCAA4D3E23 /* DefaultSignUpStepC.swift in Sources */,
+				D1051EA302D783770BA91BA87C30E2F5 /* InfoLabel.swift in Sources */,
+				AC279B5B9535B224B1F1A990681D40D1 /* NuSignUp-dummy.m in Sources */,
+				21C0F8736149C063DE094F58ACE0AB8F /* SignUpExtensions.swift in Sources */,
+				845E5809580A08C1180E929900B47401 /* SignUpHelper.swift in Sources */,
+				00EA3C221101F9849265045F5BF77892 /* SignUpNameSVC.swift in Sources */,
+				4CB8862554214D1BDECAD53AAC440AB1 /* SignUpProtocols.swift in Sources */,
+				9CB649FE9484C91816D35ABCA125B1A9 /* SignUpStack.swift in Sources */,
+				E47CFF00DF93FD001418EEF79F41B1D5 /* SignUpStepVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2BDD34458D0A25794D5617BBD56E2A0B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = InputMask;
-			target = F4A71676FE8EECF4ADE1EFCFEB625ECE /* InputMask */;
-			targetProxy = CCD96095B7E9225A3162C68F0EB3140E /* PBXContainerItemProxy */;
-		};
-		47B9F5A07FEC44C62BFF62267305A42B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NuSignUp;
-			target = 0C4B840700B66AD0FC678231CBEE8938 /* NuSignUp */;
-			targetProxy = 897B0AE1952558A46720CAB14C8773F2 /* PBXContainerItemProxy */;
-		};
-		EE19A2B5B47B34DF43331730FACF3418 /* PBXTargetDependency */ = {
+		5496BA8623EE3666D4F99D25B38E76E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-NuSignUp_Example";
-			target = 3BF2BE90D1D7F39F6175F966755DEA99 /* Pods-NuSignUp_Example */;
-			targetProxy = 33551BBE25A63EED641C991AB81B7DDF /* PBXContainerItemProxy */;
+			target = 88DC5DECCDB3DAD2C0AB522AB9641F78 /* Pods-NuSignUp_Example */;
+			targetProxy = 3E6A6DF666A6E9C0DB5F196E71606583 /* PBXContainerItemProxy */;
+		};
+		9F9F591B96090398D896AC0FBAA95F75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NuSignUp;
+			target = 11A356E02B54BE2D3F3B73508D11B346 /* NuSignUp */;
+			targetProxy = 4ACC25132516241F2CAE73ED2EA6D965 /* PBXContainerItemProxy */;
+		};
+		AF71280BF3AC2E98154E040ACA595F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InputMask;
+			target = F1C7A074D0B347D404877431B080718D /* InputMask */;
+			targetProxy = 3B4C54CBFEF9C3025D8D0FAD4153B74E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01344DCF201E9B187BDD5D5D31C36A89 /* Debug */ = {
+		268BF886D993FCFBA30A96CC0BBA1194 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C50475606E5DF58B89D81B61724C263A /* Pods-NuSignUp_Tests.debug.xcconfig */;
+			baseConfigurationReference = 22E13F95A71683841F7982909B726095 /* NuSignUp.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -608,26 +653,26 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NuSignUp_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NuSignUp/NuSignUp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NuSignUp/NuSignUp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/NuSignUp/NuSignUp.modulemap";
+				PRODUCT_MODULE_NAME = NuSignUp;
+				PRODUCT_NAME = NuSignUp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
+		3048B0C5C704DFFF688DA57F5380ED58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -659,8 +704,132 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		321D4B1A3355902609D6C0827FA21DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22E13F95A71683841F7982909B726095 /* NuSignUp.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NuSignUp/NuSignUp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NuSignUp/NuSignUp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NuSignUp/NuSignUp.modulemap";
+				PRODUCT_MODULE_NAME = NuSignUp;
+				PRODUCT_NAME = NuSignUp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E0AEC42C723F2D1D74D61CE14269378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913F10962D21B1789C829998A8CB9B95 /* Pods-NuSignUp_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B0C8287D755FD95091CF35D87FB8B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -681,143 +850,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		83AA46534C653C07BB8E97532C9F6E1A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F3EA86D093160885B8169C4D64D6A25 /* NuSignUp.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NuSignUp/NuSignUp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NuSignUp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NuSignUp/NuSignUp.modulemap";
-				PRODUCT_MODULE_NAME = NuSignUp;
-				PRODUCT_NAME = NuSignUp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		A7CB704B80B874A7367250B4664D9397 /* Release */ = {
+		7580478D2CDF35D71E2622E777634236 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F3EA86D093160885B8169C4D64D6A25 /* NuSignUp.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NuSignUp/NuSignUp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NuSignUp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NuSignUp/NuSignUp.modulemap";
-				PRODUCT_MODULE_NAME = NuSignUp;
-				PRODUCT_NAME = NuSignUp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		ABD8D13E1750BD6BE3D4D6AE696BBF46 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFB6D87B56AF057309103B48A7DB7305 /* Pods-NuSignUp_Tests.release.xcconfig */;
+			baseConfigurationReference = E3DFDCE2246997C26FC2D6CFD689AD68 /* Pods-NuSignUp_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -830,7 +877,106 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NuSignUp_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7CB0A8BFC6D6DDC83EA6569C27F81F9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7523D92A5DDC98C8209690A2BAEC7F8 /* Pods-NuSignUp_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7FE9A1B943FFF25B81FEC5FB3CB80248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF2513D94082469CE96E6FE2C93B75E /* InputMask.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InputMask/InputMask-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InputMask/InputMask-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/InputMask/InputMask.modulemap";
+				PRODUCT_MODULE_NAME = InputMask;
+				PRODUCT_NAME = InputMask;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5A48985C07B037380A0DA92F30575D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA683ED8F44CBEE310D8C3076A40B5A3 /* Pods-NuSignUp_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NuSignUp_Tests/Pods-NuSignUp_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -850,45 +996,9 @@
 			};
 			name = Release;
 		};
-		C214FBD7D26A5997741913481491D007 /* Release */ = {
+		EF97A8395BC681C238A08B8544E110E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88444E24C5BF53EE646D8BC173997EF9 /* Pods-NuSignUp_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NuSignUp_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CC2FEEA170888976374BC4AB52B048A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3410B5BD7E8BE6F4F7E6124AD8CE5C5 /* InputMask.xcconfig */;
+			baseConfigurationReference = 3EF2513D94082469CE96E6FE2C93B75E /* InputMask.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -900,7 +1010,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/InputMask/InputMask-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/InputMask/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/InputMask/InputMask-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -910,132 +1020,63 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		FBCD59FD0175A1C8537F2C6406DF8A09 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3410B5BD7E8BE6F4F7E6124AD8CE5C5 /* InputMask.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/InputMask/InputMask-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/InputMask/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/InputMask/InputMask.modulemap";
-				PRODUCT_MODULE_NAME = InputMask;
-				PRODUCT_NAME = InputMask;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FE8282EEAEA80E7128F1ED8E15AC3DA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 817EC483C246602CB1B6717FDC9A4B39 /* Pods-NuSignUp_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NuSignUp_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NuSignUp_Example/Pods-NuSignUp_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		3167719F88FD9AA5E0175BF06F82E05A /* Build configuration list for PBXNativeTarget "Pods-NuSignUp_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
-				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
+				7CB0A8BFC6D6DDC83EA6569C27F81F9E /* Debug */,
+				D5A48985C07B037380A0DA92F30575D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9562E82AA4BFE8D230740D4AAC1D3E65 /* Build configuration list for PBXNativeTarget "Pods-NuSignUp_Example" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE8282EEAEA80E7128F1ED8E15AC3DA1 /* Debug */,
-				C214FBD7D26A5997741913481491D007 /* Release */,
+				5B0C8287D755FD95091CF35D87FB8B2D /* Debug */,
+				3048B0C5C704DFFF688DA57F5380ED58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97DA00E90059EA950485EE032F0EF0DA /* Build configuration list for PBXNativeTarget "InputMask" */ = {
+		646415233295C458AD704C373DF52398 /* Build configuration list for PBXNativeTarget "InputMask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBCD59FD0175A1C8537F2C6406DF8A09 /* Debug */,
-				CC2FEEA170888976374BC4AB52B048A6 /* Release */,
+				7FE9A1B943FFF25B81FEC5FB3CB80248 /* Debug */,
+				EF97A8395BC681C238A08B8544E110E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AEDF23C9382C45DA6B57CC94C707A2A /* Build configuration list for PBXNativeTarget "NuSignUp" */ = {
+		66903E58E069C525527A40CDF0E54D5F /* Build configuration list for PBXNativeTarget "Pods-NuSignUp_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83AA46534C653C07BB8E97532C9F6E1A /* Debug */,
-				A7CB704B80B874A7367250B4664D9397 /* Release */,
+				7580478D2CDF35D71E2622E777634236 /* Debug */,
+				3E0AEC42C723F2D1D74D61CE14269378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8638DBBDF1E56DFBB2CBEEF60A8C81B /* Build configuration list for PBXNativeTarget "Pods-NuSignUp_Tests" */ = {
+		90D9476C42F6E4BD19EAB8FD03E5CE82 /* Build configuration list for PBXNativeTarget "NuSignUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01344DCF201E9B187BDD5D5D31C36A89 /* Debug */,
-				ABD8D13E1750BD6BE3D4D6AE696BBF46 /* Release */,
+				321D4B1A3355902609D6C0827FA21DCA /* Debug */,
+				268BF886D993FCFBA30A96CC0BBA1194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

@@ -211,6 +211,8 @@ Elliptical format examples:
 4. `[_…]` is a wildcard mask with a single mandatory character. Allows to enter letters and digits. Requires a single character (digit or letter).
 5. `[-…]` acts same as `[…]`.
 
+Elliptical masks support custom notations, too.
+
 <a name="custom_notation" />
 
 ## Custom notations
@@ -253,7 +255,7 @@ Mask.getOrCreate(
 )
 ```
 
-For your convinience, `MaskedTextFieldDelegate` and its children now contains a `customNotations` field. You may still use the Interface Builder with custom formats, just don't forget to programmatically assign your custom notations:
+For your convenience, `MaskedTextFieldDelegate` and its children now contains a `customNotations` field. You may still use the Interface Builder with custom formats, just don't forget to programmatically assign your custom notations:
 
 ```swift
 class ViewController: UIViewController {
@@ -374,6 +376,25 @@ $1000
 ```
 
 </details>
+
+## `UITextView` support
+
+Currently, the library has full support for all the features mentioned above for the `UITextView` component, except the autocompletion on focus.
+
+However, you may override the `textViewDidBeginEditing(textView:)` method in order to regain this feature. Consider copying the `textFieldDidBeginEditing(textField:)` implementation, replacing the empty `replacementString` with any character your app won't ever be dealing with.
+
+```swift
+override open func textViewDidBeginEditing(_ textView: UITextView) {
+    if autocompleteOnFocus && textView.text.isEmpty {
+        let _ = self.textView(
+            textView,
+            shouldChangeTextIn: NSMakeRange(0, 0),
+            replacementText: "…"
+        )
+    }
+    listener?.textViewDidBeginEditing?(textView)
+}
+```
 
 # Known issues
 

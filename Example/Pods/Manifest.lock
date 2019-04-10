@@ -1,13 +1,13 @@
 PODS:
-  - InputMask (3.4.0)
-  - NuSignUp (0.4.0)
+  - InputMask (3.5.0)
+  - NuSignUp (1.0.3)
 
 DEPENDENCIES:
   - InputMask (~> 3.4)
   - NuSignUp (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - InputMask
 
 EXTERNAL SOURCES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  InputMask: c75abc7660ff719809edde03684f9114b947d67e
-  NuSignUp: ec0d19925804b050f1e78a85d104f60a496123b7
+  InputMask: 26b8eeaaf322a0307bd404a5097192d61e978aa3
+  NuSignUp: d7eb7d624e7c1610200b1ad87d3b64de21b18af0
 
 PODFILE CHECKSUM: 50e5af0179c06ad5d2f1fe0cc9cc25798c54ce90
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1

@@ -1,6 +1,6 @@
 PODS:
   - InputMask (4.1.1)
-  - NuSignUp (1.0.3)
+  - NuSignUp (1.0.4)
 
 DEPENDENCIES:
   - InputMask (~> 4.1.1)
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   InputMask: 88c7c1432816333e884e647f8c2d69485ba525d1
-  NuSignUp: d7eb7d624e7c1610200b1ad87d3b64de21b18af0
+  NuSignUp: 8f855d40a12febc95fce6abb6be718ce80e1d0d9
 
 PODFILE CHECKSUM: 2b8abf38244d8ccbf15be6a30e602bbfbf026e48
 

@@ -8,9 +8,16 @@ import Foundation
 
 
 /**
- Utility extension for comonly used ```Mask``` operations upon strings.
+ Utility extension for commonly used ```Mask``` operations upon strings.
  */
-extension String {
+public extension String {
+
+    /**
+     A shortcut for ```String(str.reversed())```.
+     */
+    var reversed: String {
+        return String(self.reversed())
+    }
     
     /**
      Make a string by cutting the first character of current.
@@ -21,6 +28,25 @@ extension String {
      */
     func truncateFirst() -> String {
         return String(self[self.index(after: self.startIndex)...])
+    }
+    
+    /**
+     Find common prefix.
+     */
+    func prefixIntersection(with string: String) -> Substring {
+        var lhsIndex = startIndex
+        var rhsIndex = string.startIndex
+        
+        while lhsIndex != endIndex && rhsIndex != string.endIndex {
+            if self[lhsIndex] == string[rhsIndex] {
+                lhsIndex = index(after: lhsIndex)
+                rhsIndex = string.index(after: rhsIndex)
+            } else {
+                return self[..<lhsIndex]
+            }
+        }
+        
+        return self[..<lhsIndex]
     }
     
     /**
@@ -43,7 +69,20 @@ extension String {
                     }
                 }
         )
+    }
 
+    /**
+     A shortcut for ```str.distance(from: str.startIndex, to: index)```.
+     */
+    func distanceFromStartIndex(to index: String.Index) -> Int {
+        return self.distance(from: self.startIndex, to: index)
+    }
+
+    /**
+     A shortcut for ```str.index(str.startIndex, offsetBy: offset)```.
+     */
+    func startIndex(offsetBy offset: Int) -> String.Index {
+        return self.index(self.startIndex, offsetBy: offset)
     }
     
 }

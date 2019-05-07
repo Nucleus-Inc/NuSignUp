@@ -271,7 +271,8 @@ class SignUpCodeSVC: SignUpStepVC,MaskedTextFieldDelegateListener {
 
     //MARK: - UITextField methods
     private func setUpTextField(){
-        maskDelegate = MaskedTextFieldDelegate(format: "[0]")
+        maskDelegate = MaskedTextFieldDelegate()
+        maskDelegate?.primaryMaskFormat = "[0]"//MaskedTextFieldDelegate(format: "[0]")
         maskDelegate?.autocomplete = false
         maskDelegate?.listener = self
         

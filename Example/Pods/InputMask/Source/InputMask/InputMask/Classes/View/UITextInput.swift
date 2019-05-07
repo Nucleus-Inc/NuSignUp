@@ -11,7 +11,8 @@ import UIKit
 /**
  Common logic for UITextField and UITextView.
  */
-extension UITextInput {
+@available(iOS 11, *)
+public extension UITextInput {
     
     var allText: String {
         get {
@@ -59,11 +60,6 @@ extension UITextInput {
             selectedTextRange = textRange(from: from, to: to)
         }
     }
-    
-}
-
-
-private extension UITextInput {
     
     var allTextRange: UITextRange? {
         return self.textRange(from: self.beginningOfDocument, to: self.endOfDocument)

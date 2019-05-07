@@ -8,49 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		00EA3C221101F9849265045F5BF77892 /* SignUpNameSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B16B10B13F0F68F3EBD8D1482D7C0 /* SignUpNameSVC.swift */; };
-		0DD5723778CE620C8A02FF7FA0D7AE7D /* ValueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416303B6444B6FC3F9E86622FE0C0A48 /* ValueState.swift */; };
+		034163C80B88951C58C0BE9BEFCB9377 /* InputMask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E96D25922D8BA9BA1D08EC6156A1B34D /* InputMask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		104DC524B7C1F0E10569EB109DB4D60B /* OptionalValueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C695EABA02CB25093880A85DB6859 /* OptionalValueState.swift */; };
 		18E7232B670F3C4127BF08551BCCD455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		1DCB3EC0A0E319AB5F7C8F639B84713D /* UITextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A7342A3D7D23E9517E39519663CC10 /* UITextInput.swift */; };
-		20380CDA979EDBEDF4AFF0B8F319625C /* OptionalValueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D854FFB2CE05E6B087662853C153B77 /* OptionalValueState.swift */; };
+		1FEBF2282019B93695C88223894CD79A /* Next.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62432A4C33AA2A720339F91A1CCB6B7F /* Next.swift */; };
 		21C0F8736149C063DE094F58ACE0AB8F /* SignUpExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949BF72D27B89E9B94BA1E6BF245EC84 /* SignUpExtensions.swift */; };
 		27940FCADC864B7B1BCBBC4A74E43D13 /* Pods-NuSignUp_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3051C3862687176D2306B2241E2C56C6 /* Pods-NuSignUp_Tests-dummy.m */; };
+		3291B148D4A0FB6569BE90A1CA3ECD3B /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B10486EB7BD8DA803F1DF663CD488 /* CharacterSet.swift */; };
+		36F18F7C4E432D7B068F9C77427773B4 /* Notation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD01AF02DF15C6D08F05E8AC810F8173 /* Notation.swift */; };
 		3C247B71B69F72BC9C44ADBFD76118F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		4AF986C3997DB0922C04268F33E7AD80 /* ReversedMaskTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5806944C9686DEA800BB1F53C2E3FA /* ReversedMaskTextFieldDelegate.swift */; };
-		4B24A2A04C403AE228021FFACB16E350 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE58372D1EDFE39373645784EAA026B /* State.swift */; };
+		3D52C447C96CE91A9A88BD7B6B44A64C /* FixedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699044BD12DDCEA58E6945384586B2B2 /* FixedState.swift */; };
+		4269D2D9FC36CEDA83E0CD9A1BB61EDB /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA1038D83B15D68FB4EFADA0763D54 /* Mask.swift */; };
 		4CB8862554214D1BDECAD53AAC440AB1 /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CD4176DEA30EEA7001974154207B1D /* SignUpProtocols.swift */; };
-		4DDE8D2E2954C35C149B33C89A93D163 /* FreeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89969325B09786DF3EEE2F22E4488D5 /* FreeState.swift */; };
-		4FAAA154C80510238A589692A5472F1B /* InputMask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E721671B65348DC0889B1C5CDBC723 /* InputMask-dummy.m */; };
-		5705B005D4C21AABBE627BB1C19AD986 /* Notation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3FE20951EB784CE6B5F4946823B721 /* Notation.swift */; };
-		57AD5B47E3D8992A1A4811BAB00A2EB5 /* Compiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8479D15D4A3A41C3318D661CC9EC3B2 /* Compiler.swift */; };
-		5B5261D879AE9ECA692B354CBBCCE9A3 /* MaskedTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BAA689D6FFAA411FD02499CA068CFA /* MaskedTextFieldDelegate.swift */; };
-		62B0E6D850D6B354E4D98F8997EE8A0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		4EADDB36668C0D2663B0793B9D71666C /* Compiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3759F29EAE6B9828AE46BFD1CAA989B0 /* Compiler.swift */; };
+		58FD547B5998110539C58F80B41C6849 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719979CFE68FB5316F0362D5D65093CD /* UITextField.swift */; };
+		67243A1E5EC355839BA81B7826A7798D /* InputMask.h in Headers */ = {isa = PBXBuildFile; fileRef = 28032A8F6FAD0B2782C812F9EEDA6291 /* InputMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7140E876ADAC4DFCC68660FDAD5795D4 /* NuSignUp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 151F1CF13935C863491BCEAB1F72DFF9 /* NuSignUp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77D5B30B4828FF56E46B9668526E2E97 /* CaretStringIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C707AF2124F6543CC395B93FAAC57FC3 /* CaretStringIterator.swift */; };
+		79B14A6F26217DB07ACBEF03C60ECAAB /* RTLMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174207DD210155BFC696184D8038B2B7 /* RTLMask.swift */; };
 		79D6D39B7D6244D5B16AA93462E7C6B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		7E7E045FD3DA294DB9344F9458515E41 /* InputMask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66FB5DBC70A7CC1BFE565EB00ADD859E /* InputMask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8005A0ACA100A3ADD78B3F912BCE9BAE /* InterfaceBuilderSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11988402ECA1D7B09616428FFF447408 /* InterfaceBuilderSupport.swift */; };
-		831BA0166A5B2303ED514DE2AC724BC7 /* EOLState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DF8FE1FE49BA2A24D9E4DB5B193D38 /* EOLState.swift */; };
 		845E5809580A08C1180E929900B47401 /* SignUpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD04099AF7C946E15CB260D28029AB9 /* SignUpHelper.swift */; };
-		87D9DC3374202D15694280563D0A3F3C /* InputMask.h in Headers */ = {isa = PBXBuildFile; fileRef = 9418E8A51B0800CDC6CEE16C34CCA088 /* InputMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		907C3F7B522331AD6379A0BC0169D1AC /* PolyMaskTextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002C096EDF3DBDA6A7B9903B84FF20B /* PolyMaskTextViewDelegate.swift */; };
+		873BC72C12B3C8087DB398B4B89F195F /* FormatSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59179570C209864A06AFA54E9FD3861 /* FormatSanitizer.swift */; };
+		8E7E01146D2C70388928EBFC13773435 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75B0CC6E993712FCE1A471703DD914C /* State.swift */; };
+		90338F8B6186804D3DD429B8FDAFEEC7 /* AffinityCalculationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA45A934BC4CCF3CC1A0E08750264F3 /* AffinityCalculationStrategy.swift */; };
+		985D2AC7E04B7D3F861498F223041E0A /* MaskedTextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D0E5C69CD8C4C3CB8F12994873DAB3 /* MaskedTextViewDelegate.swift */; };
+		9887166F1AE5CB74481327BEC2517382 /* FreeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884998225DC5FEE573C702861D136584 /* FreeState.swift */; };
 		9CB649FE9484C91816D35ABCA125B1A9 /* SignUpStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC2A3719A7C294C4811DA68AC6CF57 /* SignUpStack.swift */; };
-		A25537A20C89A7011E79CD4CA428F2B5 /* CaretString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C292DE322106466B25382E995789A895 /* CaretString.swift */; };
-		A8A862312891E3B93C6EE078D193DE09 /* FormatSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C747307B1478BD31A2EE07C7448D5905 /* FormatSanitizer.swift */; };
+		9CCC5913CF9D5C5E87C6ABE192CD5FF0 /* CaretStringIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0093191F1BEDEF404281ED8F19598E4 /* CaretStringIterator.swift */; };
+		9D8A1496144E06AE91B9FDCF7D0AF4EC /* RTLCaretStringIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D143991D872C1977209E80626D163 /* RTLCaretStringIterator.swift */; };
+		9E2EC76565CE1951DEF09D04E3FD0308 /* MaskedTextInputListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204A4E96E230D8B1CD2D562DF030C52E /* MaskedTextInputListener.swift */; };
+		A39AD4B7187A58F4B667AB290B9C473B /* EOLState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6803F1D89E2707641DC73DB001AF31 /* EOLState.swift */; };
+		A7010BF6CA46525FFCE8C1BF96B72804 /* MaskedTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0EECBBDF494715825189480C2E3133 /* MaskedTextFieldDelegate.swift */; };
 		A95EF50D35E56688644387DCAA4D3E23 /* DefaultSignUpStepC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1FA9766F745B9A234E0D3DAD76F24 /* DefaultSignUpStepC.swift */; };
 		AC279B5B9535B224B1F1A990681D40D1 /* NuSignUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9589B2230F1188ECFF0223E87594988 /* NuSignUp-dummy.m */; };
-		B6C8EEA341F726DB989217F445E20745 /* MaskedTextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB372F87886338E00AC31F6F4F4D737 /* MaskedTextViewDelegate.swift */; };
-		B6F811DE8AA6FE3F3AB06DC61F628E65 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB83FDC3D2C4C1BCF0BAA194DA85B69 /* Mask.swift */; };
+		B10DF5C2E9596833419CF6887E1F68E5 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F926C34625B8BE0D88499DF4BFADAEAA /* UITextView.swift */; };
+		B209DCC9A134923511AF593538F56B92 /* UITextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19967CD488BCB60BB2E139B41F09135 /* UITextInput.swift */; };
+		B597E9EF72C8B254F3DAC645DB3DC492 /* ValueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0988034CD491628931C48750E7E8855 /* ValueState.swift */; };
 		BB744F8D8F219BE220EA035AF5B66796 /* Pods-NuSignUp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD68709BDB5A209D5B5B238E0A799B4 /* Pods-NuSignUp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFFE0E3BAA336608A682B432BA274F0D /* NSCharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B978886D60D50D94F784BBDDDE1226 /* NSCharacterSet.swift */; };
 		D0E9E21027DD4554AB081FB04B656288 /* Pods-NuSignUp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B348440FAF27295E7FFA8606ED434447 /* Pods-NuSignUp_Example-dummy.m */; };
 		D1051EA302D783770BA91BA87C30E2F5 /* InfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011CC7C947484594D18FC40B96BC70C /* InfoLabel.swift */; };
-		D245AFC315B7E0A9F3A696CB565B2672 /* PolyMaskTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72352417E5EDFB66E2087DB2FC35459 /* PolyMaskTextFieldDelegate.swift */; };
 		D85A669B839860099C0F3E2A5663167C /* Pods-NuSignUp_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 429EB416152357CEC0BE8C2EDF397D3C /* Pods-NuSignUp_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF32DDD4C67EC12C00FB552E7A070C57 /* Next.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F2762CE3EFD88EBBE0685BE85EA10 /* Next.swift */; };
+		E261CF85431934C408A9909194389462 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6420F34F053A2230D4FB74732AA3FFF2 /* String.swift */; };
 		E47CFF00DF93FD001418EEF79F41B1D5 /* SignUpStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A30DA0EA07B33592FC62C7D5FB8DC9 /* SignUpStepVC.swift */; };
-		E7BB375714924CC9DD0E6FA1343F3020 /* MaskedTextInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4E2A473F704187E8B1542A484D5664 /* MaskedTextInputDelegate.swift */; };
-		EEBFB4910EAF3702D9D7C4FD5AC5753B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF44C33525E097512078B1C12F40FB /* String.swift */; };
-		FADD49F8EDF477201C8D61F17FC7BC21 /* FixedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC813A561F94FB916443CF54F67AFB6B /* FixedState.swift */; };
+		E9644A09AF619FBEDC50C8FD3BE0BF50 /* InputMask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 787D3F93A833F904C5CC7384AC541D02 /* InputMask-dummy.m */; };
+		F5C4E98C459D242927825D0E715ECFD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		FBACAE7CD5406D4FF179CA3F0C1AB7B5 /* CaretString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB258075B238476FE7516DE31EE9D6 /* CaretString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +59,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F1C7A074D0B347D404877431B080718D;
+			remoteGlobalIDString = E0F66968D5DBDCED514A8AA4DF38768D;
 			remoteInfo = InputMask;
 		};
 		3E6A6DF666A6E9C0DB5F196E71606583 /* PBXContainerItemProxy */ = {
@@ -79,74 +80,75 @@
 
 /* Begin PBXFileReference section */
 		0A41DBBF3DE8D892F0B8024359BDAABB /* Pods-NuSignUp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NuSignUp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		11988402ECA1D7B09616428FFF447408 /* InterfaceBuilderSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterfaceBuilderSupport.swift; path = Source/InputMask/InputMask/Classes/View/InterfaceBuilderSupport.swift; sourceTree = "<group>"; };
 		151F1CF13935C863491BCEAB1F72DFF9 /* NuSignUp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NuSignUp-umbrella.h"; sourceTree = "<group>"; };
-		152D3CF3A93EDE0D90EB807C1B63A498 /* InputMask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputMask-prefix.pch"; sourceTree = "<group>"; };
 		15A30DA0EA07B33592FC62C7D5FB8DC9 /* SignUpStepVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpStepVC.swift; path = NuSignUp/Classes/SignUpStepVC.swift; sourceTree = "<group>"; };
+		174207DD210155BFC696184D8038B2B7 /* RTLMask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTLMask.swift; path = Source/InputMask/InputMask/Classes/RTLMask.swift; sourceTree = "<group>"; };
 		1A0C3F288B85351FA83A87952802CA02 /* Pods-NuSignUp_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1CE2F61040A605BD5F89AD22AEDFB2B7 /* NuSignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NuSignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		204A4E96E230D8B1CD2D562DF030C52E /* MaskedTextInputListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskedTextInputListener.swift; path = Source/InputMask/InputMask/Classes/View/MaskedTextInputListener.swift; sourceTree = "<group>"; };
 		22E13F95A71683841F7982909B726095 /* NuSignUp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NuSignUp.xcconfig; sourceTree = "<group>"; };
-		24A7342A3D7D23E9517E39519663CC10 /* UITextInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITextInput.swift; path = Source/InputMask/InputMask/Classes/View/UITextInput.swift; sourceTree = "<group>"; };
-		2B5806944C9686DEA800BB1F53C2E3FA /* ReversedMaskTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReversedMaskTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/ReversedMaskTextFieldDelegate.swift; sourceTree = "<group>"; };
+		28032A8F6FAD0B2782C812F9EEDA6291 /* InputMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InputMask.h; path = Source/InputMask/InputMask/Classes/InputMask.h; sourceTree = "<group>"; };
 		2C7B16B10B13F0F68F3EBD8D1482D7C0 /* SignUpNameSVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpNameSVC.swift; path = NuSignUp/Classes/SignUpNameSVC.swift; sourceTree = "<group>"; };
 		3051C3862687176D2306B2241E2C56C6 /* Pods-NuSignUp_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NuSignUp_Tests-dummy.m"; sourceTree = "<group>"; };
 		3756E1EE08467BBA7A68B56452297D58 /* Pods-NuSignUp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NuSignUp_Example.modulemap"; sourceTree = "<group>"; };
+		3759F29EAE6B9828AE46BFD1CAA989B0 /* Compiler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compiler.swift; path = Source/InputMask/InputMask/Classes/Helper/Compiler.swift; sourceTree = "<group>"; };
 		37CE13C8A7EA633EE493AB36CB5F3895 /* Pods-NuSignUp_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NuSignUp_Tests.modulemap"; sourceTree = "<group>"; };
 		38AE521B2DA8A1D21B2B5C2425DB8F96 /* NuSignUp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NuSignUp.modulemap; sourceTree = "<group>"; };
+		3AFA1038D83B15D68FB4EFADA0763D54 /* Mask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mask.swift; path = Source/InputMask/InputMask/Classes/Mask.swift; sourceTree = "<group>"; };
 		3C224D015BAEB0E157C1ED4F2F7DDE5D /* InputMask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InputMask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EF2513D94082469CE96E6FE2C93B75E /* InputMask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputMask.xcconfig; sourceTree = "<group>"; };
-		416303B6444B6FC3F9E86622FE0C0A48 /* ValueState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueState.swift; path = Source/InputMask/InputMask/Classes/Model/State/ValueState.swift; sourceTree = "<group>"; };
 		429EB416152357CEC0BE8C2EDF397D3C /* Pods-NuSignUp_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NuSignUp_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4BD68709BDB5A209D5B5B238E0A799B4 /* Pods-NuSignUp_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NuSignUp_Example-umbrella.h"; sourceTree = "<group>"; };
 		4F224D0453BDF367C70129F9B165BE31 /* NuSignUp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NuSignUp.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4FE58372D1EDFE39373645784EAA026B /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Source/InputMask/InputMask/Classes/Model/State.swift; sourceTree = "<group>"; };
 		5011CC7C947484594D18FC40B96BC70C /* InfoLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfoLabel.swift; path = NuSignUp/Classes/InfoLabel.swift; sourceTree = "<group>"; };
 		52C88877693AE4640E959A7E314B6E03 /* NuSignUp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NuSignUp-Info.plist"; sourceTree = "<group>"; };
 		53E0700A8F55A4814B2D1C1C46D05D50 /* Pods-NuSignUp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		552583E0D1C8AF828806C5C2B9BFA695 /* NuSignUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NuSignUp-prefix.pch"; sourceTree = "<group>"; };
-		57CF44C33525E097512078B1C12F40FB /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Source/InputMask/InputMask/Classes/Helper/String.swift; sourceTree = "<group>"; };
-		5D854FFB2CE05E6B087662853C153B77 /* OptionalValueState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalValueState.swift; path = Source/InputMask/InputMask/Classes/Model/State/OptionalValueState.swift; sourceTree = "<group>"; };
+		5B6803F1D89E2707641DC73DB001AF31 /* EOLState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EOLState.swift; path = Source/InputMask/InputMask/Classes/Model/State/EOLState.swift; sourceTree = "<group>"; };
+		5CBEFBE9AA472CE256DBB7F138919BFB /* InputMask-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InputMask-Info.plist"; sourceTree = "<group>"; };
 		5DD04099AF7C946E15CB260D28029AB9 /* SignUpHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpHelper.swift; path = NuSignUp/Classes/SignUpHelper.swift; sourceTree = "<group>"; };
+		5FCB258075B238476FE7516DE31EE9D6 /* CaretString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaretString.swift; path = Source/InputMask/InputMask/Classes/Model/CaretString.swift; sourceTree = "<group>"; };
 		60834FB55485D6CA6FE5CB734E92EFC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		66FB5DBC70A7CC1BFE565EB00ADD859E /* InputMask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputMask-umbrella.h"; sourceTree = "<group>"; };
+		62432A4C33AA2A720339F91A1CCB6B7F /* Next.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Next.swift; path = Source/InputMask/InputMask/Classes/Model/Next.swift; sourceTree = "<group>"; };
+		6420F34F053A2230D4FB74732AA3FFF2 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Source/InputMask/InputMask/Classes/Helper/String.swift; sourceTree = "<group>"; };
+		66D0E5C69CD8C4C3CB8F12994873DAB3 /* MaskedTextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskedTextViewDelegate.swift; path = Source/InputMask/InputMask/Classes/View/MaskedTextViewDelegate.swift; sourceTree = "<group>"; };
+		699044BD12DDCEA58E6945384586B2B2 /* FixedState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FixedState.swift; path = Source/InputMask/InputMask/Classes/Model/State/FixedState.swift; sourceTree = "<group>"; };
 		6A3AC800EF021B44B98B8F211014F99A /* Pods_NuSignUp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		719979CFE68FB5316F0362D5D65093CD /* UITextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITextField.swift; path = Source/InputMask/InputMask/Classes/View/UITextField.swift; sourceTree = "<group>"; };
+		732B51B7C2BAA758F8C08325F3987516 /* InputMask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputMask-prefix.pch"; sourceTree = "<group>"; };
 		743592C6FFB8A9D48E69D8B6F6B9494D /* Pods-NuSignUp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NuSignUp_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7DB83FDC3D2C4C1BCF0BAA194DA85B69 /* Mask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mask.swift; path = Source/InputMask/InputMask/Classes/Mask.swift; sourceTree = "<group>"; };
-		7F4E2A473F704187E8B1542A484D5664 /* MaskedTextInputDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskedTextInputDelegate.swift; path = Source/InputMask/InputMask/Classes/View/MaskedTextInputDelegate.swift; sourceTree = "<group>"; };
+		787D3F93A833F904C5CC7384AC541D02 /* InputMask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InputMask-dummy.m"; sourceTree = "<group>"; };
+		7A2B10486EB7BD8DA803F1DF663CD488 /* CharacterSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterSet.swift; path = Source/InputMask/InputMask/Classes/Helper/CharacterSet.swift; sourceTree = "<group>"; };
+		7BA45A934BC4CCF3CC1A0E08750264F3 /* AffinityCalculationStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AffinityCalculationStrategy.swift; path = Source/InputMask/InputMask/Classes/Helper/AffinityCalculationStrategy.swift; sourceTree = "<group>"; };
 		7FCE209AEF07581D2E75CCEF3722D9F7 /* Pods_NuSignUp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NuSignUp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87CD4176DEA30EEA7001974154207B1D /* SignUpProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpProtocols.swift; path = NuSignUp/Classes/SignUpProtocols.swift; sourceTree = "<group>"; };
+		884998225DC5FEE573C702861D136584 /* FreeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FreeState.swift; path = Source/InputMask/InputMask/Classes/Model/State/FreeState.swift; sourceTree = "<group>"; };
+		8D0EECBBDF494715825189480C2E3133 /* MaskedTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskedTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/MaskedTextFieldDelegate.swift; sourceTree = "<group>"; };
 		8D1C0BE5E6209233D88FA01432EF9516 /* Pods-NuSignUp_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Tests-Info.plist"; sourceTree = "<group>"; };
 		913F10962D21B1789C829998A8CB9B95 /* Pods-NuSignUp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9418E8A51B0800CDC6CEE16C34CCA088 /* InputMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InputMask.h; path = Source/InputMask/InputMask/Classes/InputMask.h; sourceTree = "<group>"; };
 		949BF72D27B89E9B94BA1E6BF245EC84 /* SignUpExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpExtensions.swift; path = NuSignUp/Classes/SignUpExtensions.swift; sourceTree = "<group>"; };
-		95E721671B65348DC0889B1C5CDBC723 /* InputMask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InputMask-dummy.m"; sourceTree = "<group>"; };
-		97BAA689D6FFAA411FD02499CA068CFA /* MaskedTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskedTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/MaskedTextFieldDelegate.swift; sourceTree = "<group>"; };
-		9CB372F87886338E00AC31F6F4F4D737 /* MaskedTextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskedTextViewDelegate.swift; path = Source/InputMask/InputMask/Classes/View/MaskedTextViewDelegate.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EC1FA9766F745B9A234E0D3DAD76F24 /* DefaultSignUpStepC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultSignUpStepC.swift; path = NuSignUp/Classes/DefaultSignUpStepC.swift; sourceTree = "<group>"; };
-		A4DF8FE1FE49BA2A24D9E4DB5B193D38 /* EOLState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EOLState.swift; path = Source/InputMask/InputMask/Classes/Model/State/EOLState.swift; sourceTree = "<group>"; };
+		A19967CD488BCB60BB2E139B41F09135 /* UITextInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITextInput.swift; path = Source/InputMask/InputMask/Classes/View/UITextInput.swift; sourceTree = "<group>"; };
+		A59179570C209864A06AFA54E9FD3861 /* FormatSanitizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatSanitizer.swift; path = Source/InputMask/InputMask/Classes/Helper/FormatSanitizer.swift; sourceTree = "<group>"; };
 		A7523D92A5DDC98C8209690A2BAEC7F8 /* Pods-NuSignUp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B002C096EDF3DBDA6A7B9903B84FF20B /* PolyMaskTextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PolyMaskTextViewDelegate.swift; path = Source/InputMask/InputMask/Classes/View/PolyMaskTextViewDelegate.swift; sourceTree = "<group>"; };
+		AD01AF02DF15C6D08F05E8AC810F8173 /* Notation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notation.swift; path = Source/InputMask/InputMask/Classes/Model/Notation.swift; sourceTree = "<group>"; };
+		AD6C695EABA02CB25093880A85DB6859 /* OptionalValueState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalValueState.swift; path = Source/InputMask/InputMask/Classes/Model/State/OptionalValueState.swift; sourceTree = "<group>"; };
 		B348440FAF27295E7FFA8606ED434447 /* Pods-NuSignUp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NuSignUp_Example-dummy.m"; sourceTree = "<group>"; };
 		BA683ED8F44CBEE310D8C3076A40B5A3 /* Pods-NuSignUp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C292DE322106466B25382E995789A895 /* CaretString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaretString.swift; path = Source/InputMask/InputMask/Classes/Model/CaretString.swift; sourceTree = "<group>"; };
+		C0988034CD491628931C48750E7E8855 /* ValueState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueState.swift; path = Source/InputMask/InputMask/Classes/Model/State/ValueState.swift; sourceTree = "<group>"; };
 		C45677483CBE2ACCA08D130255D47985 /* Pods-NuSignUp_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NuSignUp_Example-Info.plist"; sourceTree = "<group>"; };
-		C707AF2124F6543CC395B93FAAC57FC3 /* CaretStringIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaretStringIterator.swift; path = Source/InputMask/InputMask/Classes/Helper/CaretStringIterator.swift; sourceTree = "<group>"; };
-		C747307B1478BD31A2EE07C7448D5905 /* FormatSanitizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatSanitizer.swift; path = Source/InputMask/InputMask/Classes/Helper/FormatSanitizer.swift; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC78F754F3C82FC4234D2E2CF52F1B2D /* InputMask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputMask.xcconfig; sourceTree = "<group>"; };
 		CEADB0F133248DFFAB335D6BBC0EBCBE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D75B0CC6E993712FCE1A471703DD914C /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Source/InputMask/InputMask/Classes/Model/State.swift; sourceTree = "<group>"; };
 		D9589B2230F1188ECFF0223E87594988 /* NuSignUp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NuSignUp-dummy.m"; sourceTree = "<group>"; };
-		DA3FE20951EB784CE6B5F4946823B721 /* Notation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notation.swift; path = Source/InputMask/InputMask/Classes/Model/Notation.swift; sourceTree = "<group>"; };
-		DC813A561F94FB916443CF54F67AFB6B /* FixedState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FixedState.swift; path = Source/InputMask/InputMask/Classes/Model/State/FixedState.swift; sourceTree = "<group>"; };
-		DD0F2762CE3EFD88EBBE0685BE85EA10 /* Next.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Next.swift; path = Source/InputMask/InputMask/Classes/Model/Next.swift; sourceTree = "<group>"; };
+		DE091D757624C8B910236465EA12BFFB /* InputMask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InputMask.modulemap; sourceTree = "<group>"; };
 		E01C0F4032E62C7D1CAAA5FD01B274A3 /* Pods-NuSignUp_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NuSignUp_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E3DFDCE2246997C26FC2D6CFD689AD68 /* Pods-NuSignUp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NuSignUp_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E854D46C26B466540178C4A50EEF5DBC /* InputMask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InputMask.modulemap; sourceTree = "<group>"; };
-		E89969325B09786DF3EEE2F22E4488D5 /* FreeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FreeState.swift; path = Source/InputMask/InputMask/Classes/Model/State/FreeState.swift; sourceTree = "<group>"; };
-		F2B978886D60D50D94F784BBDDDE1226 /* NSCharacterSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSCharacterSet.swift; path = Source/InputMask/InputMask/Classes/Helper/NSCharacterSet.swift; sourceTree = "<group>"; };
-		F6E19471C7128E4EE4B4560E63A537D6 /* InputMask-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InputMask-Info.plist"; sourceTree = "<group>"; };
-		F72352417E5EDFB66E2087DB2FC35459 /* PolyMaskTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PolyMaskTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/PolyMaskTextFieldDelegate.swift; sourceTree = "<group>"; };
-		F8479D15D4A3A41C3318D661CC9EC3B2 /* Compiler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compiler.swift; path = Source/InputMask/InputMask/Classes/Helper/Compiler.swift; sourceTree = "<group>"; };
+		E96D25922D8BA9BA1D08EC6156A1B34D /* InputMask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputMask-umbrella.h"; sourceTree = "<group>"; };
+		EB1D143991D872C1977209E80626D163 /* RTLCaretStringIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTLCaretStringIterator.swift; path = Source/InputMask/InputMask/Classes/Helper/RTLCaretStringIterator.swift; sourceTree = "<group>"; };
+		F0093191F1BEDEF404281ED8F19598E4 /* CaretStringIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaretStringIterator.swift; path = Source/InputMask/InputMask/Classes/Helper/CaretStringIterator.swift; sourceTree = "<group>"; };
+		F926C34625B8BE0D88499DF4BFADAEAA /* UITextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITextView.swift; path = Source/InputMask/InputMask/Classes/View/UITextView.swift; sourceTree = "<group>"; };
 		FCFC2A3719A7C294C4811DA68AC6CF57 /* SignUpStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignUpStack.swift; path = NuSignUp/Classes/SignUpStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,11 +169,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		762CA1F85EFC5A41B5030B4984D73E45 /* Frameworks */ = {
+		746BFF41E84C0D3DCBED164A25CBA749 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62B0E6D850D6B354E4D98F8997EE8A0E /* Foundation.framework in Frameworks */,
+				F5C4E98C459D242927825D0E715ECFD1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +199,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		32AF2E7DC7B0A8A9A9BD5F81485ACDED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE091D757624C8B910236465EA12BFFB /* InputMask.modulemap */,
+				CC78F754F3C82FC4234D2E2CF52F1B2D /* InputMask.xcconfig */,
+				787D3F93A833F904C5CC7384AC541D02 /* InputMask-dummy.m */,
+				5CBEFBE9AA472CE256DBB7F138919BFB /* InputMask-Info.plist */,
+				732B51B7C2BAA758F8C08325F3987516 /* InputMask-prefix.pch */,
+				E96D25922D8BA9BA1D08EC6156A1B34D /* InputMask-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/InputMask";
+			sourceTree = "<group>";
+		};
 		3A2794C57D8FCDBEB1546984992BDD21 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,34 +227,35 @@
 			path = "Example/Pods/Target Support Files/NuSignUp";
 			sourceTree = "<group>";
 		};
-		3B7A51F9AB9729F26AEB85F282AA80B7 /* InputMask */ = {
+		54AACB63DEAA7EFB91D3A0C227B3E446 /* InputMask */ = {
 			isa = PBXGroup;
 			children = (
-				C292DE322106466B25382E995789A895 /* CaretString.swift */,
-				C707AF2124F6543CC395B93FAAC57FC3 /* CaretStringIterator.swift */,
-				F8479D15D4A3A41C3318D661CC9EC3B2 /* Compiler.swift */,
-				A4DF8FE1FE49BA2A24D9E4DB5B193D38 /* EOLState.swift */,
-				DC813A561F94FB916443CF54F67AFB6B /* FixedState.swift */,
-				C747307B1478BD31A2EE07C7448D5905 /* FormatSanitizer.swift */,
-				E89969325B09786DF3EEE2F22E4488D5 /* FreeState.swift */,
-				9418E8A51B0800CDC6CEE16C34CCA088 /* InputMask.h */,
-				11988402ECA1D7B09616428FFF447408 /* InterfaceBuilderSupport.swift */,
-				7DB83FDC3D2C4C1BCF0BAA194DA85B69 /* Mask.swift */,
-				97BAA689D6FFAA411FD02499CA068CFA /* MaskedTextFieldDelegate.swift */,
-				7F4E2A473F704187E8B1542A484D5664 /* MaskedTextInputDelegate.swift */,
-				9CB372F87886338E00AC31F6F4F4D737 /* MaskedTextViewDelegate.swift */,
-				DD0F2762CE3EFD88EBBE0685BE85EA10 /* Next.swift */,
-				DA3FE20951EB784CE6B5F4946823B721 /* Notation.swift */,
-				F2B978886D60D50D94F784BBDDDE1226 /* NSCharacterSet.swift */,
-				5D854FFB2CE05E6B087662853C153B77 /* OptionalValueState.swift */,
-				F72352417E5EDFB66E2087DB2FC35459 /* PolyMaskTextFieldDelegate.swift */,
-				B002C096EDF3DBDA6A7B9903B84FF20B /* PolyMaskTextViewDelegate.swift */,
-				2B5806944C9686DEA800BB1F53C2E3FA /* ReversedMaskTextFieldDelegate.swift */,
-				4FE58372D1EDFE39373645784EAA026B /* State.swift */,
-				57CF44C33525E097512078B1C12F40FB /* String.swift */,
-				24A7342A3D7D23E9517E39519663CC10 /* UITextInput.swift */,
-				416303B6444B6FC3F9E86622FE0C0A48 /* ValueState.swift */,
-				AFF1AE0263A0FBE081FB7BDE3CDCE65A /* Support Files */,
+				7BA45A934BC4CCF3CC1A0E08750264F3 /* AffinityCalculationStrategy.swift */,
+				5FCB258075B238476FE7516DE31EE9D6 /* CaretString.swift */,
+				F0093191F1BEDEF404281ED8F19598E4 /* CaretStringIterator.swift */,
+				7A2B10486EB7BD8DA803F1DF663CD488 /* CharacterSet.swift */,
+				3759F29EAE6B9828AE46BFD1CAA989B0 /* Compiler.swift */,
+				5B6803F1D89E2707641DC73DB001AF31 /* EOLState.swift */,
+				699044BD12DDCEA58E6945384586B2B2 /* FixedState.swift */,
+				A59179570C209864A06AFA54E9FD3861 /* FormatSanitizer.swift */,
+				884998225DC5FEE573C702861D136584 /* FreeState.swift */,
+				28032A8F6FAD0B2782C812F9EEDA6291 /* InputMask.h */,
+				3AFA1038D83B15D68FB4EFADA0763D54 /* Mask.swift */,
+				8D0EECBBDF494715825189480C2E3133 /* MaskedTextFieldDelegate.swift */,
+				204A4E96E230D8B1CD2D562DF030C52E /* MaskedTextInputListener.swift */,
+				66D0E5C69CD8C4C3CB8F12994873DAB3 /* MaskedTextViewDelegate.swift */,
+				62432A4C33AA2A720339F91A1CCB6B7F /* Next.swift */,
+				AD01AF02DF15C6D08F05E8AC810F8173 /* Notation.swift */,
+				AD6C695EABA02CB25093880A85DB6859 /* OptionalValueState.swift */,
+				EB1D143991D872C1977209E80626D163 /* RTLCaretStringIterator.swift */,
+				174207DD210155BFC696184D8038B2B7 /* RTLMask.swift */,
+				D75B0CC6E993712FCE1A471703DD914C /* State.swift */,
+				6420F34F053A2230D4FB74732AA3FFF2 /* String.swift */,
+				719979CFE68FB5316F0362D5D65093CD /* UITextField.swift */,
+				A19967CD488BCB60BB2E139B41F09135 /* UITextInput.swift */,
+				F926C34625B8BE0D88499DF4BFADAEAA /* UITextView.swift */,
+				C0988034CD491628931C48750E7E8855 /* ValueState.swift */,
+				32AF2E7DC7B0A8A9A9BD5F81485ACDED /* Support Files */,
 			);
 			path = InputMask;
 			sourceTree = "<group>";
@@ -276,20 +293,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		AFF1AE0263A0FBE081FB7BDE3CDCE65A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E854D46C26B466540178C4A50EEF5DBC /* InputMask.modulemap */,
-				3EF2513D94082469CE96E6FE2C93B75E /* InputMask.xcconfig */,
-				95E721671B65348DC0889B1C5CDBC723 /* InputMask-dummy.m */,
-				F6E19471C7128E4EE4B4560E63A537D6 /* InputMask-Info.plist */,
-				152D3CF3A93EDE0D90EB807C1B63A498 /* InputMask-prefix.pch */,
-				66FB5DBC70A7CC1BFE565EB00ADD859E /* InputMask-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/InputMask";
-			sourceTree = "<group>";
-		};
 		C43C338992568187828384AD825902E5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,7 +308,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				8C2ABADCE9F9D1BD1A99AAC71BB97A7D /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				D4FDCDA7DE1BD3FAF19BB3CE380E147A /* Pods */,
+				EC870CEF1F6C87192BCC88BAD347221F /* Pods */,
 				23950CBB867B658FEF82D29AACB8FB49 /* Products */,
 				C43C338992568187828384AD825902E5 /* Targets Support Files */,
 			);
@@ -337,10 +340,10 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		D4FDCDA7DE1BD3FAF19BB3CE380E147A /* Pods */ = {
+		EC870CEF1F6C87192BCC88BAD347221F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B7A51F9AB9729F26AEB85F282AA80B7 /* InputMask */,
+				54AACB63DEAA7EFB91D3A0C227B3E446 /* InputMask */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -390,12 +393,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FA0A3C1D9E6FE66BFF621E00C12117E /* Headers */ = {
+		DD74818B473B1C7EB2019F72B4ADBD0E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E7E045FD3DA294DB9344F9458515E41 /* InputMask-umbrella.h in Headers */,
-				87D9DC3374202D15694280563D0A3F3C /* InputMask.h in Headers */,
+				034163C80B88951C58C0BE9BEFCB9377 /* InputMask-umbrella.h in Headers */,
+				67243A1E5EC355839BA81B7826A7798D /* InputMask.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,14 +451,14 @@
 			productReference = 7FCE209AEF07581D2E75CCEF3722D9F7 /* Pods_NuSignUp_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F1C7A074D0B347D404877431B080718D /* InputMask */ = {
+		E0F66968D5DBDCED514A8AA4DF38768D /* InputMask */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 646415233295C458AD704C373DF52398 /* Build configuration list for PBXNativeTarget "InputMask" */;
+			buildConfigurationList = 1FBC9DCAF233F3D9116FA3253B1BF1B8 /* Build configuration list for PBXNativeTarget "InputMask" */;
 			buildPhases = (
-				9FA0A3C1D9E6FE66BFF621E00C12117E /* Headers */,
-				0558479F73D109A7F86BD017BD07B43D /* Sources */,
-				762CA1F85EFC5A41B5030B4984D73E45 /* Frameworks */,
-				0C39B808C669FEC89FFFB81E16657BF6 /* Resources */,
+				DD74818B473B1C7EB2019F72B4ADBD0E /* Headers */,
+				F2FAE1EFCC15F6C35CF68AE27A58ABAD /* Sources */,
+				746BFF41E84C0D3DCBED164A25CBA749 /* Frameworks */,
+				76DB2BF69F3FCB9835BD55C5D45DE99A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -512,7 +515,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1C7A074D0B347D404877431B080718D /* InputMask */,
+				E0F66968D5DBDCED514A8AA4DF38768D /* InputMask */,
 				11A356E02B54BE2D3F3B73508D11B346 /* NuSignUp */,
 				88DC5DECCDB3DAD2C0AB522AB9641F78 /* Pods-NuSignUp_Example */,
 				FA5E44FEFB06A7EF931FAAF96DD20192 /* Pods-NuSignUp_Tests */,
@@ -521,14 +524,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0C39B808C669FEC89FFFB81E16657BF6 /* Resources */ = {
+		3AAB98E1F38331BC61F07742376B90F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3AAB98E1F38331BC61F07742376B90F0 /* Resources */ = {
+		76DB2BF69F3FCB9835BD55C5D45DE99A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -552,37 +555,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0558479F73D109A7F86BD017BD07B43D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A25537A20C89A7011E79CD4CA428F2B5 /* CaretString.swift in Sources */,
-				77D5B30B4828FF56E46B9668526E2E97 /* CaretStringIterator.swift in Sources */,
-				57AD5B47E3D8992A1A4811BAB00A2EB5 /* Compiler.swift in Sources */,
-				831BA0166A5B2303ED514DE2AC724BC7 /* EOLState.swift in Sources */,
-				FADD49F8EDF477201C8D61F17FC7BC21 /* FixedState.swift in Sources */,
-				A8A862312891E3B93C6EE078D193DE09 /* FormatSanitizer.swift in Sources */,
-				4DDE8D2E2954C35C149B33C89A93D163 /* FreeState.swift in Sources */,
-				4FAAA154C80510238A589692A5472F1B /* InputMask-dummy.m in Sources */,
-				8005A0ACA100A3ADD78B3F912BCE9BAE /* InterfaceBuilderSupport.swift in Sources */,
-				B6F811DE8AA6FE3F3AB06DC61F628E65 /* Mask.swift in Sources */,
-				5B5261D879AE9ECA692B354CBBCCE9A3 /* MaskedTextFieldDelegate.swift in Sources */,
-				E7BB375714924CC9DD0E6FA1343F3020 /* MaskedTextInputDelegate.swift in Sources */,
-				B6C8EEA341F726DB989217F445E20745 /* MaskedTextViewDelegate.swift in Sources */,
-				DF32DDD4C67EC12C00FB552E7A070C57 /* Next.swift in Sources */,
-				5705B005D4C21AABBE627BB1C19AD986 /* Notation.swift in Sources */,
-				BFFE0E3BAA336608A682B432BA274F0D /* NSCharacterSet.swift in Sources */,
-				20380CDA979EDBEDF4AFF0B8F319625C /* OptionalValueState.swift in Sources */,
-				D245AFC315B7E0A9F3A696CB565B2672 /* PolyMaskTextFieldDelegate.swift in Sources */,
-				907C3F7B522331AD6379A0BC0169D1AC /* PolyMaskTextViewDelegate.swift in Sources */,
-				4AF986C3997DB0922C04268F33E7AD80 /* ReversedMaskTextFieldDelegate.swift in Sources */,
-				4B24A2A04C403AE228021FFACB16E350 /* State.swift in Sources */,
-				EEBFB4910EAF3702D9D7C4FD5AC5753B /* String.swift in Sources */,
-				1DCB3EC0A0E319AB5F7C8F639B84713D /* UITextInput.swift in Sources */,
-				0DD5723778CE620C8A02FF7FA0D7AE7D /* ValueState.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4550BC5FFA412E1DC5C4329ECE45CCFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,6 +587,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2FAE1EFCC15F6C35CF68AE27A58ABAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90338F8B6186804D3DD429B8FDAFEEC7 /* AffinityCalculationStrategy.swift in Sources */,
+				FBACAE7CD5406D4FF179CA3F0C1AB7B5 /* CaretString.swift in Sources */,
+				9CCC5913CF9D5C5E87C6ABE192CD5FF0 /* CaretStringIterator.swift in Sources */,
+				3291B148D4A0FB6569BE90A1CA3ECD3B /* CharacterSet.swift in Sources */,
+				4EADDB36668C0D2663B0793B9D71666C /* Compiler.swift in Sources */,
+				A39AD4B7187A58F4B667AB290B9C473B /* EOLState.swift in Sources */,
+				3D52C447C96CE91A9A88BD7B6B44A64C /* FixedState.swift in Sources */,
+				873BC72C12B3C8087DB398B4B89F195F /* FormatSanitizer.swift in Sources */,
+				9887166F1AE5CB74481327BEC2517382 /* FreeState.swift in Sources */,
+				E9644A09AF619FBEDC50C8FD3BE0BF50 /* InputMask-dummy.m in Sources */,
+				4269D2D9FC36CEDA83E0CD9A1BB61EDB /* Mask.swift in Sources */,
+				A7010BF6CA46525FFCE8C1BF96B72804 /* MaskedTextFieldDelegate.swift in Sources */,
+				9E2EC76565CE1951DEF09D04E3FD0308 /* MaskedTextInputListener.swift in Sources */,
+				985D2AC7E04B7D3F861498F223041E0A /* MaskedTextViewDelegate.swift in Sources */,
+				1FEBF2282019B93695C88223894CD79A /* Next.swift in Sources */,
+				36F18F7C4E432D7B068F9C77427773B4 /* Notation.swift in Sources */,
+				104DC524B7C1F0E10569EB109DB4D60B /* OptionalValueState.swift in Sources */,
+				9D8A1496144E06AE91B9FDCF7D0AF4EC /* RTLCaretStringIterator.swift in Sources */,
+				79B14A6F26217DB07ACBEF03C60ECAAB /* RTLMask.swift in Sources */,
+				8E7E01146D2C70388928EBFC13773435 /* State.swift in Sources */,
+				E261CF85431934C408A9909194389462 /* String.swift in Sources */,
+				58FD547B5998110539C58F80B41C6849 /* UITextField.swift in Sources */,
+				B209DCC9A134923511AF593538F56B92 /* UITextInput.swift in Sources */,
+				B10DF5C2E9596833419CF6887E1F68E5 /* UITextView.swift in Sources */,
+				B597E9EF72C8B254F3DAC645DB3DC492 /* ValueState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -633,7 +637,7 @@
 		AF71280BF3AC2E98154E040ACA595F9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = InputMask;
-			target = F1C7A074D0B347D404877431B080718D /* InputMask */;
+			target = E0F66968D5DBDCED514A8AA4DF38768D /* InputMask */;
 			targetProxy = 3B4C54CBFEF9C3025D8D0FAD4153B74E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -930,9 +934,9 @@
 			};
 			name = Debug;
 		};
-		7FE9A1B943FFF25B81FEC5FB3CB80248 /* Debug */ = {
+		C7FB6726B9E80FEBB2FB25691C4B283A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EF2513D94082469CE96E6FE2C93B75E /* InputMask.xcconfig */;
+			baseConfigurationReference = CC78F754F3C82FC4234D2E2CF52F1B2D /* InputMask.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -954,7 +958,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -996,9 +1000,9 @@
 			};
 			name = Release;
 		};
-		EF97A8395BC681C238A08B8544E110E8 /* Release */ = {
+		D85820C2C445E584C307BB10EC21EF5B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EF2513D94082469CE96E6FE2C93B75E /* InputMask.xcconfig */;
+			baseConfigurationReference = CC78F754F3C82FC4234D2E2CF52F1B2D /* InputMask.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1020,7 +1024,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1031,6 +1035,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1FBC9DCAF233F3D9116FA3253B1BF1B8 /* Build configuration list for PBXNativeTarget "InputMask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7FB6726B9E80FEBB2FB25691C4B283A /* Debug */,
+				D85820C2C445E584C307BB10EC21EF5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3167719F88FD9AA5E0175BF06F82E05A /* Build configuration list for PBXNativeTarget "Pods-NuSignUp_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1045,15 +1058,6 @@
 			buildConfigurations = (
 				5B0C8287D755FD95091CF35D87FB8B2D /* Debug */,
 				3048B0C5C704DFFF688DA57F5380ED58 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		646415233295C458AD704C373DF52398 /* Build configuration list for PBXNativeTarget "InputMask" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7FE9A1B943FFF25B81FEC5FB3CB80248 /* Debug */,
-				EF97A8395BC681C238A08B8544E110E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
